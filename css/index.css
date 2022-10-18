@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 *{
     box-sizing: border-box;
     padding: 0px;
@@ -7,13 +8,14 @@
 
 body{
     margin: 0px;
-    padding: 5px;
+    padding: 0px;
     
 }
 
 
 
 header{
+
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -45,7 +47,8 @@ header{
     flex-direction: row
 }
 .head_menu ul li a{
-    font-family: 'Zilla Slab', serif;
+    
+    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     text-decoration: none;
     color: white;
@@ -86,17 +89,21 @@ footer #footer-top-section address{
 }
 
 .address i{
-    scale: 1.3 1.3;
-    margin-top: 1rem;
-    margin-right: 1.5rem;
+    scale:2 2;
+    margin-top: 1.6rem;
+    margin-right: 1.8rem;
     color: white;
 }
 .address article ul li{
     list-style: none;
     color: white;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;    
 }
 .address article h1{
     color: white;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
 }
 
 .bottom{
@@ -104,6 +111,8 @@ footer #footer-top-section address{
     flex-direction: row;
     justify-content: space-between;
     padding: 0.1rem 2rem;
+    font-family: 'Inter', sans-serif;
+
 }
 .bottom a{
     text-decoration: none;
