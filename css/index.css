@@ -6,6 +6,10 @@
     margin:0px;
 }
 
+html{
+    font-size: 100%;
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -15,7 +19,6 @@ body{
 
 
 header{
-
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -25,10 +28,14 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
+
+#list{
+    display: none;
+}
 .logo{
     margin-top: -1.5rem;
     margin-bottom: -1.5rem;
-    margin-left: 3rem;
+    margin-left: 2.2rem;
 }
 .logo img{
     width: 8em;
@@ -40,7 +47,7 @@ header{
 }
 .head_menu ul li{
     list-style: none;
-    margin: 2.2rem 3rem;
+    margin: 2.2rem 2.2rem;
 }
 .head_menu ul{
     display: flex;
@@ -60,11 +67,10 @@ header{
     width: 1.5px;
     margin-top: 2rem;
 }
-.head_menu picture{
-    margin-top: 1.7rem;
-    margin-right: 3rem;
-    margin-bottom: 1rem;
-    padding-left: 3rem;
+.head_menu #world{
+    margin: 1.9rem 2.2rem 1rem 2.2rem;
+    color: white;
+    font-size: 1.5rem;
 }
 footer{
     width: 100%;
@@ -72,25 +78,25 @@ footer{
 footer #footer-top-section {
     background: linear-gradient(90deg, #0ACDF8 0%, #36ACDF 53.93%);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-footer section address{
+#footer-top-section address{
     display: flex;
     flex-direction: row;
+    flex-basis: 15rem;
+    margin:1.5rem 0rem 1.5rem 2rem;
+    align-items: center;
 } 
-footer #footer-top-section address{
-    margin: 1.5rem 4rem;
-}
 
- #footer-top-section  address ul{
+#footer-top-section  address ul{
     margin-top: 0.7rem;
     line-height: 1rem;
 }
 
 .address i{
     scale:2 2;
-    margin-top: 1.6rem;
     margin-right: 1.8rem;
     color: white;
 }
@@ -109,21 +115,51 @@ footer #footer-top-section address{
 .bottom{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0.1rem 2rem;
     font-family: 'Inter', sans-serif;
-
+    font-size: 1rem;
 }
 .bottom a{
     text-decoration: none;
+
+}
+.bottom h5{
+    margin-left: 2rem;
+    margin-top: calc((1.5rem - 1rem)/2);
+}
+.bottom address{
+    margin-right: 2rem;
 }
 .bottom h5 a{
     color: black;
 }
+
 .bottom address img{
     color: white;
-    height: 20%;
+    height: 1.5rem;
+    margin-left: 0.3rem;
 }
 .bottom address a{
-    margin-left: 1.3rem;
+    margin-left: 1rem;
+}
+
+
+@media(max-width: 1220px){
+    html{
+        width: 100%;
+        font-size: 70%;
+    }
+
+    .head_menu{
+        display: none;
+    }
+    #list{
+        display: inline-block;
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 2.2rem;
+    
+    }
+
 }
