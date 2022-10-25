@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+:root{
+
+
+
+/*root font prcentage*/
+--root_fontsize:70%;
+/*background colors*/
+ --header_footer-linear:linear-gradient(90deg, #0ACDF8 0%, #36ACDF 53.93%);
+/*colors*/
+--texts_color-white: #FFFFFF; 
+--texts_color-black: #000;
+--hover_color_grey: rgba(190, 191, 193, 1);
+--hover_color_orange:rgba(230, 120, 22, 1);
+/*fonts styles*/
+--header_footer_text_style: 'IBM Plex Sans', sans-serif;
+--inter:'Inter', sans-serif;
+/*fonts weight*/
+--font_weight_lighter: lighter;
+/*transition*/
+--header_transition: 0.3s ease-in-out;
+
+
+}
