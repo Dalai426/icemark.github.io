@@ -23,7 +23,7 @@
 --color-black:#000;
 --color-white: #FFFFFF; 
 --playbutton_color:	#778899;
---opacity-black:rgba(0, 0, 0, 0.7);;
+--opacity-black:rgba(0, 0, 0, 0.7);
 --bvteegdehvvn_tus_bvr_window_foot:#0078AC;
 /*fonts styles*/
 --header_footer_text_style: 'IBM Plex Sans', sans-serif;
@@ -41,12 +41,14 @@
 --bvteegdehvvn_tus_arrow_x:14rem;
 --bvteegdehvvn_tus_arrow_y:11rem;
 --bvteegdehvvn_window_margins:5rem;
+--shapes_img_bvteegdehvvn_tanilcuulga_width:22.8rem;
+--shapes_img_bvteegdehvvn_tanilcuulga_height:21.2rem;
 /*shadow*/
 --shadow-header:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 --shadow-bvteegdehvvn-window:drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
-
-
+--shadow-bvteegdehvvntanilcuulga-shapes-bordered:0px 4px 4px rgba(0, 0, 0, 0.4);
 /*bvteegdehvvn tus bvr*/
 --fontsize_bvteegdehvvntusbvr_window:1rem;
 --bvteegdehvvn_tusbvr_window_foot_medeelel:0.8rem;
+/*border riadus making shape bvteegdehvvn tanilcuulga*/
 }
