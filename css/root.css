@@ -10,15 +10,21 @@
 --root_fontsize:70%;
 /*background colors*/
  --header_footer-linear:linear-gradient(90deg, #0ACDF8 0%, #36ACDF 53.93%);
-/*colors*/
+--bvteegdehvvn_window_linear:linear-gradient(138.06deg, #F5F5F5 5.93%, rgba(246, 246, 246) 7.9%, rgba(255, 255, 255) 100.35%);
+ /*colors*/
 --texts_color-white: #FFFFFF; 
 --texts_color-black: #000;
 --hover_color_grey: rgba(190, 191, 193, 1);
 --hover_color_orange:rgba(230, 120, 22, 1);
---assistant_color:#0098DA;
+--assistant_color-blue:#0098DA;
 --assistant_color_orange:#FF6C00;
 --bvteegdehvvn_name-color:#005CA9;
 --mocktail-color: rgba(137, 157, 72, 1);
+--color-black:#000;
+--color-white: #FFFFFF; 
+--playbutton_color:	#778899;
+--opacity-black:rgba(0, 0, 0, 0.7);;
+--bvteegdehvvn_tus_bvr_window_foot:#0078AC;
 /*fonts styles*/
 --header_footer_text_style: 'IBM Plex Sans', sans-serif;
 --inter:'Inter', sans-serif;
@@ -31,12 +37,16 @@
 --header_transition: 0.3s ease-in-out;
 /*other sizes*/
 --bvteegdehvvnii_tanilcuulga_article-width:30rem;
+--tus_bvteegdehvvn-3_zurag_hoiguuroroh:7rem;
+--bvteegdehvvn_tus_arrow_x:14rem;
+--bvteegdehvvn_tus_arrow_y:11rem;
+--bvteegdehvvn_window_margins:5rem;
 /*shadow*/
 --shadow-header:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+--shadow-bvteegdehvvn-window:drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
 
 
-
-
-
-
+/*bvteegdehvvn tus bvr*/
+--fontsize_bvteegdehvvntusbvr_window:1rem;
+--bvteegdehvvn_tusbvr_window_foot_medeelel:0.8rem;
 }
