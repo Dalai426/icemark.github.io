@@ -163,11 +163,6 @@ footer #footer-top-section {
 }
 
 @media(max-width: 1220px){
-    html{
-        width: 100%;
-        font-size: var(--root_fontsize);
-    }
-
     .head_menu{
         display: none;
     }
@@ -229,7 +224,4 @@ footer #footer-top-section {
         height: 1.5rem;
     }
 }
-
-
-
 
