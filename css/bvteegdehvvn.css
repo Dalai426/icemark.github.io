@@ -3,6 +3,7 @@
     padding: 0px;
     margin:0px;
 }
+
 header{
     z-index:1;
 }
@@ -69,7 +70,6 @@ header{
     top:0.8rem;
 }
 .tanilcuulga_icecream{
-    margin-top: 6rem;
     margin-bottom: 6rem;
     width: 100%;
     display: grid;
@@ -81,6 +81,12 @@ header{
 .zairmag .zurag img{
     aspect-ratio: initial;
     width:25rem;
+}
+.zairmag{
+    padding-top: 6rem;
+}
+.zairmag:hover .zurag{
+    scale: 1.1;
 }
 
 .tanilcuulga_icecream .zurag{
@@ -163,10 +169,15 @@ header{
     text-align: right;
 }
 
-#video iframe{
-    aspect-ratio: initial;
+#video{
+    background-color: aqua;
 }
 
+#video iframe{
+    aspect-ratio:initial;
+    width: var(--bvteegdehvvn_tusbvr_sizeof_imgs);
+    background-color: black;
+}
 #play_pause{
 
     font-size: 4rem;
@@ -182,40 +193,38 @@ header{
 
 
 /*bvteegdehvvn tus bvr deeer*/
+body{
+    font-size: 100%;
+}
 .bvteegdehvvn_tus{
-    margin-left: 20%;
-    width: 50rem;
+    margin:auto auto;
+    width: 50em;
     height: auto;
-    padding-bottom:3rem;
-    margin-top: 5rem;
+    padding-bottom:3em;
+    margin-top: 5em;
     text-align: center;
     border-radius:var(--bvteegdehvvntusbvr_window_border);
     background: var(--bvteegdehvvn_window_linear);
     filter: var(--shadow-bvteegdehvvn-window);
 }
 
-.bvteegdehvvn_tus .head{
-    width: 100%;
-    margin: 0;
-}
-
 #x{
     position: relative;
-    left: 21rem;
+    left: 21em;
 }
 #x:hover{
     color: var(--hover_color_grey);
 }
 .bvteegdehvvn_tus .head{
     width: 100%;
-    padding: 3rem 0 0 0;
+    padding: 3em 0 0 0;
 }
 .tus_zurag{
     display: flex;
     justify-content: center;
     align-items: center;
     width: fit-content;
-    margin: 1rem auto;
+    margin: 1em auto;
 }
 
 
@@ -265,17 +274,17 @@ header{
 
 
 .left{
-    font-size: 3rem;
+    font-size: 3em;
     color: var(--color-white);
     position: absolute;
-    left: 8rem;
+    left: 2.5em;
     z-index: 1;
 }
 .right{
-    font-size: 3rem;
+    font-size: 3em;
     color: var(--color-white);
     position: absolute;
-    right: 8rem;
+    right: 2.5em;
     z-index: 1;
 }
 .right:hover,.left:hover{
@@ -285,19 +294,17 @@ header{
 
 /*bvteegdehvvn tyus bvr deerhi window foot heseg*/
 .foot{
-    margin-top: 2rem;
+    margin-top: 2em;
 }
 .foot h1{
     color: var(--bvteegdehvvn_name-color);
     font-family:var(--bvteegdehvvn_name-style);
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 500;    
 }
-.foot>hr{
+.foot hr{
     color: var(--bvteegdehvvn_name-color);
-    background-color:var(--bvteegdehvvn_name-color);
-    height: 1px;
-    margin:0 var(--bvteegdehvvn_window_margins) 2rem var(--bvteegdehvvn_window_margins);
+    margin:0 var(--bvteegdehvvn_window_margins) 2em var(--bvteegdehvvn_window_margins);
 }
 
 .contain_turlvvd_window{
@@ -312,12 +319,12 @@ header{
      display: flex;
      flex-direction: row-reverse;
      flex-wrap: wrap;
-     max-width: 36rem;
+     max-width: 36em;
 }
 .contain_turlvvd_window ul li{
     list-style: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .contain_turlvvd_window ul li:nth-child(1){
     padding-right: 0;
@@ -329,7 +336,7 @@ padding-left: 0;
 
 
 .contain_turlvvd_window ul li{
-    border-left:2px solid var(--bvteegdehvvn_name-color);
+    border-left:0.1em solid var(--bvteegdehvvn_name-color);
     font-size: var(--fontsize_bvteegdehvvntusbvr_window);
     font-family:var(--inter);
 }
@@ -344,12 +351,12 @@ padding-left: 0;
 }
 
 .tailbar{
-    margin: 2rem var(--bvteegdehvvn_window_margins);
+    margin: 2em var(--bvteegdehvvn_window_margins);
     font-size: var(--fontsize_bvteegdehvvntusbvr_window);
     font-family:var(--inter);
 }
 .bvteegdehvvn_medeelel{
-    margin: 0 5rem;
+    margin: 0 7em;
     font-family:var(--inter);
     font-size: var(--bvteegdehvvn_tusbvr_window_foot_medeelel);
     display: flex;
@@ -369,12 +376,18 @@ padding-left: 0;
 }
 
 
+
+
+/*mocktail id's*/
 #mocktail_window{
-    background: black;
-    border: 0.2rem solid white;
+    color:var(--color-white);
+}
+#mocktail_window{
+    background:var(--texts_color-black);
+    border: 0.2em solid var(--color-white);
 }
 #mocktail_window .frame{
-    border: 0.1rem solid white;
+    border: 0.1em solid var(--color-white);
 }
 #mocktail_window h1,#mocktail_window .foot h2,#mocktail_window .bvteegdehvvn_medeelel li{
     color:var(--mocktail_color);
@@ -387,7 +400,97 @@ padding-left: 0;
     color: var(--texts_color-white);
 }
 
+
 #mocktail_page{
-    overflow: hidden;
+    
+    background-image: linear-gradient(to right, rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("../pictures_bvteegdehvvniitanilcuulga/BACK_MOCKTAIL.jpg");
+background-size: cover, auto 100%;
+
+background-position: center, center;
+background-repeat: no-repeat, repeat;
+margin: 0rem 0rem -4.2rem 0rem;
+padding: 8rem 0rem 9rem 0rem;
+
+}
+#sectio4,#section5{
+    border-bottom: 0;
+}
+#section4 h1, #section5 h1{
+   border-radius: 2rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+#section5 h1{
+    top:2.5rem;
+}
+#Mocktail_h1{
+    color: var(--mocktail_color);
+}
+#mocktail_foot span{
+    color: var(--texts_color-white);
+}
+#mocktail_foot svg{
+    fill: var(--mocktail_color);
+}
+#mocktail_foot em{
+    color: var(--texts_color-white);
+}
+
+@media(max-width: 1550px){
+    html{
+        font-size: 80%;
+    }
+}
+@media(max-width: 1290px){
+    html{
+        font-size: 70%;
+    }
+}
+@media(max-width: 1060px){
+    .tanilcuulga_icecream{
+        grid-template-columns: calc(100%/2) calc(100%/2);
+    }   
+}
+@media(max-width: 770px){
+    body{
+        font-size:95%;
+    }
+}
+
+@media(max-width: 750px){
+    .tanilcuulga_icecream{
+        grid-template-columns:auto;
+    }
+    .turul h1{
+        margin:auto;
+    }
+    .bvteegdehvvnii_turul ul li a{
+        font-size: 0.6rem;
+    }
+}
+@media(max-width: 570px){
+    .bvteegdehvvnii_turul{
+        display: none;
+    } 
+}
+@media(max-width: 554px){
+    body{
+        font-size:70%;
+    }
+}
+@media(max-width: 420px){
+    body{
+        font-size:60%;
+    }
+}
+@media(max-width: 400px){
+    .turul h1{
+        font-size: 2rem;
+    }
+}
+@media(max-width: 370px){
+    body{
+        font-size:50%;
+    }
 }
 
