@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+<head>
+    <link rel="stylesheet" href="css/root.css">
+    <title>Бүтээгдэхүүний танилцуулга</title>
+
+</head>
+<style>
+    /*bvteegdehvvn tus bvr deeer*/
+body{
+    font-size: 100%;
+}
+.bvteegdehvvn_tus{
+    margin:auto auto;
+    width: 50em;
+    height: auto;
+    padding-bottom:3em;
+    margin-top: 5em;
+    text-align: center;
+    border-radius:var(--bvteegdehvvntusbvr_window_border);
+    background: var(--bvteegdehvvn_window_linear);
+    filter: var(--shadow-bvteegdehvvn-window);
+}
+
+#x{
+    position: relative;
+    left: 21em;
+}
+#x:hover{
+    color: var(--hover_color_grey);
+}
+.bvteegdehvvn_tus .head{
+    width: 100%;
+    padding: 3em 0 0 0;
+}
+.tus_zurag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 1em auto;
+}
+
+
+.bvteegdehvvn_tus .frame{
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:var(--bvteegdehvvn_tusbvr_sizeof_imgs);
+    height:var(--bvteegdehvvn_tusbvr_sizeof_imgs);
+
+}
+.tus_zurag img{
+    aspect-ratio: initial;
+    height:102%;
+    width: auto;
+}
+.tus_zurag img:nth-child(n+3){
+    display: none;
+}
+.bvteegdehvvn_tus .frame:nth-child(2){
+    position:absolute;
+    left: var(--tus_bvteegdehvvn-3_zurag_hoiguuroroh);
+    filter: var(--bvteegdehvvn_tus_bvr_shadow_zah_imgs);
+    height: var(--bvteegdehvvn_tus_bvr_window_img_zah);
+    opacity:var(--opacity_img_zah);
+}
+.bvteegdehvvn_tus .frame:nth-child(2) img{
+    width:100%; height:auto;
+}
+.bvteegdehvvn_tus .frame:nth-child(4){
+    position: absolute;
+    right: var(--tus_bvteegdehvvn-3_zurag_hoiguuroroh);
+    filter: var(--bvteegdehvvn_tus_bvr_shadow_zah_imgs);
+    height: var(--bvteegdehvvn_tus_bvr_window_img_zah);
+    opacity: var(--opacity_img_zah);
+}
+.bvteegdehvvn_tus .frame:nth-child(4) img{
+    width:100%; height:auto;
+}
+
+.bvteegdehvvn_tus .frame:nth-child(3){
+    z-index: 1;
+    filter: var(--bvteegdehvvn_tus_bvr_shadow_gol_imgs);
+}
+
+
+.left{
+    font-size: 3em;
+    color: var(--color-white);
+    position: absolute;
+    left: 2.5em;
+    z-index: 1;
+}
+.right{
+    font-size: 3em;
+    color: var(--color-white);
+    position: absolute;
+    right: 2.5em;
+    z-index: 1;
+}
+.right:hover,.left:hover{
+    color: var(--hover_color_grey);
+}
+
+
+/*bvteegdehvvn tyus bvr deerhi window foot heseg*/
+.foot{
+    margin-top: 2em;
+}
+.foot h1{
+    color: var(--bvteegdehvvn_name-color);
+    font-family:var(--bvteegdehvvn_name-style);
+    font-size: 2em;
+    font-weight: 500;    
+}
+.foot hr{
+    color: var(--bvteegdehvvn_name-color);
+    margin:0 var(--bvteegdehvvn_window_margins) 2em var(--bvteegdehvvn_window_margins);
+}
+
+.contain_turlvvd_window{
+     font-family:var(--inter);
+     display: flex;
+     flex-direction: row;
+     margin: 0 var(--bvteegdehvvn_window_margins);
+     justify-content: space-between;
+     align-items: flex-start;
+}
+.contain_turlvvd_window ul{
+     display: flex;
+     flex-direction: row-reverse;
+     flex-wrap: wrap;
+     max-width: 36em;
+}
+.contain_turlvvd_window ul li{
+    list-style: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.contain_turlvvd_window ul li:nth-child(1){
+    padding-right: 0;
+}
+.contain_turlvvd_window ul li:nth-last-child(1){
+border-left: none;
+padding-left: 0;
+}
+
+
+.contain_turlvvd_window ul li{
+    border-left:0.1em solid var(--bvteegdehvvn_name-color);
+    font-size: var(--fontsize_bvteegdehvvntusbvr_window);
+    font-family:var(--inter);
+}
+
+.contain_turlvvd_window ul li:hover{
+    color: var(--assistant_color_orange);
+}
+
+.contain_turlvvd_window h2{
+    color:var(--bvteegdehvvn_tus_bvr_window_foot);
+    font-size: var(--fontsize_bvteegdehvvntusbvr_window);
+}
+
+.tailbar{
+    margin: 2em var(--bvteegdehvvn_window_margins);
+    font-size: var(--fontsize_bvteegdehvvntusbvr_window);
+    font-family:var(--inter);
+}
+.bvteegdehvvn_medeelel{
+    margin: 0 7em;
+    font-family:var(--inter);
+    font-size: var(--bvteegdehvvn_tusbvr_window_foot_medeelel);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    
+}
+.bvteegdehvvn_medeelel li{
+    list-style: none;
+    color:var(--bvteegdehvvn_tus_bvr_window_foot);
+    font-weight: 800;
+}
+.bvteegdehvvn_medeelel li span{
+    list-style: none;
+    color:var(--texts_color-black);
+    font-weight: 200;
+}
+
+
+
+
+/*mocktail id's*/
+#mocktail_window{
+    color:var(--color-white);
+}
+#mocktail_window{
+    background:var(--texts_color-black);
+    border: 0.2em solid var(--color-white);
+}
+#mocktail_window .frame{
+    border: 0.1em solid var(--color-white);
+}
+#mocktail_window h1,#mocktail_window .foot h2,#mocktail_window .bvteegdehvvn_medeelel li{
+    color:var(--mocktail_color);
+}
+#mocktail_window .contain_turlvvd_window li,#mocktail_window .tailbar{
+    border-color: var(--mocktail_color);
+    color: var(--texts_color-white);
+}
+#mocktail_window .bvteegdehvvn_medeelel li span{
+    color: var(--texts_color-white);
+}
+
+
+</style>
+
+<body>
+    <header>
+
+        <picture class="logo">
+            <source media="(min-width: 1024px)" srcset="pictures/ICEMARK.png">
+            <source media="(max-width: 768px)" srcset="pictures/ICEMARK.png">
+            <a href="index.html">
+                <img src="pictures/ICEMARK.png" alt="Icemark">
+            </a>
+        </picture>
+
+        <nav class="head_menu">
+            <ul>
+                <li><a href="BaiguullagiinTaniltsuulga.html">КОМПАНЫ ТУХАЙ</a></li>
+                <li><a href="bvteegdehvvn_tanilcuulga&tus.html"
+                        aria-label="Бүтээгдэхүүний зургууд, дэлгэрэнгүй мэдээлэл">БҮТЭЭГДЭХҮҮНИЙ ТАНИЛЦУУЛГА</a></li>
+                <li><a href="News.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></li>
+                <li class="border"><a href="sanalHuselt.html">САНАЛ ХҮСЭЛТ</a></li>
+            </ul>
+            <div id="white"></div>
+            <i class="fas fa-globe" id="world"></i>
+        </nav>
+        <i class="fas fa-list-ul" id="list"></i>
+    </header>
+    <menu class="bvteegdehvvnii_turul">
+        <ul>
+            <li><a href="#section1" aria-label="Мөнх тунх бүтээгдэхүүний мэдээлэл">МӨНХ ТУНХ</a>
+                <div class="line"></div>
+            </li>
+            <li><a href="#section2" aria-label="Жимстэй зайрмагнуудын мэдээлэл">ЖИМСТЭЙ ЗАЙРМАГ</a>
+                <div class="line"></div>
+            </li>
+            <li><a href="#section3" aria-label="Шоколадтай зайрмагнуудын мэдээлэл">ШОКОЛАДТАЙ ЗАЙРМАГ</a>
+                <div class="line"></div>
+            </li>
+            <li><a href="#section4" aria-label="Mocktail брендийн зайрмагнуудын мэдээлэл">MOCKTAIL</a>
+                <div class="line"></div>
+            </li>
+            <li><a href="#section5" aria-label="аарцтай зайрмагнуудын мэдээлэл">ААРЦТАЙ ЗАЙРМАГ</a>
+                <div class="line"></div>
+            </li>
+            <li><a href="#section6" aria-label="Аягатай зайрмагнуудын танилцуулга">АЯГАТАЙ ЗАЙРМАГ</a>
+                <div class="line"></div>
+            </li>
+            <li><a href="#section7" aria-label="Цөцгийтэй зайрмагнуудын танилцуулга">ЦӨЦГИЙТЭЙ ЗАЙРМАГ</a>
+                <div class="line"></div>
+            </li>
+            <li><a href="#section8" aria-label="гэр бүлийн зайрмагнуудын танилцуулга">ГЭР БҮЛИЙН</a>
+                <div class="line"></div>
+            </li>
+        </ul>
+
+    </menu>
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/iberry_tus_1.jpg"
+                        alt="чацарганатай iberry" style="height:102%; width:auto;"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/iberry_tus_2.jpg"
+                        alt="нэрстэй iberry"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/iberry_tus_3.jpg"
+                        alt="аньстай iberry" style="height:102%; width:auto;"></article>
+                <img src="pictures_bvteegdehvvniitanilcuulga/iberry_tus_4.jpg" alt="аньстай аягатай iberry">
+                <img src="pictures_bvteegdehvvniitanilcuulga/iberry_tus_5.jpg" alt="нэрстэй аягатай iberry">
+                <img src="pictures_bvteegdehvvniitanilcuulga/iberry_tus_1.jpg" alt="чацарганатай аягатай iberry">
+                <img src="pictures_bvteegdehvvniitanilcuulga/iberry_tus_1.jpg" alt="iberry">
+                <span class="right">❯</span>
+
+            </article>
+        </section>
+
+        <footer class="foot">
+            <h1>IBERRY</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ЧАЦАРГАНА</li>
+                        <li>НЭРС</li>
+                        <li>АНЬС</li>
+                    </ul>
+                </article>
+
+                <article class="tailbar">Инээмсэглэл бэлэглэх байгалийн амт уриатай Iberry зайрмаг нь 2010 оноос эхлэн
+                    зах зээлд нэвтэрч хэрэглэгчдийнхээ таашаалыг хэдийнээ хүлээсэн бүтээгдэхэүүн юм. Монгол улсын нөхөн
+                    сэргээгддэг нөөц болох байгалийн зэрлэг жимс чацаргана, нэрс аньс жимсийг ашиглан энэхүү
+                    бүтээгдэхүүнийг үйлдвэрлэдэг. Худалдаанд гарсан цагаасаа эхлэн нийгэмд эрэлт хэрэгцээг бий болгосон
+                    уг зайрмаг 2019 онд сав баглаа боодлоо шинэчлэн өөрчилж аягатай төрлийн мөн нэмж гаргасан юм.
+                </article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД: <span>ЖИМСТЭЙ ЗАЙРМАГ</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН: <span>65.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА: <span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_mello1.jpg" alt="cherry mello">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_mello2.jpg" alt="mango mello">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_mello3.jpg" alt="kiwi mello">
+                </article>
+                <img src="pictures_bvteegdehvvniitanilcuulga/mello.jpg" alt="kiwi mello">
+                <span class="right">❯</span>
+            </article>
+                
+        </section>
+
+        <footer class="foot">
+            <h1>MELLO</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>KIWI</li>
+                        <li>CHERRY</li>
+                        <li>MANGO</li>
+                        <li>STRAWBERRY</li>
+                    </ul>
+                </article>
+                <article class="tailbar">Өөрийгөө хөглөе! Хөгжилтэй хөгтэй дүрсгүй дурсамжийг бүтээх шинэ сэргэх мэдрэмж
+                    түгээх #Mello зайрмаг</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>ЖИМСТЭЙ ЗАЙРМАГ</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>70.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_venus2.jpg" alt="venus зайрмаг" >
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_venus3.jpg" alt="venus зайрмаг">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_venus4.jpg" alt="venus зайрмаг" >
+                </article>
+                <img src="pictures_bvteegdehvvniitanilcuulga/tus_venus5.jpg" alt="venus зайрмаг">
+                <span class="right">❯</span>
+            </article>
+            
+        </section>
+
+        <footer class="foot">
+            <h1>VENUS</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ШОКОЛАДТАЙ</li>
+                        <li>ИРИС ШОКОЛАДТАЙ</li>
+                        <li>ЦАГААН ШОКОЛАДТАЙ</li>
+                        <li>ШОКОЛАД САМАРТАЙ</li>
+                        <li>ЦАГААН ШОКОЛАД ГҮЗЭЭЛЗГЭНЭТЭЙ</li>
+
+                    </ul>
+                </article>
+                <article class="tailbar">ХАЙР ДУРЛАЛЫН АМТ УРИАТАЙ АНХ ГАРЧ БАЙСАН ВЕНУС ЗАЙРМАГ ЗАЛУУЧУУДЫН ХАМГИЙН ИХ
+                    ИДЭХ ДУРТАЙ БҮТЭЭГДЭХҮҮНЭЭР ШАЛГАРСАН ЮМ. 2019 ОНД УГ ЗАЙРМАГТ ШИНЭЧЛЭЛТ ХИЙЖ “МЭДРЭМЖЭЭ ЧӨЛӨӨЛ”
+                    УРИАТАЙГААР ДАХИН ЗАЛУУЧУУДЫН ДУНД ТРЭНД БОЛЖ ТЭСРЭЛТ ХИЙЖ ЧАДСАН БҮТЭЭГДЭХҮҮН ЮМ. УГ ЗАЙРМАГ НЬ
+                    ШОКОЛАДТАЙ, ИРИСТЭЙ, САМАРТАЙ ГЭСЭН ҮНДСЭН ГУРВАН ТӨРӨЛТЭЙГӨӨР ХУДАЛДААЛАГДАЖ БАЙНА.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>ШОКОЛАДТАЙ ЗАЙРМАГ</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>70.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_icemark.png"
+                        alt="icemark бренд зайрмаг" style="height:102%; width:auto;"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_icemark1.png"
+                        alt="icemark бренд зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_icemark2.png"
+                        alt="icemark бренд зайрмаг" style="height:102%; width:auto;"></article>
+                <img src="pictures_bvteegdehvvniitanilcuulga/tus_icemark3.png" alt="icemark бренд зайрмаг">
+                <img src="pictures_bvteegdehvvniitanilcuulga/tus_icemark4.png" alt="icemark бренд зайрмаг">
+                <span class="right">❯</span>
+            </article>
+        </section>
+
+        <footer class="foot">
+            <h1>ICEMARK</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ЧАЦАРГАНАТАЙ</li>
+                        <li>НЭРСТЭЙ</li>
+                        <li>КРЕМ БРЮЛЕ</li>
+                        <li>ААРЦТАЙ</li>
+                        <li>3D</li>
+                        <li>4D</li>
+
+
+
+                    </ul>
+
+                </article>
+                <article class="tailbar">2019 онышинэ бүтээгдэхүүн Айсмарк зайрмаг нь өөртөө итгэлтэй, өнгөлөг, шинийг
+                    санаачлагч хэн бүхэнд зориулсан бренд бүтээгдэхүүн юм. Монголдоо анх удаа шинэчлэгдсэн технилогоор
+                    3D, 4D зайрмагийг үйлдвэрлэснээс гадна, аарцтай, чацарганатай, нэрстэй, крем брюле гээд
+                    хэрэглэгчдийн дуртай олон амтыг багтаасан уг зайрмаг нь үйлдвэрлэгдэн гарсан цагаасаа эхлэн нийгэмд
+                    хэдийнээ өөрийн байр сууриа олоод эхэлсэн юм.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>ШОКОЛАДТАЙ ЗАЙРМАГ</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>70.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_bambar1.jpg"
+                        alt="icemark бренд зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_bambar2.jpg"
+                        alt="icemark бренд зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_bambar3.jpg"
+                        alt="icemark бренд зайрмаг"></article>
+                <img src="pictures_bvteegdehvvniitanilcuulga/tus_bambar4.jpg" alt="icemark бренд зайрмаг">
+                <span class="right">❯</span>
+            </article>
+
+        </section>
+
+        <footer class="foot">
+            <h1>BAMBAR</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ААРЦТАЙ</li>
+                        <li>ЧАЦАРГАНАТАЙ ААРЦТАЙ</li>
+                        <li>ТОГЛООМТОЙ БАМБАР</li>
+
+                    </ul>
+
+                </article>
+                <article class="tailbar">Монголын уламжлалт хүнс болох аарцыг орчин үеийн технологитой хослуулан
+                    гаргасан анхны бүтээгдэхүүн юм. Тус зайрмаг нь 2003 онд үйлдвэрлэгдэж эхэлснээс хойш өнөөдрийг
+                    хүртэл хэрэглэгчдийн таашаалт нийцсэн бүтээгдэхүүн хэвээр байсаар байна. Өнөөдрийн байдлаар Аарцтай,
+                    чацаргана аарцтай, тоглоомтой бамбар гэсэн үндсэн гурван төрөлтэйгээр худалдаалагддаг.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>ААРЦТАЙ ЗАЙРМАГ</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>65.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>5 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/venus_shock.jpg"
+                        alt="venus бренд minicshock зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/venus_shock2.jpg"
+                        alt="venus бренд minicshock зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/venus_shock1.jpg"
+                        alt="venus бренд minicshock зайрмаг" style="height:102%; width:auto;"></article>
+                <img src="pictures_bvteegdehvvniitanilcuulga/venus_shock3.jpg" alt="venus бренд minicshock зайрмаг">
+                <span class="right">❯</span>
+            </article>
+
+        </section>
+
+        <footer class="foot">
+            <h1>MINI SHCOK</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ЦАГААН ШОКОЛАДТАЙ</li>
+                        <li>ШОКОЛАДТАЙ</li>
+                        <li>САМАРТАЙ ШОКОЛАДТАЙ</li>
+                    </ul>
+                </article>
+                <article class="tailbar">Нэг дор дөрвөн төрлийн амттанг цуглуулсан Мини шок зайрмаг нь гэр бүлээрээ
+                    болон найз нөхдөөрөө идэхэд хамгийн тохиромжтой бүтээгдэхүүн юм. Хэн нэгэнд баярын бэлэг болгож
+                    өгөх, хайр сэтгэлээ илэрхийлэх, найз нөхдийн нандин холбоогоо бататгаж аз жаргалын амтаа хамтдаа
+                    хуваалцах хамгийн шилдэг амттан бол Мини шок зайрмаг юм.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>ГЭР БҮЛИЙН</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>420.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_teso4.jpg"
+                        alt="teso бренд зайрмаг" style="height:102%; width:auto;"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_teso1.jpg"
+                        alt="teso бренд зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_teso3.jpg"
+                        alt="teso бренд зайрмаг" style="height:102%; width:auto;"></article>
+                <img src="pictures_bvteegdehvvniitanilcuulga/tus_teso2.jpg" alt="teso бренд зайрмаг">
+                <span class="right">❯</span>
+            </article>
+      
+        </section>
+
+        <footer class="foot">
+            <h1>TESO</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ИРИСТЭЙ</li>
+
+
+                    </ul>
+                </article>
+                <article class="tailbar">The packing with easy-to-use cup and single-serve spoon is the main quality of
+                    Teso ice cream and the ice cream is enriched with perfect combination of caramel and cream. Caramel
+                    is the one of the main ingredient of this ice cream, which is imported from Russia. Teso is one of
+                    the most satisfying and enjoyable ice creams since its introduction to the market as a new member of
+                    our products.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>АЯГАТАЙ ЗАЙРМАГ</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>65.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_imperia1.png"
+                        alt="imperia тортон зайрмаг" style="width:110%;"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_imperia2.jpg"
+                        alt="imperia тортон зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_imperia3.jpg"
+                        alt="imperia тортон зайрмаг"></article>
+                <span class="left">❮</span>
+            </article>
+        </section>
+
+        <footer class="foot">
+            <h1>IMPERIA</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ИМПЕРИЯ ТОРТОН ЗАЙРМАГ</li>
+                    </ul>
+                </article>
+                <article class="tailbar">Монголд хамгийн анх удаа Айсмарк компани орос технологиор Монголд анх удаа
+                    тортон зайрмаг үйлдвэрлэж 2016 онд зах зээлд нэвтрүүлсэн. Тус зайрмаг нь гэр бүл хамт олон найз
+                    нөхөдтэйгээ хамт олуулаа идэхэд хамгийн тохиромжтой бөгөөд сав баглаа боодлын хувьд ч хүнд
+                    бэлэглэхэд нэн тохирох бүтээгдэхүүн юм. Худалдаанд гарцсан цагаас нь хойш хэрэглэгчид өнөөдрийг
+                    хүртэл төрсөн өдөр шинэ жил гэх мэт баярын ширээнд ашиглах зорилгоор хамгийн ихээр худалдан авсаар
+                    байна. Тус зайрмаг нь 850 граммтайгаар савлагдсан.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>ГЭР БҮЛИЙН</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>850.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/elite ice.jpg" alt="elite зайрмаг" style="height:102%; width:auto;">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/элитэ.jpg" alt="elite зайрмаг" style="width:100%; height: auto;"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_elitw.jpg" alt="elite зайрмаг" style="height:102%; width:auto;"></article>
+                <span class="right">❯</span>
+            </article>
+  
+
+        </section>
+
+        <footer class="foot">
+            <h1>ELITE</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ELIT АЯГАТАЙ ЗАЙРМАГ</li>
+                    </ul>
+                </article>
+                <article class="tailbar">Тус зайрмаг нь цөцгийтэй зайрмаг бөгөөд нэмэлт орцонд нь самар жимс ордог
+                    болно. 570 граммийн савалгаатай тул та бүхэн гэр бүлээрээ болон олуулаа найз нөхдөөрөө идэхэд
+                    хамгийн тохиромжтой. Түүнээс гадна үйлчилгээний газрууд энэхүү зайрмагийг өөрсдийн дессертэнд
+                    хамгийн өргөнөөр ашиглан хэрэглэж байна.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>ГЭР БҮЛИЙН</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>550.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_alyaska1.jpg"
+                        alt="alyaska зайрмаг" style="height:102%; width:auto;"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_alyaska2.png"
+                        alt="alyaska зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_alyaska4.png"
+                        alt="alyaska зайрмаг" style="height:102%; width:auto;"></article>
+                <span class="right">❯</span>
+
+            </article>
+    
+     
+        </section>
+
+        <footer class="foot">
+            <h1>ALYASKA</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ЦӨЦГИЙТЭЙ</li>
+                        <li>ЖИМСТЭЙ</li>
+                        <li>ШОКОЛАДТАЙ</li>
+
+
+                    </ul>
+                </article>
+                <article class="tailbar">ХЭРЭГЛЭГЧДИЙН ДУНД ХЭЗЭЭНИЙ ӨӨРИЙН БАЙР СУУРИЙГ ОЛЖ ҮНЭНЧ ХЭРЭГЛЭГЧДЭЭ ТАТАЖ
+                    ЧАДСАН АЛЯСКА ЗАЙРМАГ НЬ ЦЭВЭР ЦӨЦГИЙГ АШИГЛАН ХИЙДЭГ БӨГӨӨД ЦӨЦГИЙТЭЙ, ШОКОЛАДТАЙ , ЖИМСТЭЙ ГЭСЭН
+                    ҮНДСЭН ГУРВАН ТӨРӨЛТЭЙ ЮМ. АМАНД ОРООД Л ХАЙЛАН УРСАЖ, ЗӨӨЛӨН АМТЫГ МЭДРЭХ ДУРТАЙ ХЭН БҮХЭНД АЛЯСКА
+                    ЗАЙРМАГИЙГ ЗОРИУЛАН ҮЙЛДВЭРЛЭЖ БАЙНА.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>ЦӨЦГИЙТЭЙ</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>65.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_munh.jpg" alt="munh зайрмаг">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_munh.png" alt="munh зайрмаг">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/м.jpg" alt="munh зайрмаг"></article>
+                <span class="right">❯</span>
+            </article>
+
+
+        </section>
+
+        <footer class="foot">
+            <h1>MUNH</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ШОКОЛАД ЦӨЦГИЙТЭЙ</li>
+
+                    </ul>
+                </article>
+                <article class="tailbar">Хүүхэд багачуудад үлгэрээр дамжуулан шинэ санаа, шилдэг сургамжийг өгч, Монгол
+                    аж ахуйг танин мэдүүлж, хүүхдүүдийн хүмүүжилд эерэгээр нөлөөлж байгаа Мөнх Тунх хүүхэлдэйн кино
+                    гараад нэлээдгүй хугацаа өнгөрчээ. Эхний ангиасаа л хүүхдүүдийн сонирхлыг татаж шинэ дугаар бүрд өөр
+                    өөр санааг өгүүлж Монгол ардын үлгэрүүдийг орчин цагт хөрвүүлэн сонирхолтой содон байдлаар үзүүлдэг
+                    нь тухайн анимешний онцлог тал юм. Мөн бяцхан дүү нартаа хүүхэлдэйн киноноос гадна амин дэмээр
+                    баялаг шүүс болон Мөнх Тунх зайрмагийг хүргэж эхэллээ. Мөнх Тунх зайрмаг нь хоёр төрөлтэй бөгөөд
+                    бусад зайрмагаас Сахарын агууламж бага гэдгээрээ онцлог талтай юм. Хүүхэд бүр чихэрлэг зүйлд дуртай
+                    бөгөөд түүнийгээ ихээр идэх нь биед ямар нэгэн байдлаар сөрөг талтай байдаг бол Айсмарк компани
+                    Монголдоо анх удаа сахарын агууламж бага бүтээгдэхүүнийг бяцхан дүү нартаа зориулан үйлдвэрлэж
+                    эхэллээ.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>MUN&TUNH</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>65.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="right">❯</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_tunh.jpg" alt="tunh зайрмаг">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_tunh1.jpg" alt="tunh зайрмаг">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_tunh2.jpg" alt="tunh зайрмаг">
+                <span class="right">❯</span>
+            </article>
+
+
+
+
+            </article>
+        </section>
+
+        <footer class="foot">
+            <h1>TUNH</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ГҮЗЭЭЛЗГЭНЭ ЦӨЦГИЙТЭЙ</li>
+                    </ul>
+                </article>
+                <article class="tailbar">Хүүхэд багачуудад үлгэрээр дамжуулан шинэ санаа, шилдэг сургамжийг өгч, Монгол
+                    аж ахуйг танин мэдүүлж, хүүхдүүдийн хүмүүжилд эерэгээр нөлөөлж байгаа Мөнх Тунх хүүхэлдэйн кино
+                    гараад нэлээдгүй хугацаа өнгөрчээ. Эхний ангиасаа л хүүхдүүдийн сонирхлыг татаж шинэ дугаар бүрд өөр
+                    өөр санааг өгүүлж Монгол ардын үлгэрүүдийг орчин цагт хөрвүүлэн сонирхолтой содон байдлаар үзүүлдэг
+                    нь тухайн анимешний онцлог тал юм. Мөн бяцхан дүү нартаа хүүхэлдэйн киноноос гадна амин дэмээр
+                    баялаг шүүс болон Мөнх Тунх зайрмагийг хүргэж эхэллээ. Мөнх Тунх зайрмаг нь хоёр төрөлтэй бөгөөд
+                    бусад зайрмагаас Сахарын агууламж бага гэдгээрээ онцлог талтай юм. Хүүхэд бүр чихэрлэг зүйлд дуртай
+                    бөгөөд түүнийгээ ихээр идэх нь биед ямар нэгэн байдлаар сөрөг талтай байдаг бол Айсмарк компани
+                    Монголдоо анх удаа сахарын агууламж бага бүтээгдэхүүнийг бяцхан дүү нартаа зориулан үйлдвэрлэж
+                    эхэллээ.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>MUN&TUNH</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>65.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+
+    <section class="bvteegdehvvn_tus">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/тус_.jpg" alt="пломбир зайрмаг">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/тус_пло1.png" alt="пломбир зайрмаг" style=" height:100%; left:10.4rem; position: relative;">
+                </article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/тус_.jpg" alt="пломбир зайрмаг" >
+                </article>
+                <span class="right">❯</span>
+            </article>
+        
+        </section>
+
+        <footer class="foot">
+            <h1>PLOMBIR</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>ИРИСТЭЙ</li>
+                    </ul>
+                </article>
+                <article class="tailbar">Plombir ice cream is for everyone who enjoys a variety of taste such as creamy
+                    nuts, creamy raisin and chocolate nuts. Our customers satisfy with this ice cream which has own
+                    unique taste in the ice cream market.</article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>ЦӨЦГИЙТЭЙ</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>70.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+    <section class="bvteegdehvvn_tus" id="mocktail_window">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_mock.jpg"
+                        alt="mocktail мөсөн зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_mock1.jpg"
+                        alt="mocktail мөсөн зайрмаг"></article>
+                <article class="frame"><img src="pictures_bvteegdehvvniitanilcuulga/tus_mock2.jpg"
+                        alt="mocktail мөсөн зайрмаг"></article>
+                <img src="pictures_bvteegdehvvniitanilcuulga/tus_mock3.jpg" alt="mocktail мөсөн зайрмаг">
+                <img src="pictures_bvteegdehvvniitanilcuulga/tus_mock4.jpg" alt="mocktail мөсөн зайрмаг">
+                <img src="pictures_bvteegdehvvniitanilcuulga/tus_mock5.jpg" alt="mocktail мөсөн зайрмаг">
+                <span class="right">❯</span>
+            </article>
+        
+        </section>
+
+        <footer class="foot">
+            <h1>MOCKTAIL</h1>
+            <hr>
+            <section class="tus_bvr">
+                <article class="contain_turlvvd_window">
+                    <h2>ТӨРӨЛ</h2>
+                    <ul>
+                        <li>COSMOPOLITAN</li>
+                        <li>BLUE OCEAN</li>
+                        <li>MOJITO</li>
+                        <li>PINOCOLADA</li>
+                    </ul>
+                </article>
+                <article class="tailbar">Мэргэжлийн бартендраас гаргасан жороор Mocktail Icecream 4 төрлийг санал болгож
+                    байна:
+                    - Cosmopolitan🍒
+                    - Blue Ocean 🌊
+                    - Mojito🍸
+                    - Pina Colada🍍
+                </article>
+                <ul class="bvteegdehvvn_medeelel">
+                    <li>БРЭНД:<span>МӨСӨН ЗАЙРМАГ</span></li>
+                    <li>БҮТЭЭГДЭХҮҮНИЙ ЖИН:<span>65.00 ГР</span></li>
+                    <li>ХАДГАЛАХ ХУГАЦАА:<span>6 САР</span></li>
+                </ul>
+            </section>
+        </footer>
+
+    </section>
+
+
+    </section>
+</body>
+</html>
