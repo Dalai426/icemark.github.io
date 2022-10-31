@@ -485,4 +485,10 @@ padding: 8rem 0rem 9rem 0rem;
         font-size:50%;
     }
 }
+@media(max-width: 310px){
+    body{
+        font-size:30%;
+    }
+}
+
 
