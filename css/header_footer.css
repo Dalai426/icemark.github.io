@@ -22,12 +22,12 @@ header{
     display: none;
 }
 .logo{
-    margin-top: -3.5rem;
-    margin-bottom: -4rem;
     margin-left: 2.2rem;
+    margin: -1.3rem auto -2.1rem 2.2rem;
 }
 .logo img{
-    width: 8em;
+    aspect-ratio: initial;
+    width: 8rem;
     height: auto;
 }
 .head_menu{
