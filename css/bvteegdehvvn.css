@@ -169,14 +169,12 @@ header{
     text-align: right;
 }
 
-#video{
-    background-color: aqua;
-}
+
 
 #video iframe{
     aspect-ratio:initial;
-    width: var(--bvteegdehvvn_tusbvr_sizeof_imgs);
-    background-color: black;
+    width: 25rem;
+    margin-top:2rem;
 }
 #play_pause{
 
@@ -188,7 +186,6 @@ header{
 
     opacity: 0.6;
 }
-
 
 
 
@@ -325,6 +322,7 @@ body{
     list-style: none;
     padding-left: 1em;
     padding-right: 1em;
+    margin-bottom: 0.5em;
 }
 .contain_turlvvd_window ul li:nth-child(1){
     padding-right: 0;
@@ -351,20 +349,20 @@ padding-left: 0;
 }
 
 .tailbar{
-    margin: 2em var(--bvteegdehvvn_window_margins);
+    margin: 1.5em var(--bvteegdehvvn_window_margins) 0 var(--bvteegdehvvn_window_margins);
     font-size: var(--fontsize_bvteegdehvvntusbvr_window);
     font-family:var(--inter);
 }
 .bvteegdehvvn_medeelel{
-    margin: 0 7em;
+    margin: 2em 7em 0 7em;
     font-family:var(--inter);
     font-size: var(--bvteegdehvvn_tusbvr_window_foot_medeelel);
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     font-weight: 100;
-    
 }
 .bvteegdehvvn_medeelel li{
+    margin-top: 1em;
     list-style: none;
     color:var(--bvteegdehvvn_tus_bvr_window_foot);
     font-weight: 800;
@@ -436,6 +434,7 @@ padding: 8rem 0rem 9rem 0rem;
     color: var(--texts_color-white);
 }
 
+
 @media(max-width: 1550px){
     html{
         font-size: 80%;
@@ -476,6 +475,12 @@ padding: 8rem 0rem 9rem 0rem;
 @media(max-width: 554px){
     body{
         font-size:70%;
+    }
+}
+@media(max-width: 460px){
+    .bvteegdehvvn_medeelel{
+       display: block;
+       text-align: left;
     }
 }
 @media(max-width: 420px){
