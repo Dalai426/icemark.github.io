@@ -3,7 +3,9 @@
     padding: 0px;
     margin:0px;
 }
-
+body{
+    font-size: 1rem;
+}
 header{
     z-index:1;
 }
@@ -179,15 +181,13 @@ header{
 
 
 /*bvteegdehvvn tus bvr deeer*/
-body{
-    font-size: 100%;
-}
+
 .bvteegdehvvn_tus{
     margin:auto auto;
-    width: 60rem;
+    width: 50em;
     height: auto;
-    padding-bottom:3rem;
-    margin-top: 5rem;
+    padding-bottom:3em;
+    margin-top: 5em;
     text-align: center;
     border-radius:var(--bvteegdehvvntusbvr_window_border);
     background: var(--bvteegdehvvn_window_linear);
@@ -195,24 +195,22 @@ body{
 }
 
 #x{
-
     position: relative;
-    left: 26rem;
-    
+    left: 21em;
 }
 #x:hover{
     color: var(--hover_color_grey);
 }
 .bvteegdehvvn_tus .head{
     width: 100%;
-    padding: 3rem 0 0 0;
+    padding: 3em 0 0 0;
 }
 .tus_zurag{
     display: flex;
     justify-content: center;
     align-items: center;
     width: fit-content;
-    margin: 1rem auto;
+    margin: 1em auto;
 }
 
 
@@ -262,17 +260,17 @@ body{
 
 
 .left{
-    font-size: 3rem;
+    font-size: 3em;
     color: var(--color-white);
     position: absolute;
-    left: 9rem;
+    left: 2.5em;
     z-index: 1;
 }
 .right{
-    font-size: 3rem;
+    font-size: 3em;
     color: var(--color-white);
     position: absolute;
-    right: 9rem;
+    right: 2.5em;
     z-index: 1;
 }
 .right:hover,.left:hover{
@@ -282,12 +280,12 @@ body{
 
 /*bvteegdehvvn tyus bvr deerhi window foot heseg*/
 .foot{
-    margin-top: 2rem;
+    margin-top: 2em;
 }
 .foot h1{
     color: var(--bvteegdehvvn_name-color);
     font-family:var(--bvteegdehvvn_name-style);
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 500;    
 }
 .foot hr{
@@ -307,13 +305,13 @@ body{
      display: flex;
      flex-direction: row-reverse;
      flex-wrap: wrap;
-     max-width: 36rem;
+     max-width: 36em;
 }
 .contain_turlvvd_window ul li{
     list-style: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-bottom: 0.5rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 0.5em;
 }
 .contain_turlvvd_window ul li:nth-child(1){
     padding-right: 0;
@@ -325,7 +323,7 @@ padding-left: 0;
 
 
 .contain_turlvvd_window ul li{
-    border-left:0.1rem solid var(--bvteegdehvvn_name-color);
+    border-left:0.1em solid var(--bvteegdehvvn_name-color);
     font-size: var(--fontsize_bvteegdehvvntusbvr_window);
     font-family:var(--inter);
 }
@@ -340,21 +338,20 @@ padding-left: 0;
 }
 
 .tailbar{
-    margin: 1.5rem var(--bvteegdehvvn_window_margins) 0 var(--bvteegdehvvn_window_margins);
+    margin: 1.5em var(--bvteegdehvvn_window_margins) 0 var(--bvteegdehvvn_window_margins);
     font-size: var(--fontsize_bvteegdehvvntusbvr_window);
     font-family:var(--inter);
 }
 .bvteegdehvvn_medeelel{
-    margin: 2rem 5rem 0 5rem;
+    margin: 2em 7em 0 7em;
     font-family:var(--inter);
-    font-size: var(--fontsize_bvteegdehvvntusbvr_window);
+    font-size: var(--bvteegdehvvn_tusbvr_window_foot_medeelel);
     display: flex;
     justify-content:space-evenly;
     font-weight: 100;
-    padding: 0;
 }
 .bvteegdehvvn_medeelel li{
-    margin-top: 1rem;
+    margin-top: 1em;
     list-style: none;
     color:var(--bvteegdehvvn_tus_bvr_window_foot);
     font-weight: 800;
@@ -374,10 +371,10 @@ padding-left: 0;
 }
 #mocktail_window{
     background:var(--texts_color-black);
-    border: 0.2rem solid var(--color-white);
+    border: 0.2em solid var(--color-white);
 }
 #mocktail_window .frame{
-    border: 0.1rem solid var(--color-white);
+    border: 0.1em solid var(--color-white);
 }
 #mocktail_window h1,#mocktail_window .foot h2,#mocktail_window .bvteegdehvvn_medeelel li{
     color:var(--mocktail_color);
@@ -426,7 +423,6 @@ padding: 8rem 0rem 9rem 0rem;
     color: var(--texts_color-white);
 }
 
-
 @media(max-width: 1550px){
     html{
         font-size: 80%;
@@ -442,9 +438,9 @@ padding: 8rem 0rem 9rem 0rem;
         grid-template-columns: calc(100%/2) calc(100%/2);
     }   
 }
-@media(max-width: 740px){
-    html{
-        font-size: 60%;
+@media(max-width: 770px){
+    body{
+        font-size:95%;
     }
 }
 
@@ -459,24 +455,14 @@ padding: 8rem 0rem 9rem 0rem;
         font-size: 0.6rem;
     }
 }
-@media(max-width: 609px){
-    html{
-        font-size: 40%;
-    }
-}
 @media(max-width: 570px){
     .bvteegdehvvnii_turul{
         display: none;
     } 
 }
-@media(max-width: 400px){
-    html{
-        font-size:30%;
-    }
-}
-@media(max-width: 303px){
-    html{
-        font-size:20%;
+@media(max-width: 554px){
+    body{
+        font-size:70%;
     }
 }
 @media(max-width: 460px){
@@ -485,15 +471,22 @@ padding: 8rem 0rem 9rem 0rem;
        text-align: left;
     }
 }
-
-@media(max-width: 206px){
-    html{
-        font-size:15%;
+@media(max-width: 420px){
+    body{
+        font-size:60%;
+    }
+    .turul h1{
+        font-size: 2rem;
+    }
+}
+@media(max-width: 370px){
+    body{
+        font-size:50%;
     }
 }
 
-@media(max-width: 154px){
-    html{
-        font-size:8%;
+@media(max-width: 310px){
+    body{
+        font-size:30%;
     }
 }
