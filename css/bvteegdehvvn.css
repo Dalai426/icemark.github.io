@@ -441,54 +441,6 @@ padding: 8rem 0rem 9rem 0rem;
 }
 @media (max-width: 770px){
     body{
-        font-size:95%;
+        font-size:0.1rem;
     }
 }
-
-@media (max-width: 750px){
-    .tanilcuulga_icecream{
-        grid-template-columns:auto;
-    }
-    .turul h1{
-        margin:auto;
-    }
-    .bvteegdehvvnii_turul ul li a{
-        font-size: 0.6rem;
-    }
-}
-@media (max-width: 570px){
-    .bvteegdehvvnii_turul{
-        display: none;
-    } 
-}
-@media (max-width: 554px){
-    body{
-        font-size:70%;
-    }
-}
-@media (max-width: 460px){
-    .bvteegdehvvn_medeelel{
-       display: block;
-       text-align: left;
-    }
-}
-@media (max-width: 420px){
-    body{
-        font-size:60%;
-    }
-    .turul h1{
-        font-size: 2rem;
-    }
-}
-@media (max-width: 370px){
-    body{
-        font-size:50%;
-    }
-}
-@media (max-width: 310px){
-    body{
-        font-size:30%;
-    }
-}
-
-
