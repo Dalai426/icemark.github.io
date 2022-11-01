@@ -423,7 +423,6 @@ padding: 8rem 0rem 9rem 0rem;
     color: var(--texts_color-white);
 }
 
-
 @media(max-width: 1550px){
     html{
         font-size: 80%;
@@ -434,18 +433,18 @@ padding: 8rem 0rem 9rem 0rem;
         font-size: 70%;
     }
 }
-@media only screen and(max-width: 1060px){
+@media(max-width: 1060px){
     .tanilcuulga_icecream{
         grid-template-columns: calc(100%/2) calc(100%/2);
     }   
 }
-@media only screen and (max-width: 770px){
+@media(max-width: 770px){
     body{
         font-size:95%;
     }
 }
 
-@media only screen and (max-width: 750px){
+@media(max-width: 750px){
     .tanilcuulga_icecream{
         grid-template-columns:auto;
     }
@@ -456,23 +455,23 @@ padding: 8rem 0rem 9rem 0rem;
         font-size: 0.6rem;
     }
 }
-@media only screen and (max-width: 570px){
+@media(max-width: 570px){
     .bvteegdehvvnii_turul{
         display: none;
     } 
 }
-@media only screen and (max-width: 554px){
+@media(max-width: 554px){
     body{
         font-size:70%;
     }
 }
-@media only screen and (max-width: 460px){
+@media(max-width: 460px){
     .bvteegdehvvn_medeelel{
        display: block;
        text-align: left;
     }
 }
-@media only screen and (max-width: 420px){
+@media(max-width: 420px){
     body{
         font-size:60%;
     }
@@ -480,14 +479,20 @@ padding: 8rem 0rem 9rem 0rem;
         font-size: 2rem;
     }
 }
-@media only screen and (max-width: 370px){
+@media(max-width: 370px){
     body{
         font-size:50%;
     }
 }
 
-@media only screen and (max-width: 310px){
+@media(max-width: 310px){
     body{
         font-size:30%;
+    }
+}
+
+@media(max-width: 197px){
+    body{
+        font-size:20%;
     }
 }
