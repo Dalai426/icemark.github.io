@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+
 :root{
 
 /*root font prcentage*/
@@ -37,23 +36,3 @@
 --font_weight_lighter: lighter;
 /*transition*/
 --header_transition: 0.3s ease-in-out;
-/*other sizes*/
---bvteegdehvvnii_tanilcuulga_article-width:30rem;
---tus_bvteegdehvvn-3_zurag_hoiguuroroh:-20%;
---bvteegdehvvn_window_margins:5em;
---shapes_img_bvteegdehvvn_tanilcuulga_width:22.8rem;
---shapes_img_bvteegdehvvn_tanilcuulga_height:21.2rem;
---bvteegdehvvntusbvr_window_border:5em;
---bvteegdehvvn_tus_bvr_shadow_gol_imgs:drop-shadow(0.5em 0 0.25em rgba(0, 0, 0, 0.25)) drop-shadow(-0.25em 0 0.25em rgba(0, 0, 0, 0.25));
---bvteegdehvvn_tus_bvr_shadow_zah_imgs:drop-shadow(0 0.25em 0.25em rgba(0, 0, 0, 0.25));
---bvteegdehvvn_tus_bvr_window_img_zah_width:39%;
-/*shadow*/
---shadow-header:drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
---shadow-bvteegdehvvn-window:drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
---shadow-bvteegdehvvntanilcuulga-shapes-bordered:0px 4px 4px rgba(0, 0, 0, 0.4);
-/*bvteegdehvvn tus bvr*/
---fontsize_bvteegdehvvntusbvr_window:0.8em;
---bvteegdehvvn_tusbvr_window_foot_medeelel:0.8em;
-/*bvteegdehvvn_tus_bvr_window*/
---opacity_img_zah:0.2;
-}
