@@ -49,180 +49,198 @@
             <div id="white"></div>
             <i class="fas fa-globe" id="world"></i>
         </nav>
+
         <i class="fas fa-list-ul" id="list"></i>
     </header>
 
-    <main>
-        <section id="slider">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="pictures/Home_img.png">
-                <source media="(max-width: 768px)" srcset="pictures/Home_img.png">
-                <img src="pictures/Home_img.png" alt="Icemark" width="1440px" height="671px">
+    <main >
+        <section class="slider">
+            <picture class="mySlides">
+                <source media="(min-width: 1024px)" srcset="index_pictures/sliding1.png">
+                <source media="(max-width: 768px)" srcset="index_pictures/sliding1.png">
+                <img src="index_pictures/sliding1.png" alt="Icemark" width="100%" height="100%">
             </picture>
-            <picture>
-                <source media="(min-width: 1024px)" srcset="pictures/Home_img.png">
-                <source media="(max-width: 768px)" srcset="pictures/Home_img.png">
-                <img src="pictures/Home_img.png" alt="Icemark" width="1440px" height="671px">
-            </picture>
-            <picture>
-                <source media="(min-width: 1024px)" srcset="pictures/Home_img.png">
-                <source media="(max-width: 768px)" srcset="pictures/Home_img.png">
-                <img src="pictures/Home_img.png" alt="Icemark" width="1440px" height="671px">
-            </picture>
-            <picture>
+
+            <picture class="mySlides">
                 <source media="(min-width: 1024px)" srcset="pictures/Home_img.png">
                 <source media="(max-width: 768px)" srcset="pictures/Home_img.png">
                 <img src="pictures/Home_img.png" alt="Icemark" width="1440px" height="671px">
             </picture>
 
+            <picture class="mySlides">
+                <source media="(min-width: 1024px)" srcset="pictures_bvteegdehvvniitanilcuulga/iberry_tus_1.jpg">
+                <source media="(max-width: 768px)" srcset="pictures_bvteegdehvvniitanilcuulga/iberry_tus_1.jpg">
+                <img src="pictures_bvteegdehvvniitanilcuulga/iberry_tus_1.jpg" alt="Icemark" width="1440px" height="671px">
+            </picture>
+
+            <picture class="mySlides">
+                <source media="(min-width: 1024px)" srcset="pictures/frame2.jpg">
+                <source media="(max-width: 768px)" srcset="pictures/frame2.jpg">
+                <img src="pictures/frame2.jpg" alt="Icemark" width="1440px" height="671px">
+            </picture> 
+
+            
+         <script>
+            var slideIndex = 0;
+            carousel();
+
+           function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 3000);
+         }
+         </script>
+        
 
 
         </section>
-
-        <section id="product">
+        <div id="line"></div>
+        <section class="product">
+         
             <a href="https://icemark.mn/i-berry">
-                <article>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="pictures/iconset2 1.png">
-                        <source media="(max-width: 768px)" srcset="pictures/iconset2 1.png">
-                        <img src="pictures/iconset2 1.png" alt="Жимстэй зайрмаг" width="462px" height="385px">
-                    </picture>
-                    <h2>Жимстэй зайрмаг</h2>
+                <article class="p-art-1">
+                   
+                    
+                    <h2><span> Жимстэй</span> <br> зайрмаг</h2>
+                    <div class="pro-hover"></div>
                 </article>
             </a>
 
 
             <a href="https://icemark.mn/i-berry">
-                <article>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="pictures/iconset3 1.png">
-                        <source media="(max-width: 768px)" srcset="pictures/iconset3 1.png">
-                        <img src="pictures/iconset3 1.png" alt="Мөсөн зайрмаг" width="200px" height="200px">
-                    </picture>
-                    <h2>Мөсөн зайрмаг</h2>
+                <article class="p-art-2">
+                    
+                    <h2> <span> Шоколадтай</span> <br> зайрмаг</h2>
+                    <div class="pro-hover"></div>
                 </article>
             </a>
 
             <a href="https://icemark.mn/i-berry">
-                <article>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="pictures/iconset4 1.png">
-                        <source media="(max-width: 768px)" srcset="pictures/iconset4 1.png">
-                        <img src="pictures/iconset4 1.png" alt="Шоколадтай зайрмаг" width="311px" height="462px">
-                    </picture>
-                    <h2>Шоколадтай зайрмаг</h2>
+                <article class="p-art-3">
+                    
+                   
+                    <h2> <span> Аарцтай</span> <br> зайрмаг</h2>
+                    <div class="pro-hover"></div>
                 </article>
             </a>
             <a href="https://icemark.mn/i-berry">
-                <article>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="pictures/iconset5 1.png">
-                        <source media="(max-width: 768px)" srcset="pictures/iconset5 1.png">
-                        <img src="pictures/iconset2 1.png" alt="Гэр бүлийн зайрмаг" width="462px" height="385px">
-                    </picture>
-                    <h2>Гэр бүлийн зайрмаг</h2>
+                <article class="p-art-4">
+                  
+                  
+                    <h2><span> Аягатай</span> <br> зайрмаг</h2>
+                    <div class="pro-hover"></div>
                 </article>
             </a>
             <a href="https://icemark.mn/i-berry">
-                <article>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="pictures/iconset6 1.png">
-                        <source media="(max-width: 768px)" srcset="pictures/iconset6 1.png">
-                        <img src="pictures/iconset2 1.png" alt="Аарцтай зайрмаг" width="462px" height="385px">
-                    </picture>
-                    <h2>Аарцтай зайрмаг</h2>
+                <article class="p-art-5">
+                   
+                    
+                    <h2> <span> Цөцгийтэй</span> <br> зайрмаг</h2>
+                    <div class="pro-hover"></div>
                 </article>
             </a>
             <a href="https://icemark.mn/i-berry">
-                <article>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="pictures/iconset7 1.png">
-                        <source media="(max-width: 768px)" srcset="pictures/iconset7 1.png">
-                        <img src="pictures/iconset7 1.png" alt="Аягатай зайрмаг" width="200px" height="200px">
-                    </picture>
-                    <h2>Аягатай зайрмаг</h2>
+                <article class="p-art-6">
+                   
+                 
+                    <h2> <span> Гэр бүлийн</span>   <br> зайрмаг</h2>
+                    <div class="pro-hover"></div>
                 </article>
             </a>
-            <a href="https://icemark.mn/i-berry">
-                <article>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="pictures/iconset8 1.png">
-                        <source media="(max-width: 768px)" srcset="pictures/iconset8 1.png">
-                        <img src="pictures/iconset2 1.png" alt="Мөнх тунх зайрмаг" width="462px" height="385px">
-                    </picture>
-                    <h2>Мөнх тунх зайрмаг</h2>
-                </article>
-            </a>
-            <a href="https://icemark.mn/i-berry">
-                <article>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="pictures/iconset8 1.png">
-                        <source media="(max-width: 768px)" srcset="pictures/iconset8 1.png">
-                        <img src="pictures/iconset2 1.png" alt="Mocktail зайрмаг" width="462px" height="385px">
-                    </picture>
-                    <h2>Mocktail зайрмаг</h2>
-                </article>
-            </a>
+        
         </section>
 
-        <section id="intro">
+        <section class="intro">
 
-
+           
             <article>
-
-
                 <section>
+                    
+                          
                     <picture>
-                        <source media="(min-width: 1024px)" srcset="pictures/icemark 20logo 202.png">
-                        <source media="(max-width: 768px)" srcset="pictures/icemark 20logo 202.png">
-                        <img src="pictures/icemark 20logo 202.png" alt="Icemark" width="767px" height="629px">
+                        <source media="(min-width: 1024px)" srcset="index_pictures/tus_imperia2.jpg">
+                        <source media="(max-width: 768px)" srcset="index_pictures/tus_imperia2.jpg"">
+                        <img src="index_pictures/tus_imperia2.jpg" alt="Аз жаргалан амт, Айсмарк" width="500px" height="500px">
                     </picture>
-                </section>
-                <section>
-                    <article>
-                        <h1>Компаний <span>тухай</span></h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quos facilis dicta
-                            necessitatibus, qui nemo magnam repellat accusantium eius modi.</p>
+                   
+              </section>
 
-                        <button>Цааш <span>Унших</span> </button>
-                    </article>
-                </section>
+              <section>
+                
+                    <h1><span>Компаний</span>  <span> тухай </span></h1>
+                    <p>Aйсмарк компани Монгол улсын өнцөг булан бүрт байгаа хүн арддаа “Аз жаргалын амт”-ыг мэдрүүлэх зорилгоор анх <span class="intro-doc"> 2003 онд үйл ажиллагаагаа </span> албан ёсоор эхлүүлж байсан. </p>
+
+                    <button>Цааш <span>Унших</span> </button>
+              </section>
+                    
             </article>
 
         </section>
+        
+       <section class="pre-news">
+        <h1> <span class="news-1">Мэдээ </span>  <span class="news-2"> мэдээлэл</span></h1>
+                
+       </section>
 
-        <section id="news">
-            <h1>Мэдээ мэдээлэл</h1>
-            <div id="line"></div>
+        <section class="news">
+            
+           <a href="#">
+             <article>
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="pictures/frame2.jpg">
+                        <source media="(max-width: 768px)" srcset="pictures/frame2.jpg">
+                        <img src="pictures/frame2.jpg" alt="Шинэ үйлдвэр" width="500px" height="500px">
+                    </picture>
 
+                    
+                    <h2>Айсмарк компани нь хайрцаг буцаан авах аянаа</h2>
+                    <div class="date">2022.01.01</div>
+               </article>  
+            </a>
+           <a href="#">
             <article>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="pictures/ICEMARK.png">
-                    <source media="(max-width: 768px)" srcset="pictures/ICEMARK.png">
-                    <img src="pictures/ICEMARK.png" alt="Шинэ үйлдвэр" width="500px" height="500px">
+                    <source media="(min-width: 1024px)" srcset="pictures/frame2.jpg">
+                    <source media="(max-width: 768px)" srcset="pictures/frame2.jpg">
+                    <img src="pictures/frame2.jpg" alt="Нисэх онгоцны буудал" width="500px" height="500px">
                 </picture>
-
-                <div class="date"></div>
-                <h2>Айсмарк компани нь хайрцаг буцаан авах аянаа</h2>
-            </article>
-            <article>
-                <picture>
-                    <source media="(min-width: 1024px)" srcset="pictures/ICEMARK.png">
-                    <source media="(max-width: 768px)" srcset="pictures/ICEMARK.png">
-                    <img src="pictures/ICEMARK.png" alt="Нисэх онгоцны буудал" width="500px" height="500px">
-                </picture>
-                <div class="date"></div>
+               
                 <h2>Айсмарк нь менежментийн нэгдсэн тогтолцоонд</h2>
+                <div class="date">2022.01.01</div>
             </article>
+        </a>
+
+        <a href="#">
             <article>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="pictures/ICEMARK.png">
-                    <source media="(max-width: 768px)" srcset="pictures/ICEMARK.png">
-                    <img src="pictures/ICEMARK.png" alt="ISO 9001" width="500px" height="500px">
+                    <source media="(min-width: 1024px)" srcset="pictures/frame2.jpg">
+                    <source media="(max-width: 768px)" srcset="pictures/frame2.jpg">
+                    <img src="pictures/frame2.jpg" alt="ISO 9001" width="500px" height="500px">
                 </picture>
-                <div class="date"></div>
+                
                 <h2>Айсмарк Компани нь ISO 9001 чанарын менежментийн</h2>
+                <div class="date">2022.01.02</div>
             </article>
+        </a>
+
+        <a href="#">    
+            <article>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="pictures/frame2.jpg">
+                    <source media="(max-width: 768px)" srcset="pictures/frame2.jpg">
+                    <img src=" pictures/frame2.jpg " alt="ISO 9001" width="500px" height="500px">
+                </picture>
+                
+                <h2>Айсмарк Компани нь ISO 9001 чанарын менежментийн</h2>
+                <div class="date">2022.01.03</div>
+            </article>
+        </a>
         </section>
     </main>
 

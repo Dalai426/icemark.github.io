@@ -161,11 +161,8 @@ footer #footer-top-section {
     margin-left: 1rem;
 }
 
-@media(max-width: 1220px){
-    html{
-        width: 100%;
-        font-size: var(--root_fontsize);
-    }
+@media(min-width: 1220px){
+   
 
     .head_menu{
         display: none;
