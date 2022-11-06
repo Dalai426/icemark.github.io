@@ -592,9 +592,9 @@ footer #footer-top-section {
     .product a{
         z-index: -1;
         display: inline-block;
-        width: calc(50% - 2rem);
-        margin: var(--product-a-Rmargin);
-        height: 7rem;
+        width: calc(50% - 4rem);
+        margin: var(--product-a-Mmargin);
+        height: 10rem;
         text-decoration: none;
         
     }
