@@ -1,31 +1,72 @@
+/*dalai*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+/*tsogoo*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import "https://unpkg.com/open-props";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Pacifico&family=Pattaya&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
 :root{
-
-
+/*dalai's variable*/
 
 /*root font prcentage*/
 --root_fontsize:70%;
 /*background colors*/
  --header_footer-linear:linear-gradient(90deg, #0ACDF8 0%, #36ACDF 53.93%);
-/*colors*/
+ --open_list-linear:linear-gradient(0deg, #0ACDF8 0%, #36ACDF 53.93%);
+--bvteegdehvvn_window_linear:linear-gradient(138.06deg, #F5F5F5 5.93%, rgba(246, 246, 246) 7.9%, rgba(255, 255, 255) 100.35%);
+ /*colors*/
 --texts_color-white: #FFFFFF; 
 --texts_color-black: #000;
 --hover_color_grey: rgba(190, 191, 193, 1);
 --hover_color_orange:rgba(230, 120, 22, 1);
+--assistant_color-blue:#0098DA;
+--assistant_color_orange:#FF6C00;
+--bvteegdehvvn_name-color:#005CA9;
+--mocktail-color: rgba(137, 157, 72, 1);
+--color-black:#000;
+--color-white: #FFFFFF; 
+--playbutton_color:	#778899;
+--opacity-black:rgba(0, 0, 0, 0.7);
+--bvteegdehvvn_tus_bvr_window_foot:#0078AC;
+--mocktail_color:#FEE715FF;
 /*fonts styles*/
 --header_footer_text_style: 'IBM Plex Sans', sans-serif;
 --inter:'Inter', sans-serif;
+--bvteegdehvvn_head2_font:'Noto Sans Display', sans-serif;
+--nunito: 'Nunito', sans-serif;
+--bvteegdehvvn_name-style:'Dangrek', cursive;
 /*fonts weight*/
 --font_weight_lighter: lighter;
 /*transition*/
 --header_transition: 0.3s ease-in-out;
-
+/*other sizes*/
+--bvteegdehvvnii_tanilcuulga_article-width:30rem;
+--tus_bvteegdehvvn-3_zurag_hoiguuroroh:-20%;
+--bvteegdehvvn_window_margins:5em;
+--shapes_img_bvteegdehvvn_tanilcuulga_width:22.8rem;
+--shapes_img_bvteegdehvvn_tanilcuulga_height:21.2rem;
+--bvteegdehvvntusbvr_window_border:5em;
+--bvteegdehvvn_tus_bvr_shadow_gol_imgs:drop-shadow(0.5em 0 0.25em rgba(0, 0, 0, 0.25)) drop-shadow(-0.25em 0 0.25em rgba(0, 0, 0, 0.25));
+--bvteegdehvvn_tus_bvr_shadow_zah_imgs:drop-shadow(0 0.25em 0.25em rgba(0, 0, 0, 0.25));
+--bvteegdehvvn_tus_bvr_window_img_zah_width:39%;
+/*shadow*/
+--shadow-header:drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+--shadow-bvteegdehvvn-window:drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
+--shadow-bvteegdehvvntanilcuulga-shapes-bordered:0px 4px 4px rgba(0, 0, 0, 0.4);
+/*bvteegdehvvn tus bvr*/
+--fontsize_bvteegdehvvntusbvr_window:0.8em;
+--bvteegdehvvn_tusbvr_window_foot_medeelel:0.8em;
+/*bvteegdehvvn_tus_bvr_window*/
+--opacity_img_zah:0.2;
+ 
+ 
+ 
 /*tsogoo's variable*/
 
 
