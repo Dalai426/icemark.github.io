@@ -10,7 +10,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import "https://unpkg.com/open-props";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Pacifico&family=Pattaya&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
+
+
 :root{
 /*dalai's variable*/
 
@@ -69,14 +72,20 @@
  
 /*tsogoo's variable*/
 
+/*tsogoo's variable*/
+
+/*.slider*/
+--slider-height:30rem;
+--slider-heightT:25rem;
+--slider-heightM:25rem;
 
 --news-line-width:80%;
 /*product*/
---section-product-tmargin: 1rem;
---product-a-width: calc(16.6% - 2rem);
+--section-product-tmargin: 2rem;
+--product-a-width: calc(12.5% - 2rem);
 --product-a-margin:0 1rem;
---product-a-Rmargin:1rem;
---product-a-height:10rem;
+--product-a-Rmargin: 1rem 2rem;
+--product-a-height:12rem;
 /*tsogoo's font family*/
 
 
@@ -89,7 +98,7 @@
 
 --n-article-Rmargins: 2rem 3rem 1.5rem 3rem;
 --n-article-margins: 2rem 2rem 2rem 2rem;
---n-date-margins:5px 10px 0 10px ;
+--n-date-margins:10px 10px 0 10px ;
 --n-h2-margins:5px 10px 10px 10px ;
 
 --news-box-shadow: 0px 8px 8px 0px #c2bfbf;
@@ -100,7 +109,8 @@
 
 --article-grid-row:30rem;
 --article-grid-columns:50% 50%;
-
+--article-grid-row-tablet:20rem 30rem;
+--article-grid-columns-tablet:100%;
 /*intro paddings*/
 --article-padding:3rem;
 --intro-padding: 3rem 5rem 20px 5rem ;
@@ -117,9 +127,9 @@
   /*font size*/
 --intro-btn-fsize:1rem;
 
---intro-btnlp:50%;
---intro-btntp:80%;
---intro-Rbtntp:85%;
+--intro-btnlp:5%;
+--intro-btntp:70%;
+--intro-Rbtntp:65%;
 --intro-Mbtntp:90%;
 /*pre-news*/
  --pre-news-tmargin:3rem;
@@ -130,8 +140,14 @@
 
 --pn-fsize: 3rem;
 --pn-fw: 1000;
-
+/*btn width*/
+--btn-color:rgb(250, 248, 248);
+--btn-width:12rem;
+--btn-padding:1rem 2rem;
+--margin-top:2rem;
+--btn-font-size:1rem;
 /*font families*/
+--intro-var2-ff:'Manrope', sans-serif;
 --pre-news-ffamily: 'Raleway' ,sans-serif;
 --intro-h1-ff: 'Overlock', cursive;
 --font-family: 'Raleway' ,sans-serif;
@@ -143,12 +159,14 @@
   --icon-size:7rem;
   --font-size-title: 2rem;
   --font-size-p: 1rem;
-  --color-p: #fff;
+  --color-p: #110f0f;
   --article-h1color: rgba(26, 26, 238, 0.918);
 --line-color: rgb(235, 149, 20);
 --product-hover-color:rgb(235, 210, 173);
 --choice-font-color: rgb(250, 248, 248);
 
 --bg-btncolor:rgba(204, 189, 170, 0.6);
----intro-article-bgcolor:rgba(47, 32, 12, 0.6);
+
+---intro-article-bgcolor:#F8F3F0;
+}
 }
