@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <meta name="description" content="as;fja;ouf iopweau fo">
+
+    <style>
+        @import "https://unpkg.com/open-props";
+
+        :root {
+            --ungu-undsen: #00f;
+            --ungu-tuslah: #777;
+
+            --hemjee-undsen: 0.05rem;
+            --huree-undsen: var(--hemjee-undsen) solid var(--ungu-tuslah);
+
+
+        }
+
+        .logo {}
+
+        a:hover {
+            color: var(--ungu-undsen);
+        }
+
+        header {
+            --ungu-undsen: #454545;
+        }
+
+        a {
+            color: var(--ungu-tuslah);
+        }
+
+        h2 {
+            color: var(--ungu-undsen);
+        }
+
+        menu {
+            display: flex;
+            flex-direction: row;
+        }
+
+        article {
+            margin: var(--size-fluid-5);
+            padding: var(--size-fluid-5);
+            box-shadow: var(--shadow-2);
+            border: var(--huree-undsen);
+            border-radius: 8px;
+
+        }
+    </style>
+    <script>
+        function ChangeUndsenUngu() {
+
+            const myStyle = getComputedStyle(document.body);
+            const unguUndsen = myStyle.getPropertyValue("--ungu-undsen");
+
+            document.body.style.setProperty("--ungu-undsen", "#0F0");
+
+        }
+
+        class MyArticle {
+            constructor(title, content) {
+                this.title = title;
+                this.content = content;
+            }
+
+            render() {
+                return `<article>
+                    <h3 class="">${this.title}</h3>
+                    <p>${this.content}</p>
+                </article>`;
+            }
+        }
+
+        function App(articles, targetElement) {
+
+            let retVal = "";
+
+            // for (const key in articles) {
+            //     if (Object.hasOwnProperty.call(articles, key)) {
+            //         let articleObj = new MyArticle(
+            //             articles[key].title,
+            //             articles[key].content);
+
+            //         retVal += articleObj.render();
+            //     }
+            // }
+
+            for (const article of articles) {
+                let articleObj = new MyArticle(article.title, article.content);
+                retVal += articleObj.render();
+            }
+
+            // for (const article of articles) {
+
+            //     const { title: ttl, content: cntn } = article;
+
+            //     let articleObj = new MyArticle(ttl, cntn);
+            //     retVal += articleObj.render();
+            // }
+
+            // articles.forEach(art => {
+            //     let articleObj = new MyArticle(art.title, art.content);
+            //     retVal += articleObj.render();
+            // })
+            //document.querySelector("#"+targetElement).insertAdjacentHTML("beforeend", retVal);
+            document.getElementById(targetElement).insertAdjacentHTML("beforeend", retVal);
+        }
+
+        const newsData = {
+            categories: ["Category1", "Category2", "Category3"],
+            articles: [
+                {
+                    "title": "Article 1",
+                    "content": "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur doloremque praesentium illum, unde vitae cumque fuga possimus nesciunt quod adipisci nobis, facere ab nisi error molestias enim, quia omnis eius nulla ea voluptate eos. Totam pariatur sequi quibusdam rem perspiciatis culpa, est nostrum voluptates tenetur fuga dolore atque, dolorem soluta odio facere. Ullam mollitia odit voluptatum quaerat accusantium a obcaecati incidunt sunt. Tenetur nemo dignissimos recusandae. Dignissimos adipisci fugiat perferendis, animi iure alias reiciendis et libero quaerat dolore cum nam ullam sequi iusto temporibus minima commodi laudantium aperiam id, fuga veniam voluptas esse quam. Suscipit inventore enim vitae cupiditate modi commodi aspernatur numquam quos consectetur nisi ipsam alias temporibus tempora incidunt est illo culpa quam officia quo, ullam quisquam quas id? Culpa, fugit doloribus mollitia aspernatur ducimus, corrupti id explicabo temporibus quaerat facilis iste? Accusantium voluptate voluptas provident soluta labore tempore consequatur modi dolores sint illo error mollitia unde, perferendis animi! Repellendus nemo laudantium mollitia delectus fugit, nisi minus natus velit aut voluptas nulla iusto nam alias ut deserunt! Sed expedita saepe cumque asperiores eveniet debitis, aspernatur suscipit quo illo rem enim, quae quos iste doloribus reiciendis voluptatibus. Distinctio beatae quas illo iste corrupti odit ea ullam consequuntur ex?"
+                },
+                {
+                    "title": "Article 2",
+                    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eius, temporibus repellendus dolorum itaque sequi quod vero? Possimus neque esse vero exercitationem totam omnis, consectetur soluta voluptatum, inventore optio dolor repellendus, aspernatur rerum recusandae sit eveniet placeat. Accusantium iste quos ex fugiat odit beatae dicta, vel facilis doloremque ratione quia animi tenetur assumenda, totam inventore. Corrupti cupiditate dolore placeat adipisci rerum nesciunt tempore non reiciendis numquam exercitationem neque id doloremque, asperiores porro eligendi quidem eveniet aliquam! Doloribus odio animi quasi consequatur in reiciendis fuga magnam nihil quidem, provident ratione veniam dolore obcaecati maiores omnis corporis expedita beatae minus sed odit quod doloremque. Eos nesciunt tempore obcaecati cupiditate nobis voluptate sunt expedita beatae distinctio quis. Repellendus dolorum consequuntur neque! Nobis adipisci expedita at sit ut! Iusto repellat, reiciendis nulla corporis obcaecati dignissimos. Dignissimos at numquam ipsa expedita atque consequuntur quidem ullam cumque quod repellendus, eos fuga aspernatur nulla officia accusamus. Id."
+                },
+                {
+                    "title": "Article 3",
+                    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vero blanditiis, non, quasi, iusto magnam deserunt maxime recusandae cupiditate voluptatibus temporibus aliquam voluptas placeat. Ducimus similique illo beatae voluptatem velit? Voluptas non nihil, quod consequatur laudantium provident voluptates odit at itaque fugit eum assumenda. Eum perferendis animi distinctio quas non nihil ab minus suscipit maxime tempore deserunt pariatur earum, dolores quo, nulla eius dolorem, dicta inventore tempora dolor quaerat magnam fugit blanditiis. Animi repellendus voluptatibus fugit ratione, iste facilis sint minus deleniti eligendi officiis maxime, atque culpa eaque iusto aut error odit impedit sunt corrupti quia veniam molestias natus! Quae illo, saepe, ea distinctio velit fugiat tempore pariatur at fugit officia explicabo provident et? Exercitationem veritatis reprehenderit, vel pariatur excepturi ab inventore modi praesentium, tenetur, magnam nam dicta mollitia dolore animi eaque consequuntur accusamus aperiam. Impedit nemo dolores laborum rerum dolor, in quia quis blanditiis maxime quidem suscipit beatae sunt officia voluptatum pariatur sed et, magnam qui temporibus minus! Sed quaerat aliquid sint, dolore nihil placeat enim ullam facilis soluta quod cupiditate, ratione quo impedit magni adipisci, amet quisquam numquam voluptate? Repellat quia, labore alias ratione delectus eos ducimus accusantium cumque maxime. Ducimus, doloribus facilis! Nostrum temporibus ratione odit eveniet dicta est molestiae illo non itaque, soluta ut perspiciatis natus, alias quasi nulla nihil provident error fugiat quo cumque magnam modi repudiandae sequi dolore. Sint nulla minima ab sapiente laborum optio voluptates provident pariatur porro eius suscipit nemo saepe deserunt error, quis perspiciatis fuga eligendi veniam et atque nostrum corrupti? Doloremque, id! Praesentium ipsum assumenda maxime, aut sint ipsa dolore repellendus soluta mollitia ab, ea sunt laboriosam? Laudantium assumenda tempore, quae nesciunt sequi repellat beatae eos maiores quis totam? Optio voluptates sint, explicabo corrupti beatae repellat sequi ab a delectus quod eligendi nihil minima asperiores! Nesciunt, ipsum! Eos, distinctio quos."
+                },
+            ]
+        }
+        window.onload = () => App(newsData.articles, "myTarget");
+
+        const comments = [
+            {
+                name: "BM",
+                ognoo: "2022.11.12",
+                img: "https://img.com/1.png",
+                comment: ""
+            },
+            {
+                name: "BM",
+                ognoo: "2022.11.12",
+                img: "https://img.com/1.png",
+                comment: ""
+            },
+            {
+                name: "BM",
+                ognoo: "2022.11.12",
+                img: "https://img.com/1.png",
+                comment: ""
+            },
+            {
+                name: "BM",
+                ognoo: "2022.11.12",
+                img: "https://img.com/1.png",
+                comment: ""
+            },
+            {
+                name: "BM",
+                ognoo: "2022.11.12",
+                img: "https://img.com/1.png",
+                comment: ""
+            }
+        ];
+
+        const article = {
+            title: "Garchig",
+            coverImg: "",
+            category: "",
+            ognoo: "2022.11.12",
+            read: 186575,
+            comcount: 4,
+            niitlelch: { name: "", img: "", lnk: "" },
+
+            shares: [
+                { name: "fbshares", shares: 10 },
+                { name: "twshares", shares: 5 },
+                { name: "inshares", shares: 1 }
+            ],
+            articleStart: "",
+            sections: [
+                { title: "1.asdfasd", p: "asdfasdf", img: "https://www.google.com" },
+                { title: "16.asdfasd", p: "asdfasdf", img: "https://www.google.com" }
+            ]
+
+
+        }
+    
+        const articleObj={
+            article:{},
+            comments: [
+                {
+                    name: "BM",
+                    ognoo: "2022.11.12",
+                    img: "https://img.com/1.png",
+                    comment: ""
+                },
+                {
+                    name: "BM",
+                    ognoo: "2022.11.12",
+                    img: "https://img.com/1.png",
+                    comment: ""
+                },
+                {
+                    name: "BM",
+                    ognoo: "2022.11.12",
+                    img: "https://img.com/1.png",
+                    comment: ""
+                },
+                {
+                    name: "BM",
+                    ognoo: "2022.11.12",
+                    img: "https://img.com/1.png",
+                    comment: ""
+                },
+                {
+                    name: "BM",
+                    ognoo: "2022.11.12",
+                    img: "https://img.com/1.png",
+                    comment: ""
+                }
+            ]
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="logo">
+            </div>
+            <nav>
+                <menu>
+                    <li><a href="page1.html">Page1</a></li>
+                    <li><a href="page2.html">Page2</a></li>
+                    <li><a href="page3.html">Page3</a></li>
+                    <li><a href="page4.html">Page4</a></li>
+                    <li><a href="page5.html">Page5</a></li>
+
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <section id="myTarget">
+                <h2>News group1</h2>
+            </section>
+            <section>
+                <h2 id="">News group2</h2>
+                <article>
+                    <h3>Title1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est odio aliquam facilis earum natus
+                        inventore!</p>
+                </article>
+                <article>
+                    <h3>Title2</h3>
+                    <p>Numquam possimus quis assumenda temporibus, cum aperiam libero dolor voluptates a neque
+                        perferendis, sapiente ullam?</p>
+                </article>
+                <article>
+                    <h3>Title3</h3>
+                    <p>Illo quisquam culpa molestiae omnis mollitia totam exercitationem ipsum, necessitatibus
+                        asperiores ducimus, consequatur, ratione quam!</p>
+                </article>
+                <article>
+                    <h3>Title4</h3>
+                    <p>Molestias, nihil praesentium voluptatum deleniti nostrum necessitatibus, voluptates ipsa iste est
+                        dolorum molestiae. Suscipit, rem!</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <div>Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <a href="mailto:admin@gmail.com">admin@gmail.com</a><a href="tel:99887766">Call me</a>
+            </address>
+            <button onClick="ChangeUndsenUngu();">CLick me</button>
+            <div class="map"></div>
+        </footer>
+    </div>
+</body>
+
+</html>

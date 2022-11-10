@@ -1,4 +1,3 @@
-
 @import url('root.css');
 *{
     box-sizing: border-box;
@@ -6,6 +5,17 @@
     margin:0px;
 }
 
+
+/*loader css*/
+#loader{
+    background: #FFFF url('../pictures/loading_gif3.gif') no-repeat center center;
+    height:100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 30%;
+}
+/*header hesgiin css*/
 header{
     width: 100%;
     position: sticky;
@@ -14,7 +24,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.7rem 0;
+    padding: 1rem 0;
     filter:var(--shadow-header);
 }
 
@@ -22,52 +32,51 @@ header{
     display: none;
 }
 .logo{
-    margin-top: -3.5rem;
-    margin-bottom: -4rem;
-    margin-left: 2.2rem;
+    margin: -0.7rem auto -2rem 2.2rem;
 }
 .logo img{
-    width: 8em;
+    aspect-ratio: initial;
+    width: 6rem;
     height: auto;
 }
 .head_menu{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+.head_menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .head_menu ul li{
     list-style: none;
-    margin: 0 2.2rem;
-}
-
-
-
-.head_menu ul{
+    margin: 0.1rem 3rem 0.1rem 0;
     display: flex;
-    flex-direction: row
+
 }
 .head_menu ul li a{
-    
     font-family:var(--header_footer_text_style);
     font-size: 1rem;
     text-decoration: none;
     color:var(--texts_color-white);
- 
 }
 
 .head_menu ul li:hover{ 
-    border-bottom: 0.15rem solid rgba(230, 120, 22, 1);
+    border-bottom: 0.15rem solid var(--color-white);
     margin-bottom: -0.2rem;
     transition: var(--header_transition);
 }
 #white{
     background-color:var(--texts_color-white);
     height: 1.1rem;
-    width: 1.5px;
+    width: 0.01rem;
 }
 .head_menu #world{
-    margin: -0.2rem 2.2rem 0 2.2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     color:var(--texts_color-white);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 #world:hover {
     transform: rotate3d(0, 1, 0, 360deg);
@@ -162,6 +171,7 @@ footer #footer-top-section {
     margin-left: 1rem;
 }
 #opened_list{
+    display: none;
     position: sticky;
     top:4.7rem;
     background:var(--open_list-linear);
@@ -213,16 +223,62 @@ footer #footer-top-section {
 #opened_list ul li:hover a{
     color: var(--hover_color_orange);
 }
+
+
+
 @media(max-width: 1220px){
+    header{
+        padding: 0.5rem 0;
+    }
+    .logo{
+        margin: -0.31rem auto -2rem 2.2rem;
+    }
+    .logo img{
+        width: 4rem;
+    }
+    .head_menu ul li a{
+        font-size: 0.6rem;
+    }
+    .head_menu ul li{
+        list-style: none;
+        margin: 0.1rem 1.5rem 0.1rem 0;
+    }
+    .head_menu ul li:hover{ 
+        border-bottom: 0.01rem solid var(--color-white);
+        margin-bottom: -0.01rem;
+    }
+    #white{
+        height: 0.5rem;
+    }
+    .logo img{
+        width: 3.5rem;
+        height: auto;
+    }
+    .head_menu #world{
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 711px){ 
+    header{
+        padding: 1rem;
+    }
     .head_menu{
         display: none;
     }
-   
+    .logo{
+        margin: -0.4rem auto -2rem 1.6rem;
+    }
+    .logo img{
+        width: 6rem;
+    }
     #list{
         display: inline-block;
         color: var(--texts_color-white);
-        font-size: 1.5rem;
-        margin-right: 2.2rem;
+        font-size: 2rem;
+        margin-right: 1.2rem;
     }
     #list:hover{
         color:var(--hover_color_grey);
@@ -257,7 +313,6 @@ footer #footer-top-section {
         justify-content: right;
         text-align: right;
     }
-
     */
     .bottom{
         margin: 0;
@@ -276,14 +331,6 @@ footer #footer-top-section {
         height: 1.5rem;
     }
 }
-
-
-
-@media(max-width: 850px){
-   #opened_list{
-    font-size: 80%;
-   }
-}
 @media(max-width: 600px){
     #opened_list{
      font-size: 60%;
@@ -300,3 +347,4 @@ footer #footer-top-section {
     }
     
  }
+
