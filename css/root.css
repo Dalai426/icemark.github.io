@@ -82,8 +82,7 @@
 --news-line-width:80%;
 /*product*/
 --section-product-tmargin: 2rem;
---product-a-width: calc(12.5% - 2rem);
---product-a-margin:0 1rem;
+--product-a-width: 12rem;
 --product-a-Rmargin: 1rem 2rem;
 --product-a-height:12rem;
 /*tsogoo's font family*/

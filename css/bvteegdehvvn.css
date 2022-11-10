@@ -114,29 +114,34 @@ header{
 .tanilcuulga_icecream .zairmag:nth-child(3n) .zurag{
     border-radius: 44% 60% 48% 48%;
 }
-.tanilcuulga_icecream:nth-child(9) .zairmag:nth-child(2) .zurag img{
+.tanilcuulga_icecream:nth-child(10) .zairmag:nth-child(2) .zurag img{
     position: relative;
     width: auto;
     height: 24.1rem;
     top: 0.6rem;
 }
-.tanilcuulga_icecream:nth-child(15) .zairmag:nth-child(1) .zurag img{
+.tanilcuulga_icecream:nth-child(16) .zairmag:nth-child(1) .zurag img{
     width: auto;
     height: 25rem;
 }
-.tanilcuulga_icecream:nth-child(15) .zairmag:nth-child(2) .zurag img{
+.tanilcuulga_icecream:nth-child(16) .zairmag:nth-child(2) .zurag img{
    position: relative;
     bottom: 2rem;
     width: 23rem;
 }
-.tanilcuulga_icecream:nth-child(15) .zairmag:nth-child(4) .zurag img{
+.tanilcuulga_icecream:nth-child(16) .zairmag:nth-child(3) .zurag img{
+    position: relative;
+     bottom: 2rem;
+     width: 23rem;
+ }
+.tanilcuulga_icecream:nth-child(16) .zairmag:nth-child(4) .zurag img{
     position: relative;
     width: 22.8rem;
  }
- .tanilcuulga_icecream:nth-child(17) .zairmag:nth-child(2) .zurag img{
+ .tanilcuulga_icecream:nth-child(18) .zairmag:nth-child(2) .zurag img{
     width: 29rem;
  }
- .tanilcuulga_icecream:nth-child(19) .zairmag:nth-child(3) .zurag img{
+ .tanilcuulga_icecream:nth-child(20) .zairmag:nth-child(3) .zurag img{
     width: 35rem;
  }
 .zairmag>a{
@@ -397,7 +402,7 @@ padding-left: 0;
 
 #mocktail_page{
     
-    background-image: linear-gradient(to right, rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("../pictures_bvteegdehvvniitanilcuulga/BACK_MOCKTAIL.jpg");
+background-image: linear-gradient(to right, rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("../pictures_bvteegdehvvniitanilcuulga/BACK_MOCKTAIL.jpg");
 background-size: cover, auto 100%;
 
 background-position: center, center;
