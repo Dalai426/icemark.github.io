@@ -79,16 +79,18 @@ header{
 
 /* main.css*/
 
-
+.slider {
+    height: var(--slider-height);
+}
 
 .slider .mySlides{
     width: var(--width-size);
-    height: var(--height-size);
+   height: var(--width-size);
     overflow: hidden;
 }
 .mySlides  img {
     width: var(--width-size);
-    aspect-ratio: initial;
+   aspect-ratio: initial;
     
 }
 .mySlides source{
@@ -97,11 +99,15 @@ header{
 }
 /* product bar's css*/
 
-
+.product img{
+    width: var(--width-size);
+    margin-bottom: 1rem;
+    height: 60%;
+}
 
 .product{
-    overflow:hidden;
-   flex-wrap: nowrap;
+   
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -122,14 +128,17 @@ header{
     overflow: hidden;
     position: relative;
    
-    border: solid 0.5px rgb(202, 176, 176);
+    border: solid 0px rgb(202, 176, 176);
     
     
     width: var(--width-size);
     height:  var(--width-size);
-   transition: all 2s ease;
+   
 }
-.product a:hover article {
+.product article img{
+    transition: all 1s ease;
+}
+.product a:hover article img{
     transform: scale(1.1,1.1);
     background-position: top ; /* Center the image */
     background-size: 200% 200%; /* Resize the background image to cover the entire container */
@@ -141,17 +150,17 @@ header{
 .product h2{
     width: var(--width-size);
     height: 4rem;
-    vertical-align: middle;
+    
     position: absolute;
   
     top: 65%;
     font-size: 1.25rem;
-    color: #FEF9F9;
+    color: #424141;
     line-height: 1.2rem;
     font-family: var(--product-font-family);
     text-align: center;
     font-weight:100;
-    background-color: rgba(47, 32, 12, 0.6);
+   /* background-color: rgba(47, 32, 12, 0.6);*/
    padding: 0.5rem 0.5rem;
 }
 
@@ -164,48 +173,7 @@ header{
     background-color: var(--line-color);
 }
 
-.p-art-1{
-    border-radius: 44% 60% 48% 48%;
-    background-image: url("../index_pictures/Jimstei.png"); /* The image used */  
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-.p-art-2{
-    border-radius: 60% 44% 48% 48%;
-    background-image: url("../index_pictures/Chocolate.png"); /* The image used */  
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-.p-art-3{
-    border-radius: 44% 44% 48% 48%;
-    background-image: url("../index_pictures/Aartstai.png"); /* The image used */  
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-.p-art-4{
-    border-radius: 60% 44% 48% 48%;
-    background-image: url("../index_pictures/Aygatai.png"); /* The image used */  
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-.p-art-5{
-    border-radius: 44% 44% 48% 48%;
-    background-image: url("../index_pictures/tsutsgiitei.png"); /* The image used */  
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-.p-art-6{
-    border-radius: 60% 44% 48% 48%;
-    background-image: url("../index_pictures/Ger_bvliin.png"); /* The image used */  
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
+
 
 
 
@@ -213,16 +181,13 @@ header{
 /*introduction css*/
 .intro 
 {
-    background-image: url("../index_pictures/Curd_Cream.jpg"); /* The image used */  
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    border-radius: 2rem;
-    margin: 3rem 2rem 1rem 2rem;
+    
+    
+    margin: 2rem 0rem;
 }
 .intro > article{
+    padding: 2rem 3rem;
     
-    border-radius: var(--article-border-radius);
     width: var(--width-size);
     display: grid;
     grid-template-columns: var(--article-grid-columns);
@@ -236,10 +201,12 @@ header{
     
 }
 .intro >article >section:nth-child(1){
-    padding: 2rem;
+   padding: 2rem;
     overflow: hidden;
 }
 .intro >article >section:nth-child(2){
+    display: flex;
+    flex-direction: column;
     padding: 2rem 2rem;
 }
 .intro >article >section:nth-child(2) h1{
@@ -263,26 +230,26 @@ header{
     color: var( --intro-span2);
 }
 .intro >article >section:nth-child(2) p{
-    font-weight: 100;
+    font-weight: 400;
     margin-top: 2rem;
     line-height: 2rem;
     letter-spacing: 1pt;
     text-align: justify;
     color: var( --color-p);
-    font-family: var(--intro-h1-ff);
+    font-family: var(--font-family);
 }
 .intro >article >section:nth-child(2) button{
+    color: var(--btn-color);
     display: inline-block;
     font-family: var(--intro-h1-ff);
-    font-size: 1rem;
-    position: absolute;
-    left: var(--intro-btnlp);
-    top: var(--intro-btntp);
-    padding: 1rem 2rem;
-    background-color:  var(---intro-article-bgcolor);
+    font-size: var(--btn-font-size);
+    width: var(--btn-width);
+   margin-top: var(--margin-top);
+    padding: var(--btn-padding);
+    background-color:  rgba(8, 25, 119, 0.76);
     border-radius: 1rem;
     border: var(--n-border);
-    color: var( --color-p);
+    font-family: var(--font-family);
     transition: all 1s ease-in-out;
 }
 .intro >article >section:nth-child(2) button:hover{
@@ -292,8 +259,8 @@ header{
 }
 .intro img,source {
     width: var(--width-size);
-    height: var(--height-size);
-    border-radius: 20% 60% 20% 20%;
+    height: var(--width-size);
+    border-radius: 60% 50% 60% 50%;
 }
 
 
@@ -364,16 +331,15 @@ header{
          }
 
  section.news a article h2{
-    font-family: var(--intro-h1-ff);
-    font-weight: 200;
+    font-family: var(--font-family);
+    
+    font-weight: 400;
  }
 section.news a article .date{
-    font-family: var(--intro-h1-ff);
-    margin: var(--n-date-margins);
+    font-weight: 300;
     
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
+    margin: var(--n-date-margins);
+    font-family: var(--font-family);
 }
 section.news a article h2{
     margin: var(--n-h2-margins);
@@ -467,18 +433,47 @@ footer #footer-top-section {
     margin-left: 1rem;
 }
 
-@media(max-width: 1200px){
-    
+@media(max-width: 900px){
+    .head_menu{
+        display: none;
+    }
+    #list{
+        display: inline-block;
+        color: var(--texts_color-white);
+        font-size: 1.5rem;
+        margin-right: 2.2rem;
+    }
+    #list:hover{
+        color:var(--hover_color_grey);
+        transition:var(--header_transition);
+    }
+
+    .slider {
+        height: var(--slider-heightT);
+    }
     .product a{
         z-index: -1;
         display: inline-block;
-        width: calc(33.3% - 2rem);
+        width: calc(25% - 4rem);
         margin: var(--product-a-Rmargin);
-        height: 10rem;
+        height: var(--product-a-height);
         text-decoration: none;
         
     }
+    .intro > article{
     
+        border-radius: var(--article-border-radius);
+        width: var(--width-size);
+        display: grid;
+        grid-template-columns: var(--article-grid-columns-tablet);
+
+        grid-template-rows: var(--article-grid-row-tablet);
+
+        background-color:var(---intro-article-bgcolor) ;
+        z-index: 0;
+        padding: var(--article-padding);
+    }
+  
     .news{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -507,43 +502,9 @@ footer #footer-top-section {
              
              }
     
-    .intro > article{
     
-        border-radius: var(--article-border-radius);
-        width: var(--width-size);
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 30rem 30rem;
-        background-color:var(---intro-article-bgcolor) ;
-        z-index: 0;
-        padding: var(--article-padding);
-    }
-    .intro >article >section:nth-child(2) button{
-        font-family: var(--intro-h1-ff);
-        font-size: 1rem;
-        position: absolute;
-        left: var(--intro-btnlp);
-        top: var(--intro-Rbtntp);
-        padding: 1rem 1rem;
-      
-        border-radius: 1rem;
-        border: var(--n-border);
-    }
 
-    .head_menu{
-        display: none;
-    }
-    #list{
-        display: inline-block;
-        color: var(--texts_color-white);
-        font-size: 1.5rem;
-        margin-right: 2.2rem;
-    }
-    #list:hover{
-        color:var(--hover_color_grey);
-        transition:var(--header_transition);
-    }
-
+  
 
 
 
@@ -577,13 +538,16 @@ footer #footer-top-section {
     }
 }
 @media(max-width: 600px){
+    .slider {
+        height: var(--slider-heightM);
+    }
     .intro > article{
     
         border-radius: var(--article-border-radius);
         width: var(--width-size);
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 40rem;
+        grid-template-rows: var(--article-grid-row);
         background-color:var(---intro-article-bgcolor) ;
         z-index: 0;
         padding: var(--article-padding);
@@ -592,9 +556,9 @@ footer #footer-top-section {
     .product a{
         z-index: -1;
         display: inline-block;
-        width: calc(50% - 2rem);
+        width: calc(50% - 4rem);
         margin: var(--product-a-Rmargin);
-        height: 7rem;
+        height: var(--product-a-height);
         text-decoration: none;
         
     }
@@ -607,17 +571,7 @@ footer #footer-top-section {
     .intro >article >section:nth-child(1){
         display: none;
     }
-    .intro >article >section:nth-child(2) button{
-        font-family: var(--intro-h1-ff);
-        font-size: 1rem;
-        position: absolute;
-        left: var(--intro-btnlp);
-        top: var(--intro-Mbtntp);
-        padding: 0.5rem 1rem;
-      
-        border-radius: 1rem;
-        border: var(--n-border);
-    }
+
 
 
 
@@ -626,8 +580,7 @@ footer #footer-top-section {
     grid-template-columns: 100%;
   
     grid-template-rows: var(--n-Rheight)
-    var(--n-Rheight)
-    var(--n-Rheight)
+    
     var(--n-Rheight);
 }
 .news a{
