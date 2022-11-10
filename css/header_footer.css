@@ -227,6 +227,7 @@ footer #footer-top-section {
 
 
 @media(max-width: 1220px){
+<<<<<<< HEAD
     header{
         padding: 0.5rem 0;
     }
@@ -265,6 +266,8 @@ footer #footer-top-section {
     header{
         padding: 1rem;
     }
+=======
+>>>>>>> d6cf424866409aa10220da040eb5192811c29be3
     .head_menu{
         display: none;
     }
@@ -331,6 +334,7 @@ footer #footer-top-section {
         height: 1.5rem;
     }
 }
+<<<<<<< HEAD
 @media(max-width: 600px){
     #opened_list{
      font-size: 60%;
@@ -347,4 +351,6 @@ footer #footer-top-section {
     }
     
  }
+=======
+>>>>>>> d6cf424866409aa10220da040eb5192811c29be3
 
