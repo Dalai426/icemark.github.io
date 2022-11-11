@@ -9,6 +9,7 @@ body{
 header{
     z-index:1;
 }
+/*sublist*/
 #opened_list{
     z-index: 1;
 }
@@ -46,6 +47,12 @@ header{
     width: 100%;
     transition: 0.3s;
 }
+
+
+
+
+/*page main*/
+
 .turul{
     width: 100%;
     border-bottom:0.1rem solid var(--assistant_color-blue);
@@ -144,7 +151,7 @@ header{
  .tanilcuulga_icecream:nth-child(20) .zairmag:nth-child(3) .zurag img{
     width: 35rem;
  }
-.zairmag>a{
+.zairmag>section{
     text-decoration: none;
     display: grid;
     grid-column: 100%;

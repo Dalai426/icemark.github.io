@@ -167,14 +167,9 @@ class MySubList{
             let cont="";
             for(const ics of this.icecream){
                 cont+=`<article class="zairmag">
-                <a href="#" aria-label="${ics.name} зайрмагны дэлгэрэнгүй мэдээлэл" onclick="${ics.name}()">
+                <section зайрмагны дэлгэрэнгүй мэдээлэл" onclick="${ics.name.split(" ")[0]}()">
                 <div class="zurag">
                     <img src="${ics.img}" alt="${ics.name} зайрмаг">
-                    <div>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
                 </div>
                 <h1>${ics.name}</h1>
                 <div class="bvteegdehvvn_tailbar">
@@ -186,7 +181,7 @@ class MySubList{
                             </path>
                         </svg><em>дэлгэрэнгүй</em></div>
                 </div>
-                </a>
+                </section>
                 </article>`;
             }
             return`<section id="${this.link}" class="turul">
@@ -198,14 +193,9 @@ class MySubList{
             let cont="";
             for(const ics of this.icecream){
                 cont+=`<article class="zairmag">
-                <a href="#" aria-label="${ics.name} зайрмагны дэлгэрэнгүй мэдээлэл" onclick="${ics.name}()">
+                <section onclick="${ics.name.split(" ")[0]}()">
                 <div class="zurag">
                     <img src="${ics.img}" alt="${ics.name} зайрмаг">
-                    <div>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
                 </div>
                 <h1 id="Mocktail_h1">${ics.name}</h1>
                 <div class="bvteegdehvvn_tailbar" id="mocktail_foot">
@@ -217,7 +207,7 @@ class MySubList{
                             </path>
                         </svg><em>дэлгэрэнгүй</em></div>
                 </div>
-                </a>
+                </section>
                 </article>`;
             }
             return`<section id="${this.link}" class="turul">
