@@ -45,7 +45,7 @@ const sublist=[
             },
             {
                 "img":"pictures_bvteegdehvvniitanilcuulga/3d,4d_icemarkzairmag.png",
-                "name":"MELLO",
+                "name":"ICEMARK",
                 "descrip":"Төсөөллөөс ч илүү гүзээлзгэнэ, шоколадтай зайрмаг ICEMARK"
             }
         ]

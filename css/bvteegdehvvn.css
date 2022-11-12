@@ -6,18 +6,13 @@
 body{
     font-size: 1rem;
 }
-header{
-    z-index:1;
-}
 /*sublist*/
-#opened_list{
-    z-index: 1;
-}
+
 .bvteegdehvvnii_turul{
     width: 100%;
     position: sticky;
     top: 3.4rem;
-    z-index: 1;
+    z-index: 100;
 }
 
 .bvteegdehvvnii_turul ul{
@@ -454,19 +449,10 @@ padding: 8rem 0rem 9rem 0rem;
         font-size: 70%;
     }
 }
+
 @media(max-width: 1220px){
-    .bvteegdehvvnii_turul{
-        top: 1.95rem;
-    }
-    .bvteegdehvvnii_turul ul{
-        padding: 0rem 0 0.1rem 0;
-    }
-    .bvteegdehvvnii_turul ul li a{
-        font-size: 0.5rem;
-    }
-    .bvteegdehvvnii_turul .line{
-        margin-top: 0rem;
-        margin-bottom: 0.1rem;
+    body{
+        font-size: 120%;
     }
 }
 @media(max-width: 1060px){
@@ -477,15 +463,17 @@ padding: 8rem 0rem 9rem 0rem;
         width: 70%;
     }
 }
+@media(max-width: 827px){
+    .bvteegdehvvnii_turul{
+        display: none;
+    }
+ }
 @media(max-width: 750px){
     .tanilcuulga_icecream{
         grid-template-columns:auto;
     }
     .turul h1{
-        margin:auto;
-    }
-    .bvteegdehvvnii_turul ul li a{
-        font-size: 0.5rem;
+        margin: 0 auto;
     }
     .tailbar{
         margin: 1.5em 3em 0 3em;
@@ -503,11 +491,7 @@ padding: 8rem 0rem 9rem 0rem;
     }
     
 }
-@media(max-width: 712px){
-    .bvteegdehvvnii_turul{
-        display: none;
-    }
- }
+
 @media(max-width: 710px){
    .bvteegdehvvn_tus{
     font-size: 80%;
@@ -551,5 +535,8 @@ padding: 8rem 0rem 9rem 0rem;
     .bvteegdehvvn_tus{
      font-size: 40%;
      } 
+     .turul h1{
+        font-size: 1rem;
+     }
  }
  
