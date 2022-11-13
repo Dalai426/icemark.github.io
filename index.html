@@ -28,6 +28,7 @@
 </head>
 <script src="./js/header_footer.js"></script>
 <script src="./js/loading.js"></script>
+<script src="./js/index.js"></script>
 <body>
     <div id="loader"></div>
     <header>
@@ -63,117 +64,16 @@
             </picture>
 
             <picture class="mySlides">
-                <source media="(min-width: 1024px)" srcset="index_pictures/veny.jpg">
-                <source media="(max-width: 768px)" srcset="index_pictures/veny.jpg">
-                <img src="index_pictures/veny.jpg" alt="Icemark" >
+                <source media="(min-width: 1024px)" srcset="index_pictures/zuv_zairmag.jpg">
+                <source media="(max-width: 768px)" srcset="index_pictures/zuv_zairmag.jpg">
+                <img src="index_pictures/zuv_zairmag.jpg" alt="Icemark" >
             </picture> 
-
-            
-         <script>
-            var slideIndex = 0;
-            carousel();
-
-           function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > x.length) {slideIndex = 1}
-            x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 3000);
-         }
-         </script>
-        
-
-
-        </section>
-        <div id="line"></div>
+       
+      
+          </section>
+          
         <section class="product">
-            <a href="#">
-                <article class="p-art">
-                    <picture class="products">
-                        <source media="(min-width: 1024px)" srcset="./index_pictures/mello.jpg">
-                        <source media="(max-width: 768px)" srcset="./index_pictures/mello.jpg">
-                        <img src="./index_pictures/mello.jpg" alt="Icemark" >
-                    </picture> 
-                </article>
-                <h2><span> Жимстэй</span> <br> зайрмаг</h2>
-            </a>
-
-
-            <a href="#">
-                <article class="p-art">
-                    <picture class="products">
-                        <source media="(min-width: 1024px)" srcset="./index_pictures/choco.jpg">
-                        <source media="(max-width: 768px)" srcset="./index_pictures/choco.jpg">
-                        <img src="./index_pictures/choco.jpg" alt="Icemark" >
-                    </picture> 
-                </article>
-                <h2> <span> Шоколадтай</span> <br> зайрмаг</h2>
-            </a>
-
-            <a href="#">
-                <article class="p-art">
-                    <picture class="products">
-                        <source media="(min-width: 1024px)" srcset="index_pictures/tus_bambar3.jpg">
-                        <source media="(max-width: 768px)" srcset="index_pictures/tus_bambar3.jpg">
-                        <img src="index_pictures/tus_bambar3.jpg" alt="Icemark" >
-                    </picture> 
-                </article>
-                <h2> <span> Аарцтай</span> <br> зайрмаг</h2>
-            </a>
-            <a href="#">
-                <article class="p-art">
-                    <picture class="products">
-                        <source media="(min-width: 1024px)" srcset="index_pictures/teso_ice.jpg">
-                        <source media="(max-width: 768px)" srcset="index_pictures/teso_ice.jpg">
-                        <img src="index_pictures/teso_ice.jpg" alt="Icemark" >
-                    </picture> 
-                </article>
-                <h2><span> Аягатай</span> <br> зайрмаг</h2>
-            </a>
-            <a href="#">
-                <article class="p-art">
-                    <picture class="products">
-                        <source media="(min-width: 1024px)" srcset="index_pictures/vannila.jpg">
-                        <source media="(max-width: 768px)" srcset="index_pictures/vannila.jpg">
-                        <img src="index_pictures/vannila.jpg" alt="Icemark" >
-                    </picture> 
-                </article>
-                <h2><span>Цөцгийтэй</span> <br> зайрмаг</h2>
-            </a>
-            <a href="#">
-                <article class="p-art">
-                    <picture class="products">
-                        <source media="(min-width: 1024px)" srcset="index_pictures/cake.jpg">
-                        <source media="(max-width: 768px)" srcset="index_pictures/cake.jpg">
-                        <img src="index_pictures/cake.jpg" alt="Icemark" >
-                    </picture> 
-                </article>
-                <h2> <span>Гэр бүлийн</span><br>зайрмаг</h2>
-            </a>
-            <a href="#">
-                <article class="p-art">
-                    <picture class="products">
-                        <source media="(min-width: 1024px)" srcset="index_pictures/tus_mock.jpg">
-                        <source media="(max-width: 768px)" srcset="index_pictures/tus_mock.jpg">
-                        <img src="index_pictures/tus_mock.jpg" alt="Icemark" >
-                    </picture> 
-                </article>
-                <h2> <span> Моктайл</span><br> зайрмаг</h2>
-            </a>
-            <a href="#">
-                <article class="p-art">
-                    <picture class="products">
-                        <source media="(min-width: 1024px)" srcset="index_pictures/tus_tunh2.jpg">
-                        <source media="(max-width: 768px)" srcset="index_pictures/tus_tunh2.jpg">
-                        <img src="index_pictures/tus_tunh2.jpg" alt="Icemark">
-                    </picture> 
-                </article>
-                <h2> <span> Мөнх тунх</span><br> зайрмаг</h2>
-            </a>  
+          
         </section>
 
         <section class="intro">
@@ -182,19 +82,19 @@
             <article>
                 <section>
                     
-                          
+                    <article class="intro-image">    
                     <picture>
                         <source media="(min-width: 1024px)" srcset="index_pictures/tus_imperia2.jpg">
                         <source media="(max-width: 768px)" srcset="index_pictures/tus_imperia2.jpg"">
                         <img src="index_pictures/tus_imperia2.jpg" alt="Аз жаргалан амт, Айсмарк" >
                     </picture>
-                   
+                </article> 
               </section>
 
               <section>
                 
                     <h1><span>Компаний</span>  <span> тухай </span></h1>
-                    <p>Aйсмарк компани Монгол улсын өнцөг булан бүрт байгаа хүн арддаа “Аз жаргалын амт”-ыг мэдрүүлэх зорилгоор анх <span class="intro-doc"> 2003 онд үйл ажиллагаагаа </span> албан ёсоор эхлүүлж байсан. </p>
+                    <p><span class="intro-doc">Aйсмарк </span>компани Монгол улсын өнцөг булан бүрт байгаа хүн арддаа “Аз жаргалын амт”-ыг мэдрүүлэх зорилгоор анх <span class="intro-doc"> 2003 онд </span>үйл ажиллагаагаа  албан ёсоор эхлүүлж байсан. </p>
 
                     <button>Цааш <span>Унших</span> </button>
               </section>
@@ -217,10 +117,11 @@
                         <source media="(max-width: 768px)" srcset="index_pictures/news1.png">
                         <img src="index_pictures/news1.png" alt="Шинэ үйлдвэр" >
                     </picture>
-
-                    
+                 
+                  <section class="text">  
                     <h2>Айсмарк компани нь хайрцаг буцаан авах аянаа</h2>
                     <div class="date">2022.01.01</div>
+                </section> 
                </article>  
             </a>
            <a href="#">
@@ -230,9 +131,10 @@
                     <source media="(max-width: 768px)" srcset="index_pictures/news2.png">
                     <img src="index_pictures/news2.png" alt="Нисэх онгоцны буудал" >
                 </picture>
-               
+                <section class="text"> 
                 <h2>Айсмарк нь менежментийн нэгдсэн тогтолцоонд</h2>
                 <div class="date">2022.01.01</div>
+            </section> 
             </article>
         </a>
 
@@ -243,9 +145,10 @@
                     <source media="(max-width: 768px)" srcset="index_pictures/news3.png">
                     <img src="index_pictures/news3.png" alt="ISO 9001" >
                 </picture>
-                
+                <section class="text"> 
                 <h2>Айсмарк Компани нь ISO 9001 чанарын менежментийн</h2>
                 <div class="date">2022.01.02</div>
+            </section> 
             </article>
         </a>
 
@@ -256,13 +159,31 @@
                     <source media="(max-width: 768px)" srcset="pictures/frame2.jpg">
                     <img src=" pictures/frame2.jpg " alt="ISO 9001">
                 </picture>
-                
+                <section class="text">
                 <h2>Айсмарк Компани нь ISO 9001 чанарын менежментийн</h2>
                 <div class="date">2022.01.03</div>
+            </section>
             </article>
         </a>
         </section>
     </main>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+       function carousel() {
+        var i;
+        var x = document.getElementsByClassName('mySlides');
+        console.log(x[0]);
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+       }
+     </script>
      <footer>
        <icemark-footer></icemark-footer>
     </footer>
