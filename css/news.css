@@ -1,0 +1,110 @@
+@import url('root.css');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+main{
+    padding: 2rem 4rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 18rem 18rem 18rem 18rem
+      18rem ;
+    
+}
+
+main section{
+    width: 100%;
+    height:  100%;
+    padding: 2rem 1rem;
+    border-bottom: solid 1px #d3d3d3;
+}
+main a{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+main a picture{
+    width: 40%;
+}
+main a article {
+    width: calc(60% - 2rem);
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+main a article h1{
+    margin-bottom: 1rem;
+    font-family: var(--pre-news-ffamily)
+}
+main a article p{
+    font-family: var(--intro-h1-ff);
+}
+.date{
+    margin-top: 1rem;
+    font-family: var(--pre-news-ffamily);
+    color: var(--color-p);
+}
+main a article p,h1{
+    color: rgb(34, 32, 30);
+    text-align: justify;
+}
+
+#line{
+    border: solid 1px black;
+    margin: 2rem 4rem;
+}
+
+/*link*/
+.link{
+    margin: 2rem 4rem;
+    margin-top: 0rem;
+}
+.link a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 1rem;
+   
+    color: black;
+}
+.link a:hover{
+    border: 1px solid #f4f4f4;
+    background-color: rgb(13, 5, 32);
+    color: #f4f4f4;
+}
+
+@media(max-width: 900px){
+    main{
+        padding: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-template-rows: 18rem 18rem 18rem 18rem
+        18rem 18rem 18rem 18rem 18rem 18rem ;
+    }
+    main section{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 1rem;
+        border-bottom: solid 1px #d3d3d3;
+    }
+    main a picture{
+        width: 60%;
+    }
+    #line{
+        border: solid 1px black;
+        margin: 1rem 1rem;
+    }
+    .link{
+        margin: 1rem 1rem;
+    }
+}

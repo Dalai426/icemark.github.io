@@ -12,8 +12,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Pacifico&family=Pattaya&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Manrope&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Manrope&family=Montserrat+Alternates:wght@300&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Josefin+Sans&family=Manrope&family=Montserrat+Alternates:wght@300&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
 :root{
 /*dalai's variable*/
 
@@ -75,9 +76,9 @@
 /*tsogoo's variable*/
 
 /*.slider*/
---slider-height:30rem;
---slider-heightT:25rem;
---slider-heightM:25rem;
+--slider-height:34rem;
+--slider-heightT:20rem;
+--slider-heightM:10rem;
 
 --news-line-width:80%;
 /*product*/
@@ -92,7 +93,7 @@
 --n-border: solid 0px rgb(71, 69, 69);
 --n-height: 22rem;
 --n-Rheight: 25rem;
---n-article-height: 100%;
+--n-article-height: 18rem;
 --n-article-Rheight: 14rem;
 
 --n-article-Rmargins: 2rem 3rem 1.5rem 3rem;
@@ -107,6 +108,7 @@
 
 
 --article-grid-row:30rem;
+--article-grid-Mrow:40rem;
 --article-grid-columns:50% 50%;
 --article-grid-row-tablet:20rem 30rem;
 --article-grid-columns-tablet:100%;
@@ -138,7 +140,7 @@
 --pre-news-height: 2rem;
 
 --pn-fsize: 3rem;
---pn-fw: 1000;
+--pn-fw: 500;
 /*btn width*/
 --btn-color:rgb(250, 248, 248);
 --btn-width:12rem;
@@ -146,6 +148,10 @@
 --margin-top:2rem;
 --btn-font-size:1rem;
 /*font families*/
+
+--Jos-family: 'Josefin Sans', sans-serif;
+--Mont-family: 'Montserrat', sans-serif;
+--Comforta-ff:'Comfortaa', cursive;
 --intro-var2-ff:'Manrope', sans-serif;
 --pre-news-ffamily: 'Raleway' ,sans-serif;
 --intro-h1-ff: 'Overlock', cursive;
@@ -166,6 +172,6 @@
 
 --bg-btncolor:rgba(204, 189, 170, 0.6);
 
----intro-article-bgcolor:#F8F3F0;
+--intro-article-bgcolor:#F8F3F0;
 }
 

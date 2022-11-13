@@ -26,6 +26,7 @@ header{
     justify-content: space-between;
     padding: 1rem 0;
     filter:var(--shadow-header);
+    z-index: 3;
 }
 
 #list{
@@ -57,7 +58,7 @@ header{
 }
 .head_menu ul li a{
     font-family:var(--header_footer_text_style);
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-decoration: none;
     color:var(--texts_color-white);
 }
