@@ -1,5 +1,6 @@
 
 
+
 function MUNH(){
     document.getElementById("MUNH").style.display="none";
 }
@@ -68,5 +69,12 @@ function ELITE(){
 }
            
 function ICEMARK(){
-    document.getElementById("ICEMARK").style.display="none";
+    document.getElementById("ICEMARK").style.display="block";
 }
+
+
+
+var x=document.getElementById("x");
+x.addEventListener("click",()=>{
+    x.parentNode.parentNode.style.display="none";
+});

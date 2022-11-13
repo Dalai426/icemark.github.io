@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-#myDIV {
-  border: 1px solid black;
-}
-</style>
-</head>
-<body>
-
-<div id="myDIV">This example uses the addEventListener() method to attach a "wheel" event to a DIV element. Roll the mouse wheel over me - either up or down!</div>
-
-<p>A function is triggered when you roll the mouse wheel over div. The function sets the font-size of div to 35 pixels.</p>
-
-<p><strong>Note:</strong> The wheel event is not supported in Safari and IE8 (and earlier).</p>
-
-<script>
-document.getElementById("myDIV").addEventListener("wheel", myFunction);
-
-function myFunction() {
-  this.style.fontSize = "60px";
-}
-</script>
-
-</body>
+  <head>
+    <title>Title of the Document</title>
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="elem">
+      <h1>Welcome to W3Docs</h1>
+      <p>Move the mouse over the text</p>
+      <div>
+        Position:
+        <p id='text'></p>
+      </div>
+    </div>
+    <script>
+      let elem = document.getElementById('elem');
+      document.addEventListener('mousemove', function(event) {
+        let rect = elem.getBoundingClientRect();
+        document.getElementById('text').innerHTML = 'left: ' + rect.x + ', ' + 'top: ' + rect.y;
+      });
+    </script>
+  </body>
 </html>

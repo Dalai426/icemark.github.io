@@ -1,10 +1,12 @@
+
+
 resize_top_menu();
 let scroll_pos;
 window.onscroll=()=>{scroll()};
 function scroll() {
     let elm=document.querySelector(".bvteegdehvvnii_turul");
     if (document.documentElement.scrollTop > scroll_pos) {
-        if(window.screen.width>827){
+        if(window.screen.width>691){
             elm.style.display="block";
         }
     } else {

@@ -1,6 +1,6 @@
 /*dalai*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
@@ -40,7 +40,7 @@
 --bvteegdehvvn_tus_bvr_window_foot:#0078AC;
 --mocktail_color:#FEE715FF;
 /*fonts styles*/
---header_footer_text_style: 'IBM Plex Sans', sans-serif;
+--header_footer_text_style: 'PT Sans', sans-serif;
 --inter:'Inter', sans-serif;
 --bvteegdehvvn_head2_font:'Noto Sans Display', sans-serif;
 --nunito: 'Nunito', sans-serif;
