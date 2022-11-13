@@ -26,11 +26,7 @@ header{
     justify-content: space-between;
     padding: 1em 0;
     filter:var(--shadow-header);
-<<<<<<< HEAD
-    z-index: 3;
-=======
     z-index: 100;
->>>>>>> ae48cbd6761ff33a900ece09f9619424e07fb5eb
 }
 
 #list{
@@ -62,11 +58,7 @@ header{
 }
 .head_menu ul li a{
     font-family:var(--header_footer_text_style);
-<<<<<<< HEAD
-    font-size: 0.8rem;
-=======
     font-size: 1em;
->>>>>>> ae48cbd6761ff33a900ece09f9619424e07fb5eb
     text-decoration: none;
     color:var(--texts_color-white);
 }
@@ -346,4 +338,3 @@ footer #footer-top-section {
     }
     
  }
-
