@@ -317,23 +317,8 @@ section.news a article h2{
     font-size: var(--f_size_products);
     color: rgb(31, 28, 28);
 }
-/*footer css*/
-footer{
-    width: 100%;
-}
-footer #footer-top-section {
-    background: var(--header_footer-linear);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-#footer-top-section .address{
-    display: flex;
-    flex-direction: row;
-    margin:3rem auto;
-    align-items: center;
-} 
 
+<<<<<<< HEAD
 #footer-top-section .address ul{
     margin-top: 0.7rem;
     line-height: 1rem;
@@ -408,6 +393,20 @@ footer #footer-top-section {
 
 @media(max-width: 1000px){
  
+=======
+
+@media(max-width: 900px){
+    #list{
+        display: inline-block;
+        color: var(--texts_color-white);
+        font-size: 1.5rem;
+        margin-right: 2.2rem;
+    }
+    #list:hover{
+        color:var(--hover_color_grey);
+        transition:var(--header_transition);
+    }
+>>>>>>> ae48cbd6761ff33a900ece09f9619424e07fb5eb
 
     .slider {
         height: var(--slider-heightT);
@@ -465,38 +464,6 @@ footer #footer-top-section {
     
     
 
-  
-
-
-
-    #footer-top-section{
-        padding: 3rem 0;
-        justify-content: center;
-    }
-    #footer-top-section .address{
-        width: 55%;
-        border-bottom: 0.01px solid white;
-        padding-bottom: 4rem;
-        margin-top: 1rem;
-    }
-
-    
-    .bottom{
-        margin: 0;
-        display: block;
-        text-align: center;
-    }
-    .bottom address{
-        margin: 1rem 0;
-    }
-    .bottom>h4{
-        margin:1rem 0 0 0;
-    }
-
-    .bottom address img{
-        color: var(--texts_color-white);
-        height: 1.5rem;
-    }
 }
 @media(max-width: 600px){
     .slider {
@@ -529,10 +496,6 @@ footer #footer-top-section {
     .intro >article >section:nth-child(1){
         display: none;
     }
-
-
-
-
 .news{
     display: grid;
     grid-template-columns: 100%;
@@ -548,6 +511,7 @@ footer #footer-top-section {
 }
 .news article{
     overflow: hidden;
+<<<<<<< HEAD
  
         border: var(--n-border);
         width: var(--width-size);
@@ -556,4 +520,13 @@ footer #footer-top-section {
          box-shadow: var(--news-box-shadow);
          
          }
+=======
+    border-radius: 2rem;
+    border: var(--n-border);
+    width: var(--width-size);
+    height: var(--n-article-height);
+    font-family: var(--font-family);
+    box-shadow: var(--news-box-shadow);        
+    }
+>>>>>>> ae48cbd6761ff33a900ece09f9619424e07fb5eb
 }
