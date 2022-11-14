@@ -318,83 +318,6 @@ section.news a article h2{
     color: rgb(31, 28, 28);
 }
 
-<<<<<<< HEAD
-#footer-top-section .address ul{
-    margin-top: 0.7rem;
-    line-height: 1rem;
-}
-
-.address i{
-   /* scale: (2,2);*/
-    margin-right: 1.8rem;
-    color:var(--texts_color-white);
-}
-.address article ul li{
-    list-style: none;
-    color:var(--texts_color-white);
-    font-family:var(--inter);
-    font-style: normal; 
-}
-.address a{
-    text-decoration: none;
-}
-.address article ul li a{
-    text-decoration: none;
-    color:var(--texts_color-white);
-}
-.address article h3{
-    color: var(--texts_color-white);
-    font-family:var(--inter);
-    font-style: normal;
-}
-
-.address:hover i{
-    color: var(--hover_color_grey);
-    transition: 0.5s ease-in-out;
-}
-
-.bottom{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-family: var(--inter);
-    font-size: 1rem;
-    margin-top: 0.3rem;
-}
-.bottom a{
-    text-decoration: none;
-    font-weight:var(--font_weight_lighter);
-}
-.bottom h4{
-    margin-left: 2rem;
-    margin-top:0.1rem;
-    font-weight:var(--font_weight_lighter);
-}
-.bottom address{
-    display: flex;
-    flex-direction: row;
-    margin-right: 2rem;
-}
-.bottom h4 a{
-    color: var(--texts_color-black);
-}
-
-.bottom address img{
-    color: var(--texts_color-white);
-    height: 1.5rem;
-    margin-left: -0.5rem;
-}
-.bottom address a{
-    margin-left: 1rem;
-}
-
-
-
-@media(max-width: 1000px){
- 
-=======
-
 @media(max-width: 900px){
     #list{
         display: inline-block;
@@ -406,7 +329,7 @@ section.news a article h2{
         color:var(--hover_color_grey);
         transition:var(--header_transition);
     }
->>>>>>> ae48cbd6761ff33a900ece09f9619424e07fb5eb
+
 
     .slider {
         height: var(--slider-heightT);
@@ -511,22 +434,10 @@ section.news a article h2{
 }
 .news article{
     overflow: hidden;
-<<<<<<< HEAD
- 
-        border: var(--n-border);
-        width: var(--width-size);
-         height: var(--n-article-height);
-         font-family: var(--font-family);
-         box-shadow: var(--news-box-shadow);
-         
-         }
-=======
     border-radius: 2rem;
     border: var(--n-border);
     width: var(--width-size);
     height: var(--n-article-height);
     font-family: var(--font-family);
-    box-shadow: var(--news-box-shadow);        
-    }
->>>>>>> ae48cbd6761ff33a900ece09f9619424e07fb5eb
+    box-shadow: var(--news-box-shadow);
 }
