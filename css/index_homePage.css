@@ -318,8 +318,6 @@ section.news a article h2{
     color: rgb(31, 28, 28);
 }
 
- 
-
 @media(max-width: 900px){
     #list{
         display: inline-block;
@@ -435,12 +433,11 @@ section.news a article h2{
 }
 .news article{
     overflow: hidden;
-
     border-radius: 2rem;
     border: var(--n-border);
     width: var(--width-size);
     height: var(--n-article-height);
     font-family: var(--font-family);
-    box-shadow: var(--news-box-shadow);        
-    }
+    box-shadow: var(--news-box-shadow);
+}
 }
