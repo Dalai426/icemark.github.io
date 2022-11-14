@@ -6,6 +6,19 @@
 body{
     font-size: 1rem;
 }
+::-webkit-scrollbar {
+    width: 0.1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #90A4AE  #CFD8DC;
+}
+
+::-webkit-scrollbar-track {
+    background: #CFD8DC;
+  }
+::-webkit-scrollbar-thumb {
+    background-color: #90A4AE;
+    border-radius: 1rem;
+}
 /*sublist*/
 
 .bvteegdehvvnii_turul{
@@ -187,11 +200,21 @@ body{
 
 
 /*bvteegdehvvn tus bvr deeer*/
-
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1055;
+    display: none;
+    background-color:rgba(7,7,7, 0.9);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
 .bvteegdehvvn_tus{
-position:fixed;
-top: 5rem;
-    margin:0 auto;
+    margin:1% auto;
     width: 60%;
     height: auto;
     padding-bottom:3em;
@@ -200,6 +223,7 @@ top: 5rem;
     background: var(--bvteegdehvvn_window_linear);
     filter: var(--shadow-bvteegdehvvn-window);
     font-size: 1rem;
+    z-index: 101;
 }
 
 #x{
