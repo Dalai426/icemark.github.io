@@ -37,26 +37,15 @@
     <title>Бүтээгдэхүүний танилцуулга</title>
 
 </head>
-<script src="./js/b_tanilcuulga_json.js"></script>
-<script src="./js/loading.js"></script>
-<script src="./js/header_footer.js"></script>
+<script src="./js/b_tanilcuulga_json.js" async></script>
+<script src="./js/loading.js" async></script>
+<script src="./js/header_footer.js" async  type="module"></script>
 <body onresize="resize_top_menu()">
     <div id="loader"></div>
     <header>
         <icemark-header></icemark-header>
     </header>
-    <article id="opened_list">
-        <ul>
-            <li><a href="BaiguullagiinTaniltsuulga.html">КОМПАНЫ ТУХАЙ</a></li>
-            <li><a href="bvteegdehvvn_tanilcuulga&tus.html" aria-label="Бүтээгдэхүүний зургууд, дэлгэрэнгүй мэдээлэл">БҮТЭЭГДЭХҮҮНИЙ ТАНИЛЦУУЛГА</a></li>
-            <li><a href="News.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></li>
-            <li class="border"><a href="sanalHuselt.html">САНАЛ ХҮСЭЛТ</a></li>
-        </ul>
-        <div>
-        <i class="fas fa-globe" id="world"></i>
-        <p>EN</p><p>/</p><p>MON</p>
-        </div>
-    </article>
+    <icemark-open></icemark-open>
     <menu class="bvteegdehvvnii_turul">
         <!--
             <ul>
@@ -617,8 +606,7 @@
 
 -->
 
-
-<script src="./js/bt_top_menu.js"></script>
+<script src="./js/bt_top_menu.js" defer></script>
 
     <section class="modal">
     <article class="bvteegdehvvn_tus" id="IBERRY">
@@ -1034,7 +1022,7 @@
                 <article class="contain_turlvvd_window">
                     <h2>ТӨРӨЛ</h2>
                     <ul>
-                        <li>ELIT АЯГАТАЙ ЗАЙРМАГ</li>
+                        <li>ELITE</li>
                     </ul>
                 </article>
                 <article class="tailbar">Тус зайрмаг нь цөцгийтэй зайрмаг бөгөөд нэмэлт орцонд нь самар жимс ордог
@@ -1299,6 +1287,6 @@
 
     </article>
     </section>
-    <script src="./js/open_window.js"></script>
+    <script src="./js/open_window.js" defer></script>
 </body>
 </html>

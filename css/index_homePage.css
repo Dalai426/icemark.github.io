@@ -132,8 +132,6 @@ body{
 /*introduction css*/
 .intro 
 {
-    
-    
     margin: 2rem 0rem;
 }
 .intro > article{
@@ -164,8 +162,8 @@ body{
 }
 .intro-image{
     overflow: hidden;
-    width: var(--width-size);
-    height:  var(--width-size);
+    width: 30rem;
+    height: 30rem;
     border-radius: 44% 44% 48% 48%;
 }
 .intro >article >section:nth-child(2){
@@ -288,13 +286,13 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
-        border: var(--n-border);
-        width: var(--width-size);
+    border: var(--n-border);
+    width: var(--width-size);
          height: var(--n-article-height);
          font-family: var(--font-family);
          box-shadow: var(--news-box-shadow);
          
-         }
+}
  .news article  .text{
     display: flex;
     flex-direction: column;
@@ -383,9 +381,6 @@ section.news a article h2{
              box-shadow: var(--news-box-shadow);
              
              }
-    
-    
-
 }
 @media(max-width: 600px){
     .slider {
@@ -412,8 +407,7 @@ section.news a article h2{
     .intro >article >section:nth-child(2) h1{
         font-size: 3rem;
         font-family: var(--intro-h1-ff);
-        
-        
+
     }
     .intro >article >section:nth-child(1){
         display: none;

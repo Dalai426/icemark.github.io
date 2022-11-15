@@ -173,16 +173,19 @@ footer #footer-top-section {
 .bottom address a{
     margin-left: 1rem;
 }
+
+
+
+
+/*phone list*/
 #opened_list{
     display: none;
-    position: sticky;
-    top:4.7rem;
+    position: fixed;
     background:var(--open_list-linear);
     width:40%;
     height: auto;
-    padding:1em 0;
-    float: right;
-    z-index: 100;
+    z-index: 101;
+    right: 0;
 }
 #opened_list ul{
    width: 100%;
@@ -202,10 +205,9 @@ footer #footer-top-section {
     color:var(--texts_color-white);
 }
 #opened_list div{
-    margin-top: 1em;
     display: flex;
     align-items: center;
-    margin-left: 3em;
+    margin:1em auto 1em 3em;
 }
 #opened_list div i{
     font-size: 1em;
@@ -217,15 +219,15 @@ footer #footer-top-section {
     font-family:var(--header_footer_text_style);
     color:var(--texts_color-white);
 }
-#opened_list div p:hover{
-    color: var(--hover_color_orange);
+#opened_list ul li:hover{
+    background-color:rgba(256, 256, 256, 1);
 }
 #opened_list div:hover #world{
     transform: rotate3d(0, 1, 0, 360deg);
     transition: 1.5s ease-in-out;
 }
 #opened_list ul li:hover a{
-    color: var(--hover_color_orange);
+    color: var(--assistant_color-blue);
 }
 
 
@@ -323,18 +325,35 @@ footer #footer-top-section {
         height: 1.5rem;
     }
 }
-@media(max-width: 600px){
+@media(max-width: 717px){
     #opened_list{
      font-size: 60%;
     }
+
  }
  @media(max-width: 450px){
     #opened_list{
-     font-size: 40%;
+        font-size: 40%;
+    }
+    #opened_list ul li{
+        padding: 3em 3em;   
+    }
+    #opened_list div{
+        margin:3em auto 3em 3em;
     }
  }
  @media(max-width: 335px){
     #opened_list{
      font-size: 20%;
+    }
+    #opened_list{
+        width: -webkit-max-content;
+        width: max-content;
+    }
+    #opened_list ul li{
+        padding: 6em 20em 6em 6em;
+    }
+    #opened_list div{
+        margin:6em auto 6em 6em;
     }
  }

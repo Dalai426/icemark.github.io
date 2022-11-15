@@ -38,30 +38,12 @@
         <link rel="stylesheet" href="./css/header_footer.css">
 
     </head>
+    <script src="./js/header_footer.js" type="module" async></script>
     <body>
         <header>
-
-            <picture class="logo">
-                <source media="(min-width: 1024px)" srcset="pictures/ICEMARK.png">
-                <source media="(max-width: 768px)" srcset="pictures/ICEMARK.png">
-                <a href="index.html">
-                    <img src="pictures/ICEMARK.png" alt="Icemark">
-                </a>
-            </picture>
-    
-            <nav class="head_menu">
-                <ul>
-                    <li><a href="BaiguullagiinTaniltsuulga.html">КОМПАНЫ ТУХАЙ</a></li>
-                    <li><a href="bvteegdehvvn_tanilcuulga&tus.html"
-                            aria-label="Бүтээгдэхүүний зургууд, дэлгэрэнгүй мэдээлэл">БҮТЭЭГДЭХҮҮНИЙ ТАНИЛЦУУЛГА</a></li>
-                    <li><a href="News.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></li>
-                    <li class="border"><a href="sanalHuselt.html">САНАЛ ХҮСЭЛТ</a></li>
-                </ul>
-                <div id="white"></div>
-                <i class="fas fa-globe" id="world"></i>
-            </nav>
-            <i class="fas fa-list-ul" id="list"></i>
+            <icemark-header></icemark-header>
         </header>
+        <icemark-open></icemark-open>
     
 
 

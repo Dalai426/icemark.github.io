@@ -1,3 +1,4 @@
+import {phonelist} from "../modules/phone_list.js";
 class navbar extends HTMLElement {
     connectedCallback() {
       this.parentNode.innerHTML = `
@@ -104,6 +105,52 @@ class navbar extends HTMLElement {
   
 
 
-
-
+  class openlist extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `
+      <article id="opened_list">
+      <ul>
+          <li><a href="BaiguullagiinTaniltsuulga.html">КОМПАНЫ ТУХАЙ</a></li>
+          <li><a href="bvteegdehvvn_tanilcuulga&tus.html" aria-label="Бүтээгдэхүүний зургууд, дэлгэрэнгүй мэдээлэл">БҮТЭЭГДЭХҮҮНИЙ ТАНИЛЦУУЛГА</a></li>
+          <li><a href="News.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></li>
+          <li class="border"><a href="sanalHuselt.html">САНАЛ ХҮСЭЛТ</a></li>
+      </ul>
+      <div>
+      <i class="fas fa-globe" id="world"></i>
+      <p>EN&nbsp;</p><p>|</p><p>&nbsp;MON</p>
+      </div>
+    </article>
+      `;
+    }
+  }
+  customElements.define("icemark-open",openlist);
   
+
+
+
+ 
+
+
+
+
+
+let scrollbar=`<style>
+    ::-webkit-scrollbar {
+        width: 1px;
+        scrollbar-width: thin;
+        scrollbar-color: #90A4AE  #CFD8DC;
+    }
+    ::-webkit-scrollbar-track {
+        background: #CFD8DC;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #90A4AE;
+        border-radius: 1rem;
+    }
+    </style>`;
+document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeEnd",scrollbar);
+
+let plist= new phonelist(800,"list","opened_list");
+plist.event();
+plist.mediaquery_event();
+plist.outside_click_event();

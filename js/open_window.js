@@ -1,81 +1,117 @@
 let tap;
 function MUNH(){
-    document.getElementById("MUNH").style.display="block";
+    tap=document.getElementById("MUNH");
+    tap.parentNode.style.display="block";
+    listener();
 }
            
 function TUNH(){
-    document.getElementById("TUNH").style.display="block";
+    tap=document.getElementById("TUNH");
+    tap.parentNode.style.display="block";
+    listener();
 }
 
 function MELLO(){
     tap=document.getElementById("MELLO");
     tap.parentNode.style.display="block";
-    tap.parentNode.addEventListener('click',()=>{
-            tap.parentNode.style.display="none";
-    });
+    listener();
 }
 function VENUS(){
-    document.getElementById("VENUS").parentNode.style.display="block";
+    tap=document.getElementById("VENUS");
+    tap.parentNode.style.display="block";
+    listener();
 }
 function IBERRY(){
     tap=document.getElementById("IBERRY");
     tap.parentNode.style.display="block";
-    tap.childNodes[1].childNodes[1].addEventListener('click',()=>{
-            tap.parentNode.style.display="none";
-    });
+    listener();
 }
 function MOCKTAIL(){
-    document.getElementById("mocktail_window").style.display="block";
+    tap=document.getElementById("mocktail_window");
+    tap.parentNode.style.display="block";
+    listener();
 }
 
 function BAMBAR(){
-    document.getElementById("BAMBAR").style.display="block";
+    tap=document.getElementById("BAMBAR");
+    tap.parentNode.style.display="block";
+    listener();
 }
                
 function TESO(){
-    document.getElementById("TESO").style.display="block";
+    tap=document.getElementById("TESO");
+    tap.parentNode.style.display="block";
+    listener();
 }
            
 function ELITE(){
-    document.getElementById("ELITE").style.display="block";
+    tap=document.getElementById("ELITE");
+    tap.parentNode.style.display="block";
+    listener();
 }
          
 function MOCHA(){
-    document.getElementById("MOCHA").style.display="block";
+    tap=document.getElementById("MOCHA");
+    tap.parentNode.style.display="block";
+    listener();
 }
              
 function YOGURT(){
-    document.getElementById("YOGURT").style.display="block";
+    tap=document.getElementById("YOGURT");
+    tap.parentNode.style.display="block";
+    listener();
 }
               
 function ALYASKA(){
-    document.getElementById("ALYASKA").style.display="block";
+    tap=document.getElementById("ALYASKA");
+    tap.parentNode.style.display="block";
+    listener();
 }
        
 function STANDART(){
-    document.getElementById("STANDART").style.display="block";
+    tap=document.getElementById("STANDART");
+    tap.parentNode.style.display="block";
+    listener();
 }
               
 function PLOMBIR(){
-    document.getElementById("PLOMBIR").style.display="block";
+    tap=document.getElementById("PLOMBIR");
+    tap.parentNode.style.display="block";
+    listener();
 }
           
 function IMPERIA(){
-    document.getElementById("IMPERIA").style.display="block";
+    tap=document.getElementById("IMPERIA");
+    tap.parentNode.style.display="block";
+    listener();
 }
              
 function MINI(){
-    document.getElementById("MINI_SHCOK").style.display="block";
+    tap=document.getElementById("MINI_SHCOK");
+    tap.parentNode.style.display="block";
+    listener();
 
 }
           
 function ELITE(){
-    document.getElementById("ELITE").style.display="block";
+    tap=document.getElementById("ELITE");
+    tap.parentNode.style.display="block";
+    listener();
 }
            
 function ICEMARK(){
-    document.getElementById("ICEMARK").style.display="block";
+    tap=document.getElementById("ICEMARK");
+    tap.parentNode.style.display="block";
+    listener();
 }
 
-
-
+function listener(){
+    tap.parentNode.addEventListener('click',function(e){
+        if(!tap.contains(e.target)){
+            tap.parentNode.style.display="none";
+        }
+    });
+    tap.childNodes[1].childNodes[1].addEventListener('click',()=>{
+        tap.parentNode.style.display="none";
+    });
+}

@@ -6,21 +6,8 @@
 body{
     font-size: 1rem;
 }
-::-webkit-scrollbar {
-    width: 0.1rem;
-    scrollbar-width: thin;
-    scrollbar-color: #90A4AE  #CFD8DC;
-}
 
-::-webkit-scrollbar-track {
-    background: #CFD8DC;
-  }
-::-webkit-scrollbar-thumb {
-    background-color: #90A4AE;
-    border-radius: 1rem;
-}
 /*sublist*/
-
 .bvteegdehvvnii_turul{
     position: sticky;
     z-index: 100;
@@ -409,11 +396,9 @@ padding-left: 0;
 }
 #mocktail_window{
     background:var(--texts_color-black);
-    border: 0.2em solid var(--color-white);
-}
-#mocktail_window .frame{
     border: 0.1em solid var(--color-white);
 }
+
 #mocktail_window h1,#mocktail_window .foot h2,#mocktail_window .bvteegdehvvn_medeelel li{
     color:var(--mocktail_color);
 }
