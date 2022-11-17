@@ -153,4 +153,3 @@ document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeEnd",scrollba
 let plist= new phonelist(800,"list","opened_list");
 plist.event();
 plist.mediaquery_event();
-plist.outside_click_event();
