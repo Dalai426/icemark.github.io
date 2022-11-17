@@ -185,7 +185,7 @@ footer #footer-top-section {
     width:40%;
     height: auto;
     z-index: 101;
-    /*right:-100%;*/
+    right: 0;
 }
 #opened_list ul{
    width: 100%;

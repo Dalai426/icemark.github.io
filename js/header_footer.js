@@ -9,7 +9,6 @@ class navbar extends HTMLElement {
               <img src="pictures/ICEMARK.png" alt="Icemark">
           </a>
       </picture>
-
       <nav class="head_menu">
           <ul>
               <li><a href="BaiguullagiinTaniltsuulga.html">КОМПАНЫ ТУХАЙ</a></li>
@@ -45,7 +44,6 @@ class navbar extends HTMLElement {
               </article>
           </a>
       </address>
-
       <address class="address">
           <i class="fa-solid fa-clock"></i>
           <article>
@@ -53,12 +51,9 @@ class navbar extends HTMLElement {
               <ul>
                   <li>Да-Ба: 8:00 AM-6:00PM</li>
                   <li>Бя-Ня: Амралтын өдөр</li>
-
               </ul>
           </article>
       </address>
-
-
       <address class="address">
           <i class="fa-solid fa-phone"></i>
           <a href="tel:+97675756262">
@@ -71,7 +66,6 @@ class navbar extends HTMLElement {
               </article>
           </a>
       </address>
-
       <address class="address">
           <i class="fa-solid fa-envelope"></i>
           <article>
@@ -81,7 +75,6 @@ class navbar extends HTMLElement {
                   <li><a href="mailto: info@teso.mn">info@teso.mn</a></li>
               </ul>
           </article>
-
       </address>
   </section>
   <section class="bottom">
@@ -96,7 +89,6 @@ class navbar extends HTMLElement {
           <a href="mailto: contact@teso.mn"><img src="pictures/icons8-google-96 20- 20Copy.png" alt="Google"></a>
           <a href="https://www.youtube.com/channel/UCXC01QJ4wx_vDjXV5fscvmw"><img
                   src="pictures/icons8-youtube-logo-90.png" alt="youtube"></a>
-
       </address>
   </section>`;
     }
