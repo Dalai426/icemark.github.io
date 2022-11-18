@@ -100,7 +100,7 @@ class navbar extends HTMLElement {
   class openlist extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
-      <article id="opened_list">
+      <article class="opened_list">
       <ul>
           <li><a href="BaiguullagiinTaniltsuulga.html">КОМПАНЫ ТУХАЙ</a></li>
           <li><a href="bvteegdehvvn_tanilcuulga&tus.html" aria-label="Бүтээгдэхүүний зургууд, дэлгэрэнгүй мэдээлэл">БҮТЭЭГДЭХҮҮНИЙ ТАНИЛЦУУЛГА</a></li>

@@ -178,25 +178,29 @@ footer #footer-top-section {
 
 
 /*phone list*/
-#opened_list{
-    display: none;
+.opened_list{
     position: fixed;
     background:var(--open_list-linear);
     width:40%;
     height: auto;
     z-index: 101;
+    right: 100%;
+    transition: 0.4s;
+}
+.opened_list.active{
     right: 0;
 }
-#opened_list ul{
+
+.opened_list ul{
    width: 100%;
 }
-#opened_list ul li{
+.opened_list ul li{
     padding:0;
     list-style: none;
     padding: 1em 3em;
     border-bottom: 1px solid var(--color-white);
 }
-#opened_list ul li a{
+.opened_list ul li a{
     margin-top:0.5em;
     padding:0;
     text-decoration: none;
@@ -204,29 +208,29 @@ footer #footer-top-section {
     font-size: 0.8em;
     color:var(--texts_color-white);
 }
-#opened_list div{
+.opened_list div{
     display: flex;
     align-items: center;
     margin:1em auto 1em 3em;
 }
-#opened_list div i{
+.opened_list div i{
     font-size: 1em;
     color:var(--texts_color-white);
     margin-right: 1em;
 }
-#opened_list div p{
+.opened_list div p{
     font-size: 0.8em;
     font-family:var(--header_footer_text_style);
     color:var(--texts_color-white);
 }
-#opened_list ul li:hover{
+.opened_list ul li:hover{
     background-color:rgba(256, 256, 256, 1);
 }
-#opened_list div:hover #world{
+.opened_list div:hover #world{
     transform: rotate3d(0, 1, 0, 360deg);
     transition: 1.5s ease-in-out;
 }
-#opened_list ul li:hover a{
+.opened_list ul li:hover a{
     color: var(--assistant_color-blue);
 }
 
@@ -326,34 +330,34 @@ footer #footer-top-section {
     }
 }
 @media(max-width: 717px){
-    #opened_list{
+    .opened_list{
      font-size: 60%;
     }
 
  }
  @media(max-width: 450px){
-    #opened_list{
+    .opened_list{
         font-size: 40%;
     }
-    #opened_list ul li{
+    .opened_list ul li{
         padding: 3em 3em;   
     }
-    #opened_list div{
+    .opened_list div{
         margin:3em auto 3em 3em;
     }
  }
  @media(max-width: 335px){
-    #opened_list{
+    .opened_list{
      font-size: 20%;
     }
-    #opened_list{
+    .opened_list{
         width: -webkit-max-content;
         width: max-content;
     }
-    #opened_list ul li{
+    .opened_list ul li{
         padding: 6em 20em 6em 6em;
     }
-    #opened_list div{
+    .opened_list div{
         margin:6em auto 6em 6em;
     }
  }
