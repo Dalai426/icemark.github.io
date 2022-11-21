@@ -38,44 +38,58 @@
     <link rel="stylesheet" href="css/index_homePage.css">
     <link rel="stylesheet" href="css/header_footer.css">
 </head>
-<script src="./js/header_footer.js" type="module" async></script>
-<script src="./js/loading.js" async></script>
-<script src="./js/index.js" defer></script>
+<script src="./js/header_footer.js"></script>
+<script src="./js/loading.js"></script>
+<script src="./js/index.js"></script>
 <body>
     <div id="loader"></div>
     <header>
     <icemark-header></icemark-header>
     </header>
-    <icemark-open></icemark-open>
-    
-    
+   <article id="opened_list">
+        <ul>
+            <li><a href="BaiguullagiinTaniltsuulga.html">КОМПАНЫ ТУХАЙ</a></li>
+            <li><a href="bvteegdehvvn_tanilcuulga&tus.html" aria-label="Бүтээгдэхүүний зургууд, дэлгэрэнгүй мэдээлэл">БҮТЭЭГДЭХҮҮНИЙ ТАНИЛЦУУЛГА</a></li>
+            <li><a href="News.html">МЭДЭЭ МЭДЭЭЛЭЛ</a></li>
+            <li class="border"><a href="sanalHuselt.html">САНАЛ ХҮСЭЛТ</a></li>
+        </ul>
+        <div>
+        <i class="fas fa-globe" id="world"></i>
+        <p>EN</p><p>/</p><p>MON</p>
+        </div>
+    </article>
+
     <main >
+        
+        
         <section class="slider">
-            <picture class="mySlides">
-                <source media="(min-width: 1024px)" srcset="index_pictures/iberry_purvee.png">
-                <source media="(max-width: 768px)" srcset="index_pictures/iberry_purvee.png">
-                <img src="index_pictures/iberry_purvee.png" alt="Icemark">
-            </picture>
-
-       
-
-            <picture class="mySlides">
-                <source media="(min-width: 1024px)" srcset="index_pictures/mocky.jpg">
-                <source media="(max-width: 768px)" srcset="index_pictures/mocky.jpg">
-                <img src="index_pictures/mocky.jpg" alt="Icemark" >
-            </picture>
-
-            <picture class="mySlides">
-                <source media="(min-width: 1024px)" srcset="index_pictures/zuv_zairmag.jpg">
-                <source media="(max-width: 768px)" srcset="index_pictures/zuv_zairmag.jpg">
-                <img src="index_pictures/zuv_zairmag.jpg" alt="Icemark" >
-            </picture> 
-       
-      
-          </section>
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+        <div class="image-container">
+            <div class="slider-img1 slide"></div>
+            <div class="slider-img2 slide"></div>
+            <div class="slider-img3 slide"></div>
+        </div>
+            
+        </section>
+          <script >
           
+            
+           
+            
+          </script>
         <section class="product">
-          
+          <!--<a href="${this.href}">
+        <article class="p-art">
+            <picture class="products">
+                <source media="(min-width: 1024px)" srcset="${this.mmin}">
+                <source media="(max-width: 768px)" srcset="${this.mmax}">
+                <img src="${this.src}" alt="Icemark">
+            </picture> 
+        </article>
+        <h2>${this.content}</h2>
+        </a> -->
         </section>
 
         <section class="intro">
@@ -85,12 +99,8 @@
                 <section>
                     
                     <article class="intro-image">    
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="index_pictures/tus_imperia2.jpg">
-                        <source media="(max-width: 768px)" srcset="index_pictures/tus_imperia2.jpg"">
-                        <img src="index_pictures/tus_imperia2.jpg" alt="Аз жаргалан амт, Айсмарк" >
-                    </picture>
-                </article> 
+                 
+                   </article> 
               </section>
 
               <section>
@@ -113,57 +123,79 @@
         <section class="news">
             
            <a href="#">
-             <article>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcset="index_pictures/news1.png">
-                        <source media="(max-width: 768px)" srcset="index_pictures/news1.png">
-                        <img src="index_pictures/news1.png" alt="Шинэ үйлдвэр" >
-                    </picture>
+             <article class="img-1">
+           
                  
                   <section class="text">  
                     <h2>Айсмарк компани нь хайрцаг буцаан авах аянаа</h2>
-                    <div class="date">2022.01.01</div>
+
+                    <div class="icons">
+                        <p>
+                            <i class="fa-sharp fa-solid fa-comment"></i>
+
+                            <span>12</span>
+                            <i class="fa-solid fa-eye"></i>
+                            <span>2</span>
+                        </p>
+                        <div class="date">2022.01.01</div>
+                    </div>
+                    
                 </section> 
                </article>  
             </a>
            <a href="#">
-            <article>
-                <picture>
-                    <source media="(min-width: 1024px)" srcset="index_pictures/news2.png">
-                    <source media="(max-width: 768px)" srcset="index_pictures/news2.png">
-                    <img src="index_pictures/news2.png" alt="Нисэх онгоцны буудал" >
-                </picture>
+            <article class="img-2">
+               
                 <section class="text"> 
-                <h2>Айсмарк нь менежментийн нэгдсэн тогтолцоонд</h2>
-                <div class="date">2022.01.01</div>
-            </section> 
+                    <h2>Айсмарк нь менежментийн нэгдсэн тогтолцоонд</h2>
+                    <div class="icons">
+                        <p>
+                            <i class="fa-sharp fa-solid fa-comment"></i>
+
+                            <span>12</span>
+                            <i class="fa-solid fa-eye"></i>
+                            <span>2</span>
+                        </p>
+                        <div class="date">2022.01.01</div>
+                    </div>
+               </section> 
             </article>
         </a>
 
         <a href="#">
-            <article>
-                <picture>
-                    <source media="(min-width: 1024px)" srcset="index_pictures/news3.png">
-                    <source media="(max-width: 768px)" srcset="index_pictures/news3.png">
-                    <img src="index_pictures/news3.png" alt="ISO 9001" >
-                </picture>
+            <article class=" img-3">
+                   
                 <section class="text"> 
                 <h2>Айсмарк Компани нь ISO 9001 чанарын менежментийн</h2>
-                <div class="date">2022.01.02</div>
+                <div class="icons">
+                    <p>
+                        <i class="fa-sharp fa-solid fa-comment"></i>
+
+                        <span>12</span>
+                        <i class="fa-solid fa-eye"></i>
+                        <span>2</span>
+                    </p>
+                    <div class="date">2022.01.01</div>
+                </div>
             </section> 
             </article>
         </a>
 
         <a href="#">    
-            <article>
-                <picture>
-                    <source media="(min-width: 1024px)" srcset="pictures/frame2.jpg">
-                    <source media="(max-width: 768px)" srcset="pictures/frame2.jpg">
-                    <img src=" pictures/frame2.jpg " alt="ISO 9001">
-                </picture>
-                <section class="text">
+            <article class=" img-4">
+                
+            <section class="text">
                 <h2>Айсмарк Компани нь ISO 9001 чанарын менежментийн</h2>
-                <div class="date">2022.01.03</div>
+                <div class="icons">
+                    <p>
+                        <i class="fa-sharp fa-solid fa-comment"></i>
+
+                        <span>12</span>
+                        <i class="fa-solid fa-eye"></i>
+                        <span>2</span>
+                    </p>
+                    <div class="date">2022.01.01</div>
+                </div>
             </section>
             </article>
         </a>

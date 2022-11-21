@@ -35,6 +35,7 @@
 --mocktail-color: rgba(137, 157, 72, 1);
 --color-black:#000;
 --color-white: #FFFFFF; 
+--playbutton_color:	#778899;
 --opacity-black:rgba(0, 0, 0, 0.7);
 --bvteegdehvvn_tus_bvr_window_foot:#0078AC;
 --mocktail_color:#FEE715FF;
@@ -75,15 +76,18 @@
 /*tsogoo's variable*/
 
 /*.slider*/
---slider-height:34rem;
+--slider-height:27rem;
 --slider-heightT:20rem;
 --slider-heightM:10rem;
 
 --news-line-width:80%;
 /*product*/
---section-product-tmargin: 2rem;
+
+--products-color:linear-gradient(180deg, #f79c48 0%, #db7f15 53.93%);
+--section-product-tpadding: 1rem;
+--section-product-tmargin: 1rem;
 --product-a-width: 12rem;
---product-a-Rmargin: 1rem 2rem;
+--product-a-Rmargin: 1rem 1rem;
 --product-a-height:12rem;
 /*tsogoo's font family*/
 
@@ -93,6 +97,7 @@
 --n-height: 22rem;
 --n-Rheight: 25rem;
 --n-article-height: 18rem;
+--n-article-height-1: 11rem;
 --n-article-Rheight: 14rem;
 
 --n-article-Rmargins: 2rem 3rem 1.5rem 3rem;
@@ -109,7 +114,7 @@
 --article-grid-row:30rem;
 --article-grid-Mrow:40rem;
 --article-grid-columns:50% 50%;
---article-grid-row-tablet:20rem 30rem;
+--article-grid-row-tablet:30rem 30rem;
 --article-grid-columns-tablet:100%;
 /*intro paddings*/
 --article-padding:3rem;
