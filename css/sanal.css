@@ -39,7 +39,7 @@ main{
     font-family: var(--nunito);
 }
 .contain h4>span{
-    color: #FF6C00;
+    color:#FF4C00;
 }
 .contain form fieldset{
     width: 100%;
@@ -162,3 +162,4 @@ main{
     }
   
  }
+
