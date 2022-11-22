@@ -51,7 +51,9 @@ main a article p{
     font-family: var(--intro-h1-ff);
 }
 .date{
-    margin-top: 1rem;
+    margin-top: auto;
+    margin-bottom: 0rem;
+    align-self: end;
     font-family: var(--pre-news-ffamily);
     color: var(--color-p);
 }
@@ -108,3 +110,4 @@ main a article p,h1{
         margin: 1rem 1rem;
     }
 }
+
