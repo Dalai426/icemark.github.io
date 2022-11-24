@@ -36,7 +36,6 @@ main a picture{
     width: 40%;
     height: 100%;
     overflow: hidden;
-    background-color: aqua;
 }
 main a article {
     width: calc(60% - 2rem);
@@ -130,4 +129,3 @@ main a article p,h3{
         font-size: 20%;
     }
  }
-
