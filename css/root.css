@@ -5,17 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /*tsogoo*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-@import "https://unpkg.com/open-props";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Pacifico&family=Pattaya&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Manrope&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Manrope&family=Montserrat+Alternates:wght@300&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Josefin+Sans&family=Manrope&family=Montserrat+Alternates:wght@300&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 :root{
 /*dalai's variable*/
 
@@ -108,13 +102,13 @@
 
 --news-box-shadow: 0px 8px 8px 0px #c2bfbf;
 --f_size_products:  1rem;
-
+--txt-bgcolor:rgba(10, 171, 196, 0.8);
 /*intro vars*/
 
 
 --article-grid-row:30rem;
 --article-grid-Mrow:40rem;
---article-grid-columns:50% 50%;
+--article-grid-columns:60% 40%;
 --article-grid-row-tablet:30rem 30rem;
 --article-grid-columns-tablet:100%;
 /*intro paddings*/
@@ -149,20 +143,22 @@
 /*btn width*/
 --btn-color:rgb(250, 248, 248);
 --btn-width:12rem;
---btn-padding:1rem 2rem;
+--btn-padding:1rem 1rem;
 --margin-top:2rem;
 --btn-font-size:1rem;
 /*font families*/
-
+--intro-p: 'Fira Sans', sans-serif;
 --Jos-family: 'Josefin Sans', sans-serif;
 --Mont-family: 'Montserrat', sans-serif;
 --Comforta-ff:'Comfortaa', cursive;
 --intro-var2-ff:'Manrope', sans-serif;
---pre-news-ffamily: 'Montserrat', sans-serif;
+--pre-news-ffamily: 'Raleway' ,sans-serif;
+--intro-h1-ff: 'Overlock', cursive;
 --font-family: 'Raleway' ,sans-serif;
 --product-font-family: 'Pattaya', sans-serif;
   /*color*/
 --intro-span1:#0078AC;
+
 --intro-span2:#FF6C00;
 
   --icon-size:7rem;

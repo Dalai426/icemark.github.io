@@ -17,10 +17,11 @@ body{
     background-color: yellow;
     text-align: center;
     overflow: hidden;
+   
   }
   .image-container {
     width: 300%;
-    background-color: pink;
+    
     height: 100%;
     clear: both;
     position: relative;
@@ -66,7 +67,7 @@ body{
   }
 
 .slider-img1{
-    background-image: url("../pictures/Home_img.png"); /* The image used */
+    background-image: url("../pictures/Home_img.webp"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
    
     background-position: center; /* Center the image */
@@ -75,7 +76,7 @@ body{
 }
 
 .slider-img2{
-    background-image: url("../index_pictures/mocky.jpg"); /* The image used */
+    background-image: url("../index_pictures/mocky.webp"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     
     
@@ -85,7 +86,7 @@ body{
 }
 
 .slider-img3{
-    background-image: url("../index_pictures/zuv_zairmag.jpg"); /* The image used */
+    background-image: url("../index_pictures/zuv_zairmag.webp"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
    
     background-position: center; /* Center the image */
@@ -112,13 +113,12 @@ body{
 .product{
     display: flex;
     justify-content: space-evenly;
-   
     flex-wrap:wrap;
-  
+    
     margin-bottom: var(--section-product-tmargin);
 }
 .product a{
-    width: calc(12.5% - 1rem);
+    width: 9rem;
     height: 13rem;
     margin: 1rem 0.5rem;
     padding: 0;
@@ -140,7 +140,7 @@ body{
     transition: all 1s ease;
 }
 .product a:nth-child(1) article{
-    background-image: url("../index_pictures/mello.jpg"); 
+    background-image: url("../index_pictures/mello.webp"); 
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
@@ -149,58 +149,56 @@ body{
 .product a:nth-child(2) article{
     background-image: url("../index_pictures/choco.jpg"); 
     background-color: #cccccc;  
-    background-position: center; 
+    background-position: top left; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 .product a:nth-child(3) article{
-    background-image: url("../index_pictures/tus_bambar3.jpg"); 
+    background-image: url("../index_pictures/tus_bambar3.webp"); 
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 .product a:nth-child(4) article{
-    background-image: url("../index_pictures/teso_ice.jpg"); 
+    background-image: url("../index_pictures/teso_ice.webp"); 
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 .product a:nth-child(5) article{
-    background-image: url("../index_pictures/vannila.jpg"); 
+    background-image: url("../index_pictures/vannila.webp"); 
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 .product a:nth-child(6) article{
-    background-image: url("../index_pictures/cake.jpg"); 
+    background-image: url("../index_pictures/cake.webp"); 
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 .product a:nth-child(7) article{
-    background-image: url("../index_pictures/tus_mock.jpg"); 
+    background-image: url("../index_pictures/tus_mock.webp"); 
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 .product a:nth-child(8) article{
-    background-image: url("../index_pictures/tus_tunh2.jpg"); 
+    background-image: url("../index_pictures/tus_tunh2.webp"); 
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
-    background-size: 150% 180%; 
+    background-size: 120% auto; 
 }
-.product a:nth-child(even) article{
-    border-radius:60% 44% 48% 48%;;
+.product a article{
+    border-radius:44% 44% 48% 48%;;
 }
-.product a:nth-child(odd) article{
-    border-radius: 44% 60% 48% 48%;
-}
+
 .products{
     width: 100%;
     height: 100%;
@@ -209,25 +207,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.product .p-art img{
-  
-    aspect-ratio: initial;
-    height: 100%;
-}
-.product a:nth-child(1) .products img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom:0px;
 
-}
-.product a:nth-child(7) .products img{
-    width: 100%;
-    height: auto;
-}
-.product a:nth-child(8) .products img{
-    height: 108%;
-}
+
 .product a:hover article{
     transform:scale(1.1,1.1);
  
@@ -277,24 +258,22 @@ body{
     
 }
 .intro >article >section:nth-child(1){
-   padding: 1rem;
+    text-align: center;
     overflow: hidden;
-   
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-.intro img,source {
-    width: var(--width-size);
-    aspect-ratio: initial;
-   
-}
+
 .intro-image{
-    background-image: url("../pictures/icemark 20logo 202.png"); /* The image used */
+    background-image: url("../pictures/icemark-20logo-202.webp"); /* The image used */
     background-color: #cccccc; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: 100% 100%;
     overflow: hidden;
-    width: var(--width-size);
-    height:  var(--width-size);
+    width: 32rem;
+    height: 28rem ;
     border-radius: 44% 44% 48% 48%;
 }
 .intro >article >section:nth-child(2){
@@ -303,13 +282,14 @@ body{
     padding: 2rem 2rem;
 }
 .intro >article >section:nth-child(2) h1{
-    font-size: 4rem;
-    font-family: var(--Comforta-ff);
+    font-size: 3rem;
+
+font-family: var(--intro-var2-ff);
     font-weight: 300;
     
 }
 .intro >article >section:nth-child(2) h1 span:first-child{
-    font-style: italic;
+    
     color: var(  --header_footer-linear);
    
 }
@@ -329,7 +309,15 @@ body{
     letter-spacing: 1pt;
     text-align: justify;
     color: var( --color-p);
-    font-family: var(--Mont-family);
+    font-family: var(--intro-p);
+    font-style: normal;
+}
+.intro >article >section:nth-child(2) .btn{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 .intro >article >section:nth-child(2) button{
     color: var(--btn-color);
@@ -339,7 +327,7 @@ body{
     width: var(--btn-width);
    margin-top: var(--margin-top);
     padding: var(--btn-padding);
-    background-color:  rgba(00, 00, 00, 0.5);
+    background-color:  var(--txt-bgcolor);
     border-radius: 1rem;
     border: var(--n-border);
     font-family: var(--font-family);
@@ -421,28 +409,28 @@ body{
    
 
 .news .img-1{
-    background-image: url("../index_pictures/news1.png");
+    background-image: url("../index_pictures/news1.webp");
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 .news .img-2{
-    background-image: url("../index_pictures/news2.png ");
+    background-image: url("../index_pictures/news2.webp ");
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 .news .img-3{
-    background-image: url("../index_pictures/news3.png");
+    background-image: url("../index_pictures/news3.webp");
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 .news .img-4{
-    background-image: url("../pictures/frame2.jpg");
+    background-image: url("../pictures/frame2.webp");
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
@@ -450,10 +438,12 @@ body{
 }
 
  .news article  .text{
+    width: var(--width-size);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(25, 83, 241, 0.5);
+    background-color: var(--txt-bgcolor);
+    
     color: var(--choice-font-color);
  }
  section.news a article h2{
@@ -463,6 +453,8 @@ body{
     font-weight: 100;
  }
  .news .icons{
+    width:100%
+    ;
     padding: 0.2rem 1rem;
     display: flex;
     flex-direction: row;
@@ -492,21 +484,8 @@ body{
     .slider {
         height: var(--slider-heightT);
     }
-    .mySlides  img {
-        width: var(--width-size);
-       aspect-ratio: initial;
-        
-    }
-    .product a{
-        width: calc(25% - 1rem);
-        margin: 1rem 1rem;
-        padding: 0;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+   
+
     .intro > article{
     
        
@@ -520,14 +499,23 @@ body{
         z-index: 0;
         padding: var(--article-padding);
     }
+    .intro >article >section:nth-child(2) p{
+        text-align: center;
+    }
     .intro-image{
         
-        width: calc(100% - 5rem);
-        margin: 0 2.5rem;
-        height:  var(--width-size);
+       
         background-size: 100% 100%;
+        width: 25rem;
+        height: 25rem ;
     }
-  
+    .intro >article >section:nth-child(2) .btn{
+   
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
     .news a:nth-child(3){
         display: none;
     }
@@ -558,15 +546,7 @@ body{
         height: var(--slider-heightM);
     }
    
-    .product a{
-        z-index: -1;
-        display: inline-block;
-        width: calc(50% - 2rem);
-        margin: var(--product-a-Rmargin);
-        height: var(--product-a-height);
-        text-decoration: none;
-    
-    }
+
     .intro > article{
     
         
@@ -583,9 +563,9 @@ body{
     }
     .intro-image{
         
-        width: var(--width-size);
-       margin: 0;
-        height:  var(--width-size);
+       
+        width: 18rem;
+        height: 18rem;
         background-size: 100% 100%;
     }
     .intro >article >section:nth-child(2) h1{
@@ -594,7 +574,9 @@ body{
         
         
     }
- 
+    .intro >article >section:nth-child(2) p{
+        text-align: center;
+    }
 .news{
     display: grid;
     grid-template-columns: 100%;

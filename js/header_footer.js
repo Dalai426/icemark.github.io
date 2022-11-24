@@ -3,10 +3,10 @@ class navbar extends HTMLElement {
     connectedCallback() {
       this.parentNode.innerHTML = `
       <picture class="logo">
-          <source media="(min-width: 1024px)" srcset="pictures/ICEMARK.png">
-          <source media="(max-width: 768px)" srcset="pictures/ICEMARK.png">
+          <source media="(min-width: 1024px)" srcset="pictures/ICEMARK.webp">
+          <source media="(max-width: 768px)" srcset="pictures/ICEMARK.webp">
           <a href="index.html">
-              <img src="pictures/ICEMARK.png" alt="Icemark">
+              <img src="pictures/ICEMARK.webp" alt="Icemark">
           </a>
       </picture>
       <nav class="head_menu">
