@@ -6,16 +6,15 @@
 }
 main img {
     width: 100%;
-    height: 100%;
+    aspect-ratio: initial;
+    height: auto;
 }
 main{
     padding: 2rem 4rem;
     padding-bottom: 1rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 18rem 18rem 18rem 18rem
-      18rem ;
-    
+    grid-template-rows: 18rem 18rem 18rem 18rem 18rem ;
 }
 
 main section{
@@ -35,6 +34,9 @@ main a{
 }
 main a picture{
     width: 40%;
+    height: 100%;
+    overflow: hidden;
+    background-color: aqua;
 }
 main a article {
     width: calc(60% - 2rem);
@@ -43,12 +45,14 @@ main a article {
     flex-direction: column;
    
 }
-main a article h1{
+main a article h3{
     margin-bottom: 1rem;
+    font-size: 1rem;
     font-family: var(--pre-news-ffamily)
 }
 main a article p{
-    font-family: var(--intro-h1-ff);
+    font-family: var(--pre-news-ffamily);
+    font-size: 0.8rem;
 }
 .date{
     margin-top: auto;
@@ -56,8 +60,9 @@ main a article p{
     align-self: end;
     font-family: var(--pre-news-ffamily);
     color: var(--color-p);
+    font-size: 0.7rem;
 }
-main a article p,h1{
+main a article p,h3{
     color: rgb(34, 32, 30);
     text-align: justify;
 }
@@ -110,4 +115,19 @@ main a article p,h1{
         margin: 1rem 1rem;
     }
 }
+@media(max-width: 460px){
+   html{
+    font-size: 50%;
+   }
+}
+@media(max-width: 229px){
+    html{
+     font-size: 30%;
+    }
+ }
+ @media(max-width: 143px){
+    html{
+        font-size: 20%;
+    }
+ }
 
