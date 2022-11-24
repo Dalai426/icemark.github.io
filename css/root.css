@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /*tsogoo*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
@@ -157,8 +158,7 @@
 --Mont-family: 'Montserrat', sans-serif;
 --Comforta-ff:'Comfortaa', cursive;
 --intro-var2-ff:'Manrope', sans-serif;
---pre-news-ffamily: 'Raleway' ,sans-serif;
---intro-h1-ff: 'Overlock', cursive;
+--pre-news-ffamily: 'Montserrat', sans-serif;
 --font-family: 'Raleway' ,sans-serif;
 --product-font-family: 'Pattaya', sans-serif;
   /*color*/
