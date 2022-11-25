@@ -35,7 +35,7 @@ export default class RecentNews{
     }
     
     download(){
-        fetch("https://dalai426.github.io/icemark.github.io/json/medee.json",{
+        fetch(`${this.jsonUrl}`,{
         method:'POST',
         headers:{
             'Accept':'application/json',
