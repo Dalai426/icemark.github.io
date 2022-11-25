@@ -35,8 +35,13 @@ export default class RecentNews{
     }
     
     download(){
-        fetch(`${this.jsonUrl}`,
-        { mode: "no-cors" })
+        fetch(`${this.jsonUrl}`,{
+        method:'POST',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json',
+        },
+        mode:'no-cors'})
         .then(response=>{
             response.json()
             .then(jsob_data=>{
