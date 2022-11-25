@@ -43,7 +43,6 @@ export default class RecentNews{
             response.json()
             .then(jsob_data=>{
                 document.getElementsByTagName("main")[0].innerHTML=``;
-                this.pages(jsob_data.length);
                 const filteredArray=jsob_data.filter((news,index)=>{return this.current_page*10<=index && index<this.current_page*10+10});
                 document.getElementsByTagName("main")[0].insertAdjacentHTML("afterbegin",
                     filteredArray.map(newNews=>{
@@ -75,11 +74,6 @@ export default class RecentNews{
         let contain=document.querySelector(".link");
         contain.innerHTML=``;
         contain.innerHTML+=ret;
-        document.getElementById("nex").addEventListener("click",()=>(this.page_p(1)));
-        document.getElementById("prv").addEventListener("click",()=>(this.page_p(-1)));
-        for (let i=start;i<=start+data_len;i++) {
-            document.getElementsByClassName("page")[i-start].addEventListener("click",()=>{this.change_page(i)});
-        }
     } 
     page_p(page){
         if(this.current_page==0 && page==-1){
