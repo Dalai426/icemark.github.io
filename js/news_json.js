@@ -25,7 +25,6 @@ class RecentNewsItem {
        </a></section>`
     }
 }
-
 class RecentNews{
 
     constructor(jsonUrl) {
