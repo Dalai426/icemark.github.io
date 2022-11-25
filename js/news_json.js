@@ -36,8 +36,7 @@ class RecentNews{
     }
     
     download(){
-        fetch(`${this.jsonUrl}`,
-        { mode: "no-cors" })
+        fetch(`${this.jsonUrl}`)
         .then(response=>{
             response.json()
             .then(jsob_data=>{
