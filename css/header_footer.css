@@ -348,7 +348,7 @@ footer #footer-top-section {
  }
  @media(max-width: 335px){
     .opened_list{
-     font-size: 20%;
+        font-size: 20%;
     }
     .opened_list{
         width: -webkit-max-content;

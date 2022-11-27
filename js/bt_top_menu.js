@@ -1,4 +1,3 @@
-resize_top_menu();
 let mql = window.matchMedia('(min-width: 691px)');
 let scroll_pos;
 window.onscroll=()=>{scroll()};
