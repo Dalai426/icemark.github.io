@@ -3,26 +3,284 @@
   <head>
     <title>Title of the Document</title>
     <style>
-      h1 {
-        color: red;
+      @import url('./css/root.css');
+      /*
+      body{
+        background-color: aqua;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
       }
+      .gallery{
+        width: 100%;
+      }
+      .gallery-container{
+        align-items: center;
+        display: flex;
+        height: 400px;
+        margin: 0 auto;
+        max-width: 1000px;
+        position: relative;
+      }
+      .gallery-item{
+        height: 200px;
+        opacity: 0;
+        position: absolute;
+        transition:all 0.3s ease-in-out;
+        width: 330px;
+        z-index:0;
+        border-radius: 15px;
+        background-size: contain;
+      }
+      .gallery-item-1{
+        left: 15%;
+        opacity: .4;
+        transform: translateX(-50%);
+      }
+      .gallery-item-2,.gallery-item-4{
+        height: 250px;
+        opacity: 0.8;
+        width: 380px;
+        z-index: 1;
+      }
+      .gallery-item-2{
+        left: 30%;
+        transform: translateX(-50%);
+      }
+      .gallery-item-3{
+        height: 300px;
+        opacity: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 430px;
+        z-index: 2;
+      }
+      .gallery-item-4{
+        left: 70%;
+        transform: translateX(-50%);
+      }
+
+      .gallery-item-5{
+        left: 85%;
+        opacity: .4;
+        transform: translateX(-50%);
+      }
+      */
+      /*bvteegdehvvn tus bvr deeer*/
+
+.bvteegdehvvn_tus{
+    margin:1% auto;
+    width: 60%;
+    height: auto;
+    padding-bottom:3em;
+    text-align: center;
+    border-radius:var(--bvteegdehvvntusbvr_window_border);
+    background: var(--bvteegdehvvn_window_linear);
+    filter: var(--shadow-bvteegdehvvn-window);
+    font-size: 1rem;
+    z-index: 101;
+}
+
+#x{
+    width: 100%;
+    text-align: right;
+    padding-right: 3.5em;
+    margin-top: 3em;
+}
+#x:hover{
+    color: var(--hover_color_grey);
+}
+.bvteegdehvvn_tus .head{
+    width: 100%;
+}
+.tus_zurag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin: 1em auto;
+}
+
+
+.bvteegdehvvn_tus .frame{
+    border-radius: 5%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 50/50;
+    width:45%;
+    height:100%;
+    transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+.tus_zurag img{
+    aspect-ratio: initial;
+    height:102%;
+    width: auto;
+}
+.tus_zurag img:nth-child(n+3){
+    display: none;
+}
+.bvteegdehvvn_tus .frame-1{
+    margin-right:var(--tus_bvteegdehvvn-3_zurag_hoiguuroroh);
+    filter: var(--bvteegdehvvn_tus_bvr_shadow_zah_imgs);
+    width: var(--bvteegdehvvn_tus_bvr_window_img_zah_width);
+    opacity:var(--opacity_img_zah);
+}
+.bvteegdehvvn_tus .frame-3{
+
+    margin-left:var(--tus_bvteegdehvvn-3_zurag_hoiguuroroh);
+    filter: var(--bvteegdehvvn_tus_bvr_shadow_zah_imgs);
+    width:var(--bvteegdehvvn_tus_bvr_window_img_zah_width);
+    opacity: var(--opacity_img_zah);
+}
+.bvteegdehvvn_tus .frame-2{
+    z-index: 1;
+    filter: var(--bvteegdehvvn_tus_bvr_shadow_gol_imgs);
+}
+
+
+.left{
+    font-size: 3.5em;
+    color: var(--color-white);
+    margin-right: -10%;
+    z-index: 1;
+}
+.right{
+    font-size: 3.5em;
+    color: var(--color-white);
+    margin-left:-10%;
+    z-index: 1;
+}
+.right:hover,.left:hover{
+    color: var(--hover_color_grey);
+}
     </style>
   </head>
   <body>
-    <div id="elem">
-      <h1>Welcome to W3Docs</h1>
-      <p>Move the mouse over the text</p>
-      <div>
-        Position:
-        <p id='text'></p>
+<!--
+    <div class="gallery">
+      <div class="gallery-container">
+        <img class="gallery-item gallery-item-1" src="./pictures_bvteegdehvvniitanilcuulga/alyaskaface.png" data-index="1">
+        <img class="gallery-item gallery-item-2" src="./pictures_bvteegdehvvniitanilcuulga/tus_alyaska1.jpg" data-index="2">
+        <img class="gallery-item gallery-item-3" src="./pictures_bvteegdehvvniitanilcuulga/tus_alyaska2.png" data-index="3">
+        <img class="gallery-item gallery-item-4" src="./pictures_bvteegdehvvniitanilcuulga/tus_alyaska4.png" data-index="4">
+        <img class="gallery-item gallery-item-5" src="./pictures_bvteegdehvvniitanilcuulga/alyaskaface.png" data-index="5">
       </div>
+      <div class="gallery-controls"><div id="prv">prv</div><div id="next">next</div></div>
     </div>
+  
     <script>
-      let elem = document.getElementById('elem');
-      document.addEventListener('mousemove', function(event) {
-        let rect = elem.getBoundingClientRect();
-        document.getElementById('text').innerHTML = 'left: ' + rect.x + ', ' + 'top: ' + rect.y;
-      });
-    </script>
+      const galleryContainer=document.querySelector('.gallery-container');
+      const galleryControlsContainer=document.querySelector('.gallery-controls');
+      const galleryItems=document.querySelectorAll('.gallery-item');
+      class Carousel{ 
+        constructor(container,items,controls){
+          this.carouselContainer=container;
+          this.carouselControls=controls;
+          this.carouselArray=[...items];
+        }
+        updateGallery(){
+          this.carouselArray.forEach(el=>{
+            el.classList.remove('gallery-item-1');
+            el.classList.remove('gallery-item-2');
+            el.classList.remove('gallery-item-3');
+            el.classList.remove('gallery-item-4');
+            el.classList.remove('gallery-item-5');
+          });
+          this.carouselArray.slice(0,5).forEach((el,i)=>{
+            el.classList.add(`gallery-item-${i+1}`);
+          });
+        }
+
+        setCurrentState(direction){
+          if(direction==1){
+            this.carouselArray.unshift(this.carouselArray.pop());
+          }else{
+            this.carouselArray.push(this.carouselArray.shift());
+          }
+          this.updateGallery();
+        }
+        useControls(){
+          const next=document.getElementById("next");
+          next.addEventListener('click',e=>{
+            e.preventDefault();
+            this.setCurrentState(1);
+          });
+          const prv=document.getElementById("next");
+          prv.addEventListener('click',e=>{
+            e.preventDefault();
+            this.setCurrentState(2);
+          });
+        }
+
+      }
+    const ec=new Carousel(galleryContainer,galleryItems,galleryControlsContainer);
+    ec.useControls();
+  </script>
+-->
+    
+    <article class="bvteegdehvvn_tus" id="MELLO">
+        <section class="head">
+            <i class="fa-solid fa-x" id="x"></i>
+            <article class="tus_zurag">
+                <span class="left">❮</span>
+                <article class="frame frame-1"><img src="pictures_bvteegdehvvniitanilcuulga/tus_mello1.jpg" alt="cherry mello">
+                </article>
+                <article class="frame frame-2"><img src="pictures_bvteegdehvvniitanilcuulga/tus_mello2.jpg" alt="mango mello">
+                </article>
+                <article class="frame frame-3"><img src="pictures_bvteegdehvvniitanilcuulga/tus_mello3.jpg" alt="kiwi mello">
+                </article>
+                <img src="pictures_bvteegdehvvniitanilcuulga/mello.jpg" alt="kiwi mello">
+                <span class="right">❯</span>
+            </article>  
+        </section>
+    </article>
+    <script>
+      const galleryItems=document.querySelectorAll('.frame');
+      class Carousel{ 
+        constructor(items){
+          this.carouselArray=[...items];
+        }
+        updateGallery(){
+          this.carouselArray.forEach(el=>{
+            el.classList.remove('frame-1');
+            el.classList.remove('frame-2');
+            el.classList.remove('frame-3');
+          });
+          this.carouselArray.slice(0,3).forEach((el,i)=>{
+            el.classList.add(`frame-${i+1}`);
+          });
+        }
+
+        setCurrentState(direction){
+          if(direction==1){
+            this.carouselArray.unshift(this.carouselArray.pop());
+          }else{
+            this.carouselArray.push(this.carouselArray.shift());
+          }
+          this.updateGallery();
+        }
+        useControls(){
+          const next=document.querySelector(".right")
+          next.addEventListener('click',e=>{
+            e.preventDefault();
+            this.setCurrentState(1);
+          });
+          const prv=document.querySelector(".left");
+          prv.addEventListener('click',e=>{
+            e.preventDefault();
+            this.setCurrentState(2);
+          });
+        }
+
+      }
+    const ec=new Carousel(galleryItems);
+    ec.useControls();
+  </script>
   </body>
 </html>
