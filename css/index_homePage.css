@@ -481,9 +481,7 @@ font-family: var(--intro-var2-ff);
         transition:var(--header_transition);
     }
 
-    .slider {
-        height: var(--slider-heightT);
-    }
+   
    
 
     .intro > article{
@@ -542,9 +540,7 @@ font-family: var(--intro-var2-ff);
 
 }
 @media(max-width: 600px){
-    .slider {
-        height: var(--slider-heightM);
-    }
+  
    
 
     .intro > article{
