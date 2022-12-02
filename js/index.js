@@ -79,7 +79,7 @@ class MySubList{
       return    `<picture class="mySlides">
           <source media="(min-width: 1024px)" srcset="${this.mmin}">
           <source media="(max-width: 768px)" srcset="${this.mmax}">
-          <img src="${this.src}" alt="Icemark" >
+          <img src="${this.src}" alt="Icemark" loading="lazy" >
       </picture>`
   }
 }
