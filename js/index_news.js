@@ -3,7 +3,7 @@
 
  class News extends HTMLElement{
    connectedCallback(){
-    fetch(`../json/index_box.json`,
+    fetch(`./json/index_box.json`,
         { mode: "no-cors" })
         .then(response=>{
             response.json()
@@ -14,7 +14,7 @@
                 <article class="img-1">
                   <section class="text">  
                    <h2> ${j.h2} </h2>
-    
+  
                    <div class="icons">
                        <p>
                            <i class="fa-sharp fa-solid fa-comment"></i>
