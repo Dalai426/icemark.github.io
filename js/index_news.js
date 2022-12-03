@@ -61,7 +61,7 @@
 ]
  class News extends HTMLElement{
    connectedCallback(){
-    fetch(`../json/index_box.json`,
+    fetch(`./json/index_box.json`,
         { mode: "no-cors" })
         .then(response=>{
             response.json()
@@ -72,7 +72,7 @@
                 <article class="${j.class}">
                   <section class="text">  
                    <h2> ${j.h2} </h2>
-    
+  
                    <div class="icons">
                        <p>
                            <i class="fa-sharp fa-solid fa-comment"></i>
@@ -132,9 +132,6 @@ class MyA{
   }
   window.onload=()=>PList(products);
 
-  /*<picture>
-  <source media="(min-width: 1024px)" srcset="${this.mmin}">
-  <source media="(max-width: 768px)" srcset="${this.mmax}">
-  <img src="${this.src}" alt="" width="100px" height="100px
-  ">
-</picture>*/
+
+customElements.define("icemark-news-box",News);
+
