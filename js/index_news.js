@@ -133,5 +133,5 @@ class MyA{
   window.onload=()=>PList(products);
 
 
-customElements.define("icemark-news-box",News);
+
 
