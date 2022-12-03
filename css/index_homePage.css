@@ -411,10 +411,6 @@ font-family: var(--intro-var2-ff);
        
  }
  
-
-
-   
-
 .news .img-1{
     background-image: url("../index_pictures/news1.webp");
     background-color: #cccccc;  
@@ -527,7 +523,7 @@ font-family: var(--intro-var2-ff);
     .news a:nth-child(4){
         display: none;
     }
-    .news a{
+    .news icemark-news-box a{
         text-decoration: none;
         margin: var(--n-article-Rmargins);
         width: calc(50% - 6rem);
@@ -580,7 +576,7 @@ font-family: var(--intro-var2-ff);
     .intro >article >section:nth-child(2) p{
         text-align: center;
     }
-.news{
+.news icemark-news-box{
     display: grid;
     grid-template-columns: 100%;
   
@@ -588,7 +584,7 @@ font-family: var(--intro-var2-ff);
     
     var(--n-Rheight);
 }
-.news a{
+.news icemark-news-box a{
     text-decoration: none;
     margin: var(--n-article-Rmargins);
     width: calc(100% - 6rem);
