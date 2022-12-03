@@ -338,7 +338,7 @@ font-family: var(--intro-var2-ff);
     border-radius: 1rem;
     border: var(--n-border);
     font-family: var(--font-family);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease;
 }
 .intro >article >section:nth-child(2) button:hover{
     transform: scale(1.1,1.1);
@@ -408,9 +408,11 @@ font-family: var(--intro-var2-ff);
          box-shadow: var(--news-box-shadow);
          display: flex;
          align-items: flex-end;
-       
+       transition: all 0.5s ease;
  }
- 
+ .news article:hover{
+    transform: scale(1.1,1.1);
+ }
 .news .img-1{
     background-image: url("../index_pictures/news1.webp");
     background-color: #cccccc;  
