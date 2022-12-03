@@ -37,11 +37,11 @@
     <title>Icemark</title>
     <link rel="stylesheet" href="css/index_homePage.css">
     <link rel="stylesheet" href="css/header_footer.css">
+    <script  defer src="./js/header_footer.js" type="module"></script>
+    <script defer src="./js/loading.js"></script>
+   <script defer src="./js/index_news.js"></script>
 </head>
-<script src="./js/header_footer.js" type="module"></script>
-<script src="./js/loading.js"></script>
-<script src="./js/index.js"></script>
-<script defer src="./js/index_news.js"></script>
+
 <body>
     <div id="loader"></div>
     <header>
@@ -58,7 +58,7 @@
             <span id="slide-2"></span>
             <span id="slide-3"></span>
         <div class="image-container">
-            <div class="slider-img1 slide"></div>
+            <div class="slider-img1 slide" loading="lazy"></div>
             <div class="slider-img2 slide"></div>
             <div class="slider-img3 slide"></div>
         </div>
@@ -76,7 +76,8 @@
 
         <section class="intro">
 
-           
+
+            
             <article>
                 <section>
                     
@@ -107,84 +108,7 @@
             <icemark-news-box></icemark-news-box>
             
             
-       <!--    <a href="#">
-             <article class="img-1">
-           
-                 
-                  <section class="text">  
-                    <h2></h2>
-
-                    <div class="icons">
-                        <p>
-                            <i class="fa-sharp fa-solid fa-comment"></i>
-
-                            <span></span>
-                            <i class="fa-solid fa-eye"></i>
-                            <span></span>
-                        </p>
-                        <div class="date"></div>
-                    </div>
-                    
-                </section> 
-               </article>  
-            </a>
-
-           <a href="#">
-            <article class="img-2">
-               
-                <section class="text"> 
-                    <h2></h2>
-                    <div class="icons">
-                        <p>
-                            <i class="fa-sharp fa-solid fa-comment"></i>
-
-                            <span></span>
-                            <i class="fa-solid fa-eye"></i>
-                            <span>2</span>
-                        </p>
-                        <div class="date"></div>
-                    </div>
-               </section> 
-            </article>
-        </a>
-
-        <a href="#">
-            <article class=" img-3">
-                   
-                <section class="text"> 
-                <h2></h2>
-                <div class="icons">
-                    <p>
-                        <i class="fa-sharp fa-solid fa-comment"></i>
-
-                        <span></span>
-                        <i class="fa-solid fa-eye"></i>
-                        <span></span>
-                    </p>
-                    <div class="date"></div>
-                </div>
-            </section> 
-            </article>
-        </a>
-
-        <a href="#">    
-            <article class=" img-4">
-                
-            <section class="text">
-                <h2></h2>
-                <div class="icons">
-                    <p>
-                        <i class="fa-sharp fa-solid fa-comment"></i>
-
-                        <span></span>
-                        <i class="fa-solid fa-eye"></i>
-                        <span></span>
-                    </p>
-                    <div class="date"></div>
-                </div>
-            </section>
-            </article>
-        </a>-->
+      
         
         </section>
     </main>
