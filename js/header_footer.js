@@ -81,14 +81,14 @@ class navbar extends HTMLElement {
       <h4>© 2013 - 2022 <a href="http://www.teso.mn/">ТЭСО ГРУПП</a> - <a href="index.html">АЙСМАРК ХХК</a></h4>
       <address>
           <a href="https://www.facebook.com/icemark.mn/?ref=br_rs"><img src="pictures/icons8-facebook-90.png"
-                  alt="Facebook icon" width="109px" height="200px"></a>
+                  alt="Facebook icon" ></a>
           <a href="https://www.instagram.com/icemark_____/"><img src="pictures/icons8-instagram-90.png"
-                  alt="Instagram icon" width="109px" height="200px"></a>
+                  alt="Instagram icon" ></a>
           <a href="https://twitter.com/icelandmongolia"><img src="pictures/icons8-twitter-90.png"
-                  alt="Twitter icon" width="109px" height="200px"></a>
-          <a href="mailto: contact@teso.mn"><img src="pictures/icons8-google-96 20- 20Copy.png" alt="Google" width="109px" height="200px"></a>
+                  alt="Twitter icon" ></a>
+          <a href="mailto: contact@teso.mn"><img src="pictures/icons8-google-96 20- 20Copy.png" alt="Google" ></a>
           <a href="https://www.youtube.com/channel/UCXC01QJ4wx_vDjXV5fscvmw"><img
-                  src="pictures/icons8-youtube-logo-90.png" alt="youtube" width="109px" height="200px"></a>
+                  src="pictures/icons8-youtube-logo-90.png" alt="youtube" ></a>
       </address>
   </section>`;
     }
