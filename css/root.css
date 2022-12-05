@@ -12,7 +12,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 :root{
 /*dalai's variable*/
-
 /*root font prcentage*/
 --root_fontsize:70%;
 /*background colors*/
@@ -46,14 +45,17 @@
 --header_transition: 0.3s ease-in-out;
 /*other sizes*/
 --bvteegdehvvnii_tanilcuulga_article-width:30rem;
---tus_bvteegdehvvn-3_zurag_hoiguuroroh:-20%;
+--tus_bvteegdehvvn-3_zurag_hoiguuroroh:50%;
 --bvteegdehvvn_window_margins:5em;
 --shapes_img_bvteegdehvvn_tanilcuulga_width:22.8rem;
 --shapes_img_bvteegdehvvn_tanilcuulga_height:21.2rem;
 --bvteegdehvvntusbvr_window_border:15px;
 --bvteegdehvvn_tus_bvr_shadow_gol_imgs:drop-shadow(0.5em 0 0.25em rgba(0, 0, 0, 0.25)) drop-shadow(-0.25em 0 0.25em rgba(0, 0, 0, 0.25));
 --bvteegdehvvn_tus_bvr_shadow_zah_imgs:drop-shadow(0 0.25em 0.25em rgba(0, 0, 0, 0.25));
---bvteegdehvvn_tus_bvr_window_img_zah_width:39%;
+--bvteegdehvvn_tus_bvr_window_img_zah_width:38%;
+--bvteegdehvvn_tus_bvr_window_img_gol_width:44%;
+--bvteegdehvvn_tus_bvr_window_arrow_margin:30%;
+
 /*shadow*/
 --shadow-header:drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
 --shadow-bvteegdehvvn-window:drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
