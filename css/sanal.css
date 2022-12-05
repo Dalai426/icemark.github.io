@@ -19,7 +19,7 @@ main{
     background-color: white;
     font-family: var(--inter);
     box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
-    padding-bottom:5%;
+    padding-bottom:12%;
 }
 .form_contain{
     width: fit-content;
@@ -102,6 +102,9 @@ main{
     .picture{
         background-size: 100% auto;
     }
+    header{
+        font-size: 150%;
+    }
 
 }
 @media(max-width:636px){
@@ -126,16 +129,12 @@ main{
     .picture{
         display: none;
     }
+    .contain{
+        padding-bottom:20%;
+    }
     main{
         grid-template-columns: 100%;
         grid-template-rows: auto 30%;
-    }
-    .picture_2{
-        width: 100%;
-        background-color: #FF6C00;
-        background-image: url('../sanalHuselt/zairmag_back_2.png');
-        background-size: 100% auto;
-        background-position: center;
     }
 }
 @media(max-width:218px){
@@ -162,4 +161,3 @@ main{
     }
   
  }
-
