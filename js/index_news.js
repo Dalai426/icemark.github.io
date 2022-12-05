@@ -1,7 +1,7 @@
 
    /* fetch('../json/index_box.json', { mode: 'no-cors'}).then(res => res.json()).then(res => console.log);*/
 
-   const products=[
+/*const products=[
     {
       "href":"#",
       "src":"../index_pictures/mello.webp",
@@ -58,7 +58,7 @@
       "max":"../index_pictures/tus_tunh2.webp",
       "content":"<span> Мөнх тунх</span><br> зайрмаг"
     }
-]
+]*/
  class News extends HTMLElement{
    connectedCallback(){
     fetch(`./json/index_box.json`,

@@ -80,7 +80,7 @@ main a article p,h3{
     text-decoration: none;
     display: inline-block;
     padding: 10px 1rem;
-   
+    font-family: var(--pre-news-ffamily);
     color: black;
 }
 .link a:hover{
