@@ -1,4 +1,43 @@
 let tap;
+
+class Carousel{ 
+        constructor(items){
+          const galleryItems=items.querySelectorAll('.frame');
+          this.id=items;
+          this.carouselArray=[...galleryItems];
+        }
+        updateGallery(){
+          this.carouselArray.forEach(el=>{
+            for(var i=0; i<this.carouselArray.length; i++){
+              el.classList.remove(`frame-${i+1}`);
+            }
+          });
+          this.carouselArray.slice(0,this.carouselArray.length ).forEach((el,i)=>{
+            el.classList.add(`frame-${i+1}`);
+          });
+        }
+        setCurrentState(direction){
+          if(direction==1){
+            this.carouselArray.unshift(this.carouselArray.pop());
+          }else{
+            this.carouselArray.push(this.carouselArray.shift());
+          }
+          this.updateGallery();
+        }
+        useControls(){
+          const next=this.id.querySelector(".right")
+          next.addEventListener('click',e=>{
+            e.preventDefault();
+            this.setCurrentState(1);
+          });
+          const prv=this.id.querySelector(".left");
+          prv.addEventListener('click',e=>{
+            e.preventDefault();
+            this.setCurrentState(2);
+          });
+        }
+}
+
 function MUNH(){
     tap=document.getElementById("MUNH");
     tap.parentNode.style.display="block";
@@ -114,4 +153,6 @@ function listener(){
     tap.childNodes[1].childNodes[1].addEventListener('click',()=>{
         tap.parentNode.style.display="none";
     });
+    const ec=new Carousel(tap.parentNode);
+    ec.useControls();
 }
