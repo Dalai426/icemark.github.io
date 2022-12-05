@@ -382,12 +382,12 @@ font-family: var(--intro-var2-ff);
 
 
 
-.news icemark-news-box{
+.news {
  display: flex;
  flex-direction: row;
  flex-wrap: nowrap;
 }
-.news icemark-news-box a{
+.news a{
     text-decoration: none;
     margin: var(--n-article-margins);
     width: calc(25% - 4rem);
@@ -578,7 +578,7 @@ font-family: var(--intro-var2-ff);
     .intro >article >section:nth-child(2) p{
         text-align: center;
     }
-.news icemark-news-box{
+.news {
     display: grid;
     grid-template-columns: 100%;
   
@@ -586,7 +586,7 @@ font-family: var(--intro-var2-ff);
     
     var(--n-Rheight);
 }
-.news icemark-news-box a{
+.news  a{
     text-decoration: none;
     margin: var(--n-article-Rmargins);
     width: calc(100% - 6rem);

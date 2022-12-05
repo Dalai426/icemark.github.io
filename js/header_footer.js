@@ -85,8 +85,8 @@ class navbar extends HTMLElement {
           <a href="https://www.instagram.com/icemark_____/"><img src="pictures/icons8-instagram-90.png"
                   alt="Instagram icon" ></a>
           <a href="https://twitter.com/icelandmongolia"><img src="pictures/icons8-twitter-90.png"
-                  alt="Twitter icon" ></a>
-          <a href="mailto: contact@teso.mn"><img src="pictures/icons8-google-96 20- 20Copy.png" alt="Google" ></a>
+                  alt="Twitter icon"  ></a>
+          <a href="mailto: contact@teso.mn"><img src="pictures/icons8-google-96 20- 20Copy.png" alt="Google"  ></a>
           <a href="https://www.youtube.com/channel/UCXC01QJ4wx_vDjXV5fscvmw"><img
                   src="pictures/icons8-youtube-logo-90.png" alt="youtube" ></a>
       </address>
