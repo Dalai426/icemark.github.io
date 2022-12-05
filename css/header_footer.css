@@ -331,14 +331,11 @@ footer #footer-top-section {
 }
 @media(max-width: 717px){
     .opened_list{
-     font-size: 60%;
+     width: 55%;
     }
 
- }
- @media(max-width: 450px){
-    .opened_list{
-        font-size: 40%;
-    }
+}
+@media(max-width: 450px){
     .opened_list ul li{
         padding: 3em 3em;   
     }
@@ -351,8 +348,7 @@ footer #footer-top-section {
         font-size: 20%;
     }
     .opened_list{
-        width: -webkit-max-content;
-        width: max-content;
+        width:70%;
     }
     .opened_list ul li{
         padding: 6em 20em 6em 6em;
@@ -360,4 +356,4 @@ footer #footer-top-section {
     .opened_list div{
         margin:6em auto 6em 6em;
     }
- }
+}
