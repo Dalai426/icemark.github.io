@@ -80,7 +80,7 @@ main a article p,h3{
     text-decoration: none;
     display: inline-block;
     padding: 10px 1rem;
-    font-family: var(--pre-news-ffamily);
+   
     color: black;
 }
 .link a:hover{
@@ -122,6 +122,9 @@ main a article p,h3{
 @media(max-width: 229px){
     html{
      font-size: 30%;
+    }
+    header{
+        font-size: 150%;
     }
  }
  @media(max-width: 143px){
