@@ -29,7 +29,7 @@ body{
     -moz-transition: left 2s;
     -o-transition: left 2s;
     transition: left 1s;
-    animation: sliding 10s 1s linear infinite alternate-reverse;
+    animation: sliding 10s 1s ease-in-out infinite alternate-reverse;
   }
   @keyframes sliding{
     0%{
@@ -137,7 +137,7 @@ body{
     border: solid 0px rgb(202, 176, 176);
     border-radius: 44% 44% 48% 48%;
     box-shadow: 0.25rem 0.25rem 0.55rem rgba(0, 0, 0, 0.25);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 /*.product article.p-art picture{
     width:100%;
@@ -290,16 +290,11 @@ body{
 }
 .intro >article >section:nth-child(2) h1{
     font-size: 3rem;
-
-font-family: var(--intro-var2-ff);
+    font-family:var(--intro-h1-ff);
     font-weight: 300;
     
 }
-.intro >article >section:nth-child(2) h1 span:first-child{
-    
-    color: var(  --header_footer-linear);
-   
-}
+
 .intro >article >section:nth-child(2) h1 span:nth-child(1){
     color: var(--intro-span1);
 }
@@ -312,11 +307,11 @@ font-family: var(--intro-var2-ff);
 .intro >article >section:nth-child(2) p{
     font-weight: 800;
     margin-top: 2rem;
-    line-height: 2rem;
-    letter-spacing: 1pt;
+    line-height: 1.5rem;
+    letter-spacing: 0.6pt;
     text-align: justify;
     color: var( --color-p);
-    font-family: var(--intro-p);
+    font-family:var(--intro-p);
     font-style: normal;
 }
 .intro >article >section:nth-child(2) .btn{
@@ -327,23 +322,23 @@ font-family: var(--intro-var2-ff);
     align-items: flex-end;
 }
 .intro >article >section:nth-child(2) button{
-    color: var(--btn-color);
+    color: rgb(31, 29, 29);
     display: inline-block;
-    font-family: var(--intro-h1-ff);
+    font-family:var(--intro-p);
     font-size: var(--btn-font-size);
     width: var(--btn-width);
    margin-top: var(--margin-top);
     padding: var(--btn-padding);
-    background-color:  var(--txt-bgcolor);
+    background-color: var(--bg-btncolor-1);
     border-radius: 1rem;
-    border: var(--n-border);
-    font-family: var(--font-family);
+    border: var(--btn-border);
+    font-weight: 500;
     transition: all 0.5s ease;
 }
 .intro >article >section:nth-child(2) button:hover{
     transform: scale(1.1,1.1);
-    background-color: var(--bg-btncolor);
-    color: black;
+    background-color: var(--bg-btncolor-2);
+    color: rgb(31, 29, 29);
 }
 
 /*news*/
@@ -372,16 +367,13 @@ font-family: var(--intro-var2-ff);
 .pre-news h1{
 
     font-size: var(--pn-fsize);
-    font-weight:var(--pn-fw) ;   
-     font-family: var(--pre-news-ffamily);
+   font-weight:var(--pn-fw) ;  
+     font-family: var(--intro-h1-ff);
     height: var(--width-size);  
     text-align: center;
 } 
 
 /*news*/
-
-
-
 .news {
  display: flex;
  flex-direction: row;
@@ -392,11 +384,7 @@ font-family: var(--intro-var2-ff);
     margin: var(--n-article-margins);
     width: calc(25% - 4rem);
 }
-/*.news a{
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-}*/
+
 .news article{
     position: relative;
     overflow: hidden;
@@ -404,7 +392,7 @@ font-family: var(--intro-var2-ff);
         border: var(--n-border);
         width: var(--width-size);
         height: var(--n-article-height);
-         font-family: var(--font-family);
+         font-family: var(--intro-p);
          box-shadow: var(--news-box-shadow);
          display: flex;
          align-items: flex-end;
@@ -435,7 +423,7 @@ font-family: var(--intro-var2-ff);
     background-size: cover; 
 }
 .news .img-4{
-    background-image: url("../pictures/frame2.webp");
+    background-image: url("../index_pictures/factor.jpg");
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
@@ -452,27 +440,19 @@ font-family: var(--intro-var2-ff);
     color: var(--choice-font-color);
  }
  section.news a article h2{
-    font-family:  var(--intro-h1-ff);
+    font-family:  var(--intro-p);
     margin: var(--n-h2-margins);
     font-size: var(--f_size_products);
     font-weight: 100;
  }
  .news .icons{
-    width:100%
-    ;
+    width:100%;
     padding: 0.2rem 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
  } 
-/*section.news a article .date{
-    font-weight: 300;
-    text-align: right;
-    margin: var(--n-date-margins);
-    font-family: var(--Jos-family);
-}*/
-
 
 @media(max-width: 900px){
     #list{
@@ -502,7 +482,7 @@ font-family: var(--intro-var2-ff);
         z-index: 0;
         padding: var(--article-padding);
     }
-    .intro >article >section:nth-child(2) p{
+    .intro >article >section:nth-child(2) p,h1{
         text-align: center;
     }
     .intro-image{
@@ -536,7 +516,7 @@ font-family: var(--intro-var2-ff);
             border: var(--n-border);
             width: var(--width-size);
              height: var(--n-article-height);
-             font-family: var(--font-family);
+            
              box-shadow: var(--news-box-shadow);
              
              }
@@ -597,7 +577,7 @@ font-family: var(--intro-var2-ff);
     border: var(--n-border);
     width: var(--width-size);
     height: var(--n-article-height);
-    font-family: var(--font-family);
+   
     box-shadow: var(--news-box-shadow);
 }
 }
