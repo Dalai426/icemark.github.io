@@ -8,8 +8,7 @@
 
 /*tsogoo*/
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Josefin+Sans&family=Manrope&family=Montserrat+Alternates:wght@300&family=Montserrat:ital,wght@1,200&family=Mulish:wght@200&family=Overlock:ital@1&family=Pacifico&family=Pattaya&family=Raleway:wght@100;400&family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Overlock&family=Pattaya&display=swap');
 :root{
 /*dalai's variable*/
 
@@ -139,23 +138,19 @@
 --pre-news-height: 2rem;
 
 --pn-fsize: 3rem;
---pn-fw: 500;
+--pn-fw: 300;
 /*btn width*/
+--btn-border: solid 1px rgba(189, 205, 207, 0.8);
 --btn-color:rgb(250, 248, 248);
 --btn-width:12rem;
 --btn-padding:1rem 1rem;
 --margin-top:2rem;
 --btn-font-size:1rem;
 /*font families*/
---intro-p: 'Fira Sans', sans-serif;
---Jos-family: 'Josefin Sans', sans-serif;
---Mont-family: 'Montserrat', sans-serif;
---Comforta-ff:'Comfortaa', cursive;
---intro-var2-ff:'Manrope', sans-serif;
---pre-news-ffamily: 'Raleway' ,sans-serif;
---intro-h1-ff: 'Overlock', cursive;
---font-family: 'Raleway' ,sans-serif;
---product-font-family: 'Pattaya', sans-serif;
+
+--intro-h1-ff: 'Overlock', cursive;/*intro h1*/
+--intro-p: 'Comfortaa', cursive;
+--product-font-family: 'Pattaya', sans-serif;/**/
   /*color*/
 --intro-span1:#0078AC;
 
@@ -170,7 +165,9 @@
 --product-hover-color:rgb(235, 210, 173);
 --choice-font-color: rgb(250, 248, 248);
 
---bg-btncolor:rgba(204, 189, 170, 0.6);
+--bg-btncolor-2:rgba(204, 189, 170, 0.6);
+--bg-btncolor-1:rgba(204, 189, 170, 0.4);
+
 
 --intro-article-bgcolor:#F8F3F0;
 }
