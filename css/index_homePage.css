@@ -525,7 +525,7 @@ font-family: var(--intro-var2-ff);
     .news a:nth-child(4){
         display: none;
     }
-    .news icemark-news-box a{
+    .news  a{
         text-decoration: none;
         margin: var(--n-article-Rmargins);
         width: calc(50% - 6rem);
