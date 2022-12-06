@@ -24,6 +24,9 @@ class navbar extends HTMLElement {
     }
   }
   customElements.define("icemark-header",navbar);
+  
+
+
   class footer extends HTMLElement {
     connectedCallback() {
       this.parentNode.innerHTML = `
@@ -91,7 +94,9 @@ class navbar extends HTMLElement {
     }
   }
   customElements.define("icemark-footer",footer);
- 
+  
+
+
   class openlist extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
@@ -111,6 +116,8 @@ class navbar extends HTMLElement {
     }
   }
   customElements.define("icemark-open",openlist);
+  
+
 let scrollbar=`<style>
     ::-webkit-scrollbar {
         width: 1px;
@@ -126,6 +133,7 @@ let scrollbar=`<style>
     }
     </style>`;
 document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeEnd",scrollbar);
+
 let plist= new phonelist(800,"list","opened_list");
 plist.event();
 plist.mediaquery_event();
