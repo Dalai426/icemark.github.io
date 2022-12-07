@@ -334,7 +334,7 @@
   border-radius: 2rem;
   padding: 1.3rem;
   width: 100%;
-  height: 2.5rem;
+  height: 5rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -673,6 +673,7 @@
     .Tonog_Tuhuurumj h2 {
     font-size: calc(1vw + 2rem);
     }
+  
   }   
   @media(max-width:481px){
     .Tonog_Tuhuurumj h2 {
@@ -686,8 +687,3 @@
     padding-right: 5%;
     padding-left:5%;
     }}
- 
-
- 
-
- 
