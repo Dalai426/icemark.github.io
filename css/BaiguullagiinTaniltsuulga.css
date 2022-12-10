@@ -12,7 +12,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
 }
 
 .yerunhii h2 {
@@ -33,16 +33,30 @@
 }
 
 .Alsiin_haraa{
-  margin-top: 5rem;
-  border-radius: 25px;
-  background: var(--companYerunhiiTaniltsuulaga);
-  padding: 20px;
-  width: 180px;
-  height: 240px;
+  margin-top: 4rem;
+  border-radius: 1.5rem;
+  background:var(--alsiinHaraa_background);
+  padding: 1.2rem;
+  width: 17rem;
+  height: 18rem;
   box-shadow: 5px 5px 10px var(--companYerunhiiTaniltsuulagaSuuder);
 }
+.Alsiin_haraa h3{
+  font-size: 1.65rem;
+  font-family: var(--companYerunhiiTaniltsuulagaFont);
+}
 
-
+.Alsiin_haraa hr{
+  border:none;
+  height: 0.08rem;
+  background:var(--alsiinHaraa_hr_);
+}
+.Alsiin_haraa p{
+  padding-top: 5%;
+  font-family: var(--intro-p);
+  text-align: justify;
+ 
+}
 /*hunii nuutsiin heseg*/
 .hunii_nuuts {
   margin-top: 5rem;
@@ -121,7 +135,7 @@
 /* hamt olon*/
 .hamtOlon {
   margin-top: 5rem;
-  width: 50%;
+  width: 60%;
   padding: 3rem;
   border-radius: 0px 6rem 6rem 0px;
   background-color: #FFFBEC;
@@ -173,7 +187,7 @@
 
 .organization {
   margin-top: 2rem;
-  width: 50% ;
+  width: 60% ;
   padding:5rem ;
   border-radius: 6rem 0rem 0rem 6rem;
   background-color: #FFFBEC;
@@ -214,7 +228,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
- 
     background-color: #FFFBEC;
   }
   
@@ -223,9 +236,9 @@
     margin-top: 2rem;
     border-radius: 3rem;
     background-color:white;
-    padding: 2px;
-    width: 35rem;
-    height: 20rem;
+    padding: 2rem;
+    width: 33rem;
+    height: 22rem;
     padding-left:1rem;
     box-shadow: 5px 5px 10px var(--companYerunhiiTaniltsuulagaSuuder);
   }
@@ -265,7 +278,7 @@
 
 .shalgaruulalt h3 {
   margin-top: 2rem;
-  color: var(--songonShalgaruulaltH2);
+  color: var(--backgroundColorblue);
   text-align: center;
   font-size: 2rem;
   flex-direction: 'Inter', sans-serif;
@@ -275,8 +288,8 @@
 .shalgaruulalt>article{
   position: relative;
   bottom: 0;
-  margin: 1% 0 1% 0;
-  height: 80px;
+  margin: 1.5% 0 1.5% 0;
+  height: 5rem;
 }
 
 .shalgaruulalt>article aside{
@@ -287,8 +300,8 @@
 }
 .images {
   position: absolute;
-  height: 90px;
-  width: 90px;
+  height: 5.6rem;
+  width: 5.6rem;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -296,7 +309,7 @@
   flex-wrap: wrap;
   z-index: 80;
   transform: translateY(-5%);
-  margin-left: -1%;
+  margin-left: -3%;
 }
 .image1{
   background-color: var(--backgroundColorpink);
@@ -308,6 +321,7 @@
 .img1 {
   margin-left: 1.1rem;
   margin-top: -2rem;
+
 
 }
 
@@ -325,7 +339,7 @@
 
 .selection p {
   transform: translateY(50%);
-  padding-left: 5rem;
+  padding-left: 4.5rem;
 
 }
 
@@ -369,7 +383,7 @@
   margin-left: 6rem;
   aspect-ratio: initial;
   width: 600px;
-  height: a;
+  height: auto;
 }
   
   
@@ -380,10 +394,11 @@
   color: var(--opportunitiesText);
   text-align: left;
   position: absolute;
-  margin-top: -15rem;
-  left: 55%;
+  margin-top: -18rem;
+  left: 45%;
   padding-left: 7rem;
-  padding-right: 10rem;
+  padding-right: 5rem;
+  text-align: center;
   font-size: 1.5rem;
 
 
@@ -393,10 +408,11 @@
   font-family: var(--zahzeeltext);
   color: var(--opportunitiesText);
   position: absolute;
-  margin-top: -10rem;
-  left: 55%;
+  margin-top: -13rem;
+  left: 45%;
   padding-left: 6rem;
-  padding-right: 6rem;
+  padding-right: 3rem;
+  
   font-size:1.2rem;
 
 }
@@ -459,16 +475,17 @@
 }
 
 /* компаний ерөнхий танилцуулга */
-@media(max-width:1000px){
+@media(max-width:810px){
     .yerunhii h2{
       font-size: calc(1vw + 2rem);
   }
 }
 @media(max-width:525px){
   .yerunhii h2{
-    font-size: calc(1vw + 1rem);
+    font-size: calc(1vw + 1.5rem);
 }
 }
+
 
 /*Хүний нөөц*/
 @media(max-width:1145px){
@@ -500,7 +517,15 @@
     font-size: calc(1vw + 1rem);
   }
     }
-  
+
+@media(max-width:400px){
+  .hamtOlon {
+    width: 80%;
+}
+.organization{
+  width: 80%;
+}
+}
 @media(max-width:800px){
   .organization{
     padding-left:2.5rem;
@@ -516,6 +541,30 @@
   .hamtOlon p{
     font-size: calc(1vw + 0.4rem);
   }
+}
+@media(max-width:1114px){
+  .organization h2 {
+    font-size: calc(1vw + 2rem);   
+}
+  .hamtOlon h2 {
+  font-size: calc(1vw + 2rem);   
+}
+}
+@media(max-width:838px){
+  .organization h2 {
+    font-size: calc(1vw + 1.5rem);   
+}
+  .hamtOlon h2 {
+  font-size: calc(1vw + 2rem);   
+}
+}
+@media(max-width:551px){
+  .organization h2 {
+    font-size: calc(1vw + 1rem);   
+}
+  .hamtOlon h2 {
+  font-size: calc(1vw + 1rem);   
+}
 }
 /*baiguullagiin bolomjuud*/
 @media(max-width:580px){
@@ -533,16 +582,29 @@
     font-size: calc(1vw + 0.4rem);
   }
 }
+@media(max-width:600px){
+  .part{
+    width: 80%;
+    padding-top: 0.1rem;
+  }
+}
+@media(max-width:400px){
+  .part ul {
+   margin-left: 1rem;
+   margin-right:1rem;
+   padding-top: 0.1rem;
+  }
+}
 /*shalgaruulalt*/
 
 @media(Max-width:448px){
   .shalgaruulalt h3{
-      font-size: calc(1vw + 1.1rem);
+      font-size: calc(1vw + 0.8rem);  
     }
   }
 @media(Max-width:410px){
   .shalgaruulalt h2{
-    font-size: calc(1vw + 1rem);
+    font-size: calc(1vw + 1.2rem);
     }
   }
   @media(Max-width:1097px){
@@ -551,7 +613,13 @@
       }
     .text{font-size: calc(1vw + 0.3rem);}
       }
-    
+  @media(max-width:307px){
+    .TEXT p{
+      margin-top: -2rem;
+     
+    }
+  }
+
  /*zah zeel*/
  @media(Max-width:850px){
   .zahZeel h2{
@@ -564,7 +632,7 @@
       }
     }
   
-    @media(max-width:1276px){
+    @media(max-width:1400px){
       .NiitZairmag h3{
        
         padding-right: 2rem;
@@ -585,7 +653,7 @@
         height: auto;
       }}
       
-      @media(max-width:1100px){
+      @media(max-width:1268px){
         .NiitZairmag h3{
           font-size: calc(1vw + 0.5rem);
           padding-right: 2rem;
@@ -606,7 +674,7 @@
           height: auto;
         }}
 
-        @media(max-width:885px){
+        @media(max-width:1080px){
           .NiitZairmag h3{
             font-size: calc(1vw + 0.4rem);
             padding-right: 3rem;
@@ -626,8 +694,8 @@
             margin-left:1rem ;
             height: auto;
           }}
-          
-@media(max-width:616px){
+         
+@media(max-width:776px){
 .NiitZairmag h3{
   font-size: calc(1vw + 0.4rem);
   padding-right: 3rem;
@@ -647,7 +715,7 @@
   margin-left:1rem ;
   height: auto;
 }}
-@media(max-width:464px){
+@media(max-width:572px){
   .NiitZairmag h3{
     font-size: calc(1vw + 0.2rem);
     padding-right: 3rem;
@@ -667,14 +735,38 @@
     margin-left:1rem ;
     height: auto;
   }}
+  @media(max-width:396px){
+    .NiitZairmag h3{
+      font-size: calc(1vw + 0.2rem);
+      padding-right: 3rem;
+      padding-left: -1rem;
+      margin-top:-3.5rem ;
+      }
+    
+    .NiitZairmag p{
+      font-size: calc(1vw + 0.1rem);
+      padding-left: -2rem;
+      padding-right: 2rem;
+      margin-top:-2rem ;
+  
+    }
+    .NiitZurag {
+      width: 7rem;
+      margin-left:1rem ;
+      height: auto;
+    }}
   /*tonog tohooromj*/
    
   @media(max-width:850px){
-    .Tonog_Tuhuurumj h2 {
+    .Tonog_Tushuurumj h2 {
     font-size: calc(1vw + 2rem);
     }
-  
-  }   
+  } 
+  @media(max-width:456px){
+    .Tonog_Tuhuurumj article{
+      margin-top: 0.5rem;
+    }
+  }  
   @media(max-width:481px){
     .Tonog_Tuhuurumj h2 {
     font-size: calc(1vw + 1.6rem);
@@ -683,7 +775,7 @@
   } 
   @media(max-width:700px){
     .Tonog_Tuhuurumj p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding-right: 5%;
     padding-left:5%;
     }}
