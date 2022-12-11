@@ -27,7 +27,6 @@ class RecentNewsItem {
 }
 
 export default class RecentNews{
-
     constructor(jsonUrl) {
         this.recentNewsList = [];
         this.jsonUrl = jsonUrl;
@@ -59,7 +58,7 @@ export default class RecentNews{
         })
         .catch(err => { console.log(err); });
     }
-    
+
     pages(data_len){
         data_len=Math.ceil(data_len/10);
         this.last_page=data_len-1;
@@ -82,7 +81,7 @@ export default class RecentNews{
         for (let i=start;i<=start+data_len;i++) {
             document.getElementsByClassName("page")[i-start].addEventListener("click",()=>{this.change_page(i)});
         }
-    } 
+    }
     page_p(page){
         if(this.current_page==0 && page==-1){
         }

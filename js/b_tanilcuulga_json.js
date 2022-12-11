@@ -229,8 +229,9 @@ function App(SList) {
         retVal_tanilcuulga+=articleObj.render_tanilcuulga();
     }
     retVal+="</ul>";
-    document.getElementsByClassName("bvteegdehvvnii_turul")[0].innerHTML=retVal;
-    document.querySelector(".bvteegdehvvnii_turul").insertAdjacentHTML("afterend",retVal_tanilcuulga);
+    const turul=document.getElementsByClassName("bvteegdehvvnii_turul")[0];
+    turul.innerHTML=retVal;
+    turul.insertAdjacentHTML("afterend",retVal_tanilcuulga);
 }
 window.onload=()=>App(sublist);
 
