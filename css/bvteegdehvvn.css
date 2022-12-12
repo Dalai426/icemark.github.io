@@ -3,16 +3,24 @@
     padding: 0px;
     margin:0px;
     cursor: pointer;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
 }
 body{
     font-size: 1rem;
 }
-/*sublist*/
+/*sublist css*/
 .bvteegdehvvnii_turul{
+    /*position ni sticky (bainga neg bair deer baina)*/
     position: sticky;
     z-index: 100;
 }
-
 .bvteegdehvvnii_turul ul{
     display: flex;
     flex-direction: row;
@@ -24,10 +32,8 @@ body{
     list-style: none;
  }
 .bvteegdehvvnii_turul ul li a{
-    text-decoration: none;
     color: var(--texts_color-white);
-    font-family: var(--inter);
-    font-size: 0.7rem;
+    font:0.7rem var(--inter);
 }
 .line{
     height: 0.07rem;
@@ -35,38 +41,19 @@ body{
     background-color: var(--color-white);
     margin-top: 0.1rem;
 }
-
+/*dooguurhi zuraas ni urt bolno*/
 .bvteegdehvvnii_turul ul li:hover .line{
     width: 100%;
     transition: 0.3s;
 }
-
-
-
-
 /*page main*/
-
 .turul{
     width: 100%;
     border-bottom:0.1rem solid var(--assistant_color-blue);
 }
-
-/*
-.turul article{
-    padding:2rem;
-   
-    width: fit-content;
-    border-radius: 10rem;
-    background-color: black;
-    position: relative;
-    top:3.2rem;
-}
-*/
 .turul h1{
     color:var(--texts_color-black);
-    font-size: 3rem;
-    font-family:var(--nunito);
-    font-weight: 300;
+    font: 300 3rem var(--nunito);
     margin-left: 7rem;
     background-color: var(--color-white);
     width: -moz-fit-content;
@@ -75,15 +62,14 @@ body{
     padding-left:0.3rem ;
     top:0.8rem;
 }
+/*3 baganaas bvteh grid baina*/
 .tanilcuulga_icecream{
     margin-bottom: 6rem;
     width: 100%;
     display: grid;
     grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
-    text-align: center;
 }
-
-
+/*zairmag tus bvr deer section*/
 .zairmag .zurag img{
     aspect-ratio: initial;
     width:25rem;
@@ -91,10 +77,9 @@ body{
 .zairmag{
     padding-top: 6rem;
 }
-.zairmag:hover .zurag{
-    scale: 1.1;
+.zairmag>section{
+    display: grid;
 }
-
 .tanilcuulga_icecream .zurag{
     width:var(--shapes_img_bvteegdehvvn_tanilcuulga_width);
     height:var(--shapes_img_bvteegdehvvn_tanilcuulga_width);
@@ -106,6 +91,7 @@ body{
     align-items: center;
     box-shadow: var(--shadow-bvteegdehvvntanilcuulga-shapes-bordered);
 }
+/*zurgiin dvrsiig border ashiglan gargasan*/
 .tanilcuulga_icecream .zairmag:nth-child(3n-2) .zurag{
     border-radius:60% 44% 48% 48%;;
 }
@@ -140,17 +126,14 @@ body{
  .tanilcuulga_icecream:nth-child(20) .zairmag:nth-child(3) .zurag img{
     width: 35rem;
  }
-.zairmag>section{
-    text-decoration: none;
-    display: grid;
-    grid-column: 100%;
-}
+/*zairmagnii garchig*/
 .zairmag h1{
     font-family: var(--bvteegdehvvn_name-style);
     color: var(--bvteegdehvvn_name-color);
     font-size:3rem;
     margin-top: 2rem;
 }
+/*zairmagnii tailbar*/
 .bvteegdehvvn_tailbar{
     width: var(--bvteegdehvvnii_tanilcuulga_article-width);
     color: var(--texts_color-black);
@@ -159,6 +142,7 @@ body{
     font-size: 1.5rem;
     margin: 1rem auto auto auto;
 }
+/*svg arrow*/
 .bvteegdehvvn_tailbar div svg{
     fill:var(--assistant_color_orange);
     width: 12rem;
@@ -181,7 +165,7 @@ body{
 
 
 
-/*bvteegdehvvn tus bvr deeer*/
+/*bvteegdehvvn tus bvr deeerhi modal*/
 .modal{
     position: fixed;
     top: 0;
@@ -200,14 +184,13 @@ body{
     width: 60%;
     height: auto;
     padding-bottom:3em;
-    text-align: center;
     border-radius:var(--bvteegdehvvntusbvr_window_border);
     background: var(--bvteegdehvvn_window_linear);
     filter: var(--shadow-bvteegdehvvn-window);
     font-size: 1rem;
     z-index: 101;
 }
-
+/*modal-iig haah x heseg*/
 #x{
     width: 100%;
     text-align: right;
@@ -230,6 +213,7 @@ body{
     padding-bottom:19%;
     margin: 1em auto;
 }
+/*zurguudiig aguulah container*/
 .bvteegdehvvn_tus .frame{
     border-radius: 10px;
     overflow: hidden;
@@ -238,6 +222,7 @@ body{
     align-items: center;
     aspect-ratio: 1/1;
     position: absolute;
+    /*il haragdahgvi hesgvvd mash jijighen(width 3%), opacity ni 0 baina*/
     width:3%;
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -250,37 +235,38 @@ body{
 .tus_zurag img:nth-child(n+3){
     display: none;
 }
+/*zvvn zahiin zurag*/
 .bvteegdehvvn_tus .frame-1{
     transform: translateX(var(--tus_bvteegdehvvn-3_zurag_hoiguuroroh));
     filter: var(--bvteegdehvvn_tus_bvr_shadow_zah_imgs);
     width:var(--bvteegdehvvn_tus_bvr_window_img_zah_width);
     opacity:var(--opacity_img_zah);
 }
+/*baruun zahiin zurag*/
 .bvteegdehvvn_tus .frame-3{
     transform: translateX(calc(-1*var(--tus_bvteegdehvvn-3_zurag_hoiguuroroh)));
     filter: var(--bvteegdehvvn_tus_bvr_shadow_zah_imgs);
     width:var(--bvteegdehvvn_tus_bvr_window_img_zah_width);
     opacity: var(--opacity_img_zah);
 }
-
-
+/*goliin zurag*/
 .bvteegdehvvn_tus .frame-2{
     z-index: 1;
     filter: var(--bvteegdehvvn_tus_bvr_shadow_gol_imgs);
     width:var(--bvteegdehvvn_tus_bvr_window_img_gol_width);
     opacity: 1;
 }
-.left{
+.tus_zurag span{
     font-size: 3.5em;
     color: var(--color-white);
-    margin-right:var(--bvteegdehvvn_tus_bvr_window_arrow_margin);
     z-index: 10;
 }
+/*baruun,zvvn tiish hudulguh arrow-uud*/
+.left{
+    margin-right:var(--bvteegdehvvn_tus_bvr_window_arrow_margin);
+}
 .right{
-    font-size: 3.5em;
-    color: var(--color-white);
     margin-left:var(--bvteegdehvvn_tus_bvr_window_arrow_margin);
-    z-index: 10;
 }
 .right:hover,.left:hover{
     color: var(--hover_color_grey);
@@ -301,7 +287,7 @@ body{
     color: var(--bvteegdehvvn_name-color);
     margin:0 var(--bvteegdehvvn_window_margins) 2em var(--bvteegdehvvn_window_margins);
 }
-
+/*zairmagnii turlvvdiig aguulah Turul heseg*/
 .contain_turlvvd_window{
      font-family:var(--inter);
      display: flex;
@@ -321,6 +307,9 @@ body{
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 0.5em;
+    border-left:0.1em solid var(--bvteegdehvvn_name-color);
+    font-size: var(--fontsize_bvteegdehvvntusbvr_window);
+    font-family:var(--inter);
 }
 .contain_turlvvd_window ul li:nth-child(1){
     padding-right: 0;
@@ -329,28 +318,20 @@ body{
     border-left: none;
     padding-left: 0;
 }
-
-
-.contain_turlvvd_window ul li{
-    border-left:0.1em solid var(--bvteegdehvvn_name-color);
-    font-size: var(--fontsize_bvteegdehvvntusbvr_window);
-    font-family:var(--inter);
-}
-
 .contain_turlvvd_window ul li:hover{
     color: var(--assistant_color_orange);
 }
-
 .contain_turlvvd_window h2{
     color:var(--bvteegdehvvn_tus_bvr_window_foot);
     font-size: var(--fontsize_bvteegdehvvntusbvr_window);
 }
-
+/*modal bvteegdehvvnii tailbar*/
 .tailbar{
     margin: 1.5em var(--bvteegdehvvn_window_margins) 0 var(--bvteegdehvvn_window_margins);
     font-size: var(--fontsize_bvteegdehvvntusbvr_window);
     font-family:var(--inter);
 }
+/*bvteegdehvvnii medeelel brand, jin. hugacaa*/
 .bvteegdehvvn_medeelel{
     padding: 1em 5em 0 5em;
     width: 100%;
@@ -373,15 +354,8 @@ body{
     color:var(--texts_color-black);
     font-weight: 200;
 }
-/*zurguudaa ynzlav*/
-.bvteegdehvvn_tus:nth-last-child(15) .frame:nth-child(3) img{
-    position: relative;
-    left: 0.9em;
-}
 
-
-
-/*mocktail id's*/
+/*mocktail id's window and modal*/
 #mocktail_window{
     color:var(--color-white);
 }
@@ -389,7 +363,7 @@ body{
     background:var(--texts_color-black);
     border: 0.1em solid var(--color-white);
 }
-
+/*mocktail brandiin hesgiin zairmagnii ner tailbar zereg ni oor ungutei baina*/
 #mocktail_window h1,#mocktail_window .foot h2,#mocktail_window .bvteegdehvvn_medeelel li{
     color:var(--mocktail_color);
 }
@@ -401,19 +375,18 @@ body{
     color: var(--texts_color-white);
 }
 
-
+/*background zurag*/
 #mocktail_page{
-    
-background-image: linear-gradient(to right, rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("../pictures_bvteegdehvvniitanilcuulga/BACK_MOCKTAIL.jpg");
+background-image: linear-gradient(to right, rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("../pictures_bvteegdehvvniitanilcuulga/BACK_MOCKTAIL.webp");
 background-size: cover, auto 100%;
-
 background-position: center, center;
 background-repeat: no-repeat, repeat;
 margin: 0rem 0rem -4.2rem 0rem;
 padding: 8rem 0rem 9rem 0rem;
 
 }
-#sectio4,#section5{
+/*mockatail-iin deeer, door baigaa turul*/
+#section4,#section5{
     border-bottom: 0;
 }
 #section4 h1, #section5 h1{
@@ -430,6 +403,7 @@ padding: 8rem 0rem 9rem 0rem;
 #mocktail_foot span{
     color: var(--texts_color-white);
 }
+/*mocktail window arrow*/
 #mocktail_foot svg{
     fill: var(--mocktail_color);
     z-index: 10;
@@ -438,30 +412,19 @@ padding: 8rem 0rem 9rem 0rem;
     color: var(--texts_color-white);
 }
 
-
-@media(min-width:2076px){
-    .tus_zurag{
-        padding-top:21%;
-        padding-bottom:21%;
-    }
-}
-@media(max-width: 1550px){
-    html{
-        font-size: 80%;
-    }
-}
 @media(max-width: 1290px){
+    /*rem ni root buyu html font size-aas hamaardag, hemjeegee rem-eer ugsnuur
+    zovhon html ffont size-iig solihod l hangalttai*/
     html{
         font-size: 70%;
     }
 }
-
-@media(max-width: 1220px){
+@media(max-width: 1160px){
+    /*header heseg ni em buyuu body font size-aas hamaarna header-iig tomosgov*/
     body{
         font-size: 120%;
     }
-}
-@media(max-width: 1160px){
+    /*sub list-iin elementvvdiin hemjee*/
     .bvteegdehvvnii_turul ul{
         padding: 0.2rem 0 0.3rem 0;
     }
@@ -472,55 +435,53 @@ padding: 8rem 0rem 9rem 0rem;
         display: none;
     }
 }
-@media(max-width: 691px){
-    .bvteegdehvvnii_turul{
-        display: none;
-    }
-  
-}
+/*2 egnee bologhgvi bol bagtahgvi baiv 3 egneenees 2 egnee*/
 @media(max-width: 1060px){
     .tanilcuulga_icecream{
         grid-template-columns: calc(100%/2) calc(100%/2);
-    }   
+    }  
+    /*modal urgun*/ 
     .bvteegdehvvn_tus{
         width: 70%;
     }
 }
 
 @media(max-width: 750px){
+    /*grid 1 baganatai bolno*/
     .tanilcuulga_icecream{
         grid-template-columns:auto;
     }
+    /*h1 iig golluulna*/
     .turul h1{
         margin: 0 auto;
     }
+    /*modal tailbar dood hesegiin hemjee*/
     .tailbar{
         margin: 1.5em 3em 0 3em;
-        
     }
     .contain_turlvvd_window{
         margin: 0 3em;
    }
    .foot hr{
-    color: var(--bvteegdehvvn_name-color);
-    margin:0 3em 2em 3em;
+        color: var(--bvteegdehvvn_name-color);
+        margin:0 3em 2em 3em;
     }
     .bvteegdehvvn_medeelel{
         padding: 1em 3em 0 3em;
     }
-    
-}
-
-@media(max-width: 710px){
-   .bvteegdehvvn_tus{
-    font-size: 80%;
-    width: 80%;
-   }
-}
-@media(max-width: 660px){
+    .bvteegdehvvn_tus{
+        font-size: 70%;
+        width: 80%;
+    }
+    /*bvteegdehvvnii turul sublist mobile deer haragdahgvi baih ystoi*/
+    .bvteegdehvvnii_turul{
+        display: none;
+    } 
+    /*modal width*/
     .bvteegdehvvn_tus{
         width: 95%;
     } 
+    /*zairmag tus bvriin tsonh buyuu modal-iin hemjeeg tomosgoh*/
     .tus_zurag{
         padding-top:23%;
         padding-bottom:23%;
@@ -543,43 +504,21 @@ padding: 8rem 0rem 9rem 0rem;
         margin-left:35%;
     }
 }
-@media(max-width: 500px){
-    .bvteegdehvvn_tus{
-        font-size: 70%;
-    } 
-}
+/*Bvteegdehvvbniii turliig haruulah h1 bagtahgvi baisan*/
 @media(max-width: 460px){
     .turul h1{
         font-size: 2rem;
     }
-}
-@media(max-width: 430px){
     .bvteegdehvvn_tus{
         font-size: 60%;
     } 
 }
-
+/*bvteegdehvvn window-iin brand,jin, hadgalah hugacaag neg murund oruulna*/
 @media(max-width: 382px){
-   html{
-    font-size: 50%;
-   }
-}
-@media(max-width: 322px){
     .bvteegdehvvn_medeelel{
         display: block;
     }
     .bvteegdehvvn_medeelel li{
         text-align: left;
     }
- }
-@media(max-width: 274px){
-    html{
-     font-size: 20%;
-    }
- }
- @media(max-width: 192px){
-     .turul h1{
-        font-size: 1rem;
-     }
- }
- 
+}
