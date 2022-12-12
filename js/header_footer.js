@@ -1,6 +1,7 @@
 import {phonelist} from "../modules/phone_list.js";
 class navbar extends HTMLElement {
-    connectedCallback() {
+    // header component
+    connectedCallback(){
       this.parentNode.innerHTML = `
       <picture class="logo">
           <source media="(min-width: 1024px)" srcset="pictures/ICEMARK.webp">
@@ -26,10 +27,10 @@ class navbar extends HTMLElement {
   customElements.define("icemark-header",navbar);
   
 
-
+// footer component
   class footer extends HTMLElement {
     connectedCallback() {
-      this.parentNode.innerHTML = `
+      this.parentNode.innerHTML =`
       <section id="footer-top-section">
       <address class="address">
           <i class="fa-solid fa-map-location-dot"></i>
@@ -94,11 +95,10 @@ class navbar extends HTMLElement {
     }
   }
   customElements.define("icemark-footer",footer);
-  
-
 
   class openlist extends HTMLElement {
-    connectedCallback() {
+    // phone list component
+    connectedCallback(){
       this.innerHTML = `
       <article class="opened_list">
       <ul>
@@ -117,7 +117,7 @@ class navbar extends HTMLElement {
   }
   customElements.define("icemark-open",openlist);
   
-
+// scroll style
 let scrollbar=`<style>
     ::-webkit-scrollbar {
         width: 1px;
@@ -135,5 +135,6 @@ let scrollbar=`<style>
 document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeEnd",scrollbar);
 
 let plist= new phonelist(800,"list","opened_list");
+// click eventvvdiig barij avah function-uud
 plist.event();
 plist.mediaquery_event();
