@@ -1,13 +1,15 @@
 let tap;
-
 class Carousel{ 
         constructor(items){
+          // zurguudiig aguulsan elementvvd
           const galleryItems=items.querySelectorAll('.frame');
           this.id=items;
           this.carouselArray=[...galleryItems];
         }
         updateGallery(){
+          // zurguudaa switch hiine
           this.carouselArray.forEach(el=>{
+            // element bvr iin hoid { frame-1, frame-2 ..} ustgana
             for(var i=0; i<this.carouselArray.length; i++){
               el.classList.remove(`frame-${i+1}`);
             }
@@ -18,18 +20,22 @@ class Carousel{
         }
         setCurrentState(direction){
           if(direction==1){
+            // 1 buyuu baruun tiish bol pop hiij avaad urdaas ni hiine
             this.carouselArray.unshift(this.carouselArray.pop());
           }else{
+            // urdaas ni hasaj avaad hoinoos ni hiine
             this.carouselArray.push(this.carouselArray.shift());
           }
           this.updateGallery();
         }
         useControls(){
+          // hervee baruul tal-iin sum deer daragdval
           const next=this.id.querySelector(".right")
           next.addEventListener('click',e=>{
             e.preventDefault();
             this.setCurrentState(1);
           });
+          // herev zvvn taliin sum deer daragdval
           const prv=this.id.querySelector(".left");
           prv.addEventListener('click',e=>{
             e.preventDefault();
