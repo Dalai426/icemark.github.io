@@ -1,18 +1,26 @@
-let mql = window.matchMedia('(min-width: 691px)');
-let scroll_pos;
-window.onscroll=()=>{scroll()};
-function scroll() {
-    resize_top_menu();
-    let elm=document.querySelector(".bvteegdehvvnii_turul");
-    if (document.documentElement.scrollTop > scroll_pos && mql.matches) {
-        elm.style.display="block";   
-    } else {
-        elm.style.display="none";
+//ene ni bvteegdehvvnii tanilcuulga hesgiin sublistiin bairlaliig olgoh js yum.
+// scroll hiivel scroll gedeg function-iig duudaj sublist-iin  bairlaliig oorchlono.
+class slist{
+    constructor(sublist_media,header,sublist){
+        this.mql = window.matchMedia('(min-width:'+sublist_media+'px)');
+        this.header=document.querySelector(header);
+        this.scroll_pos;
+        this.elm=document.querySelector(sublist);
     }
-    scroll_pos=document.documentElement.scrollTop;
-}
-function resize_top_menu(){
-    const elmnt = document.querySelector("header");
-    let height=elmnt.offsetHeight;
-    document.querySelector(".bvteegdehvvnii_turul").style.top=height+"px";
-}
+    scroll() {
+        // header hesgiin undriig avna
+        let height=this.header.offsetHeight;
+        // bvteegdehvvnii turul classtai sublist-iig tuhain header hesgiin door baihaar bairluulna
+        this.elm.style.top=height+"px";
+        // deeshee scroldohod omno hadgalj avsan scroll-iin hemjeenees ih mun screen hemjee tohirch baival
+        if (document.documentElement.scrollTop > this.scroll_pos && this.mql.matches) {
+            this.elm.style.display="block";   
+        } else {
+            this.elm.style.display="none";
+        }
+        this.scroll_pos=document.documentElement.scrollTop;
+    }
+};
+// 691 px gedeg ni header heseg ni sublist alga boloh hemjee
+const list=new slist(750,"header",".bvteegdehvvnii_turul");
+window.onscroll=()=>{list.scroll()};
