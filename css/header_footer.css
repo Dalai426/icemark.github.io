@@ -4,8 +4,6 @@
     padding: 0px;
     margin:0px;
 }
-
-
 /*loader css*/
 #loader{
     background: #FFFF url('../pictures/loading_gif3.gif') no-repeat center center;
@@ -28,23 +26,28 @@ header{
     filter:var(--shadow-header);
     z-index: 100;
 }
-
+/*phone list*/
 #list{
     display: none;
 }
+/*logo heseg*/
 .logo{
     margin: -0.8em auto -1.15em 2.2em;
 }
 .logo img{
+    /*haricaaa ni vndsen zurgaaraa*/
     aspect-ratio: initial;
     width: 6em;
     height: auto;
 }
 .head_menu{
     display: flex;
+    /*elementvvdiig hevtvvlne*/
     flex-direction: row;
+    /*elementvvd bosoogooroo centerlene*/
     align-items: center;
 }
+/*list*/
 .head_menu ul{
     display: flex;
     flex-direction: row;
@@ -53,8 +56,6 @@ header{
 .head_menu ul li{
     list-style: none;
     margin: 0 2.5em 0 0;
-    display: flex;
-
 }
 .head_menu ul li a{
     font-family:var(--header_footer_text_style);
@@ -69,11 +70,13 @@ header{
     transition: var(--header_transition);
 }
 */
+/*list bolon world icon goliin zauraas*/
 #white{
     background-color:var(--texts_color-white);
     height: 0.9em;
     width: 0.01em;
 }
+/*world icon css*/
 .head_menu #world{
     margin-right: 2.5em;
     margin-left: 2.5em;
@@ -81,7 +84,8 @@ header{
     font-size: 1em;
 }
 #world:hover {
-    transform: rotate3d(0, 1, 0, 360deg);
+    /*y tenhlegiinn daguu 360grads ergene*/
+    transform: rotate3d(0, 0, 0, 360deg);
     transition: 1.5s ease-in-out;
 }
 
@@ -99,23 +103,26 @@ footer #footer-top-section {
     flex-wrap: wrap;
     flex-direction: row;
 }
+/*footer hesgiin contents*/
 #footer-top-section .address{
+    /*display ni flex baina. chiglel ni row. ingesneer dotrhoi 
+    elementvvdiig chuluutei bairluulah bolomjtoi*/
     display: flex;
     flex-direction: row;
     margin:3rem auto;
     align-items: center;
 } 
-
 #footer-top-section .address ul{
     margin-top: 0.7rem;
     line-height: 1rem;
 }
-
+/*icon*/
 .address i{
-    scale:2 2;
+    font-size: 2rem;
     margin-right: 1.8rem;
     color:var(--texts_color-white);
 }
+/*utas, fax,hayag,email*/
 .address article ul li{
     list-style: none;
     color:var(--texts_color-white);
@@ -126,7 +133,6 @@ footer #footer-top-section {
     text-decoration: none;
 }
 .address article ul li a{
-    text-decoration: none;
     color:var(--texts_color-white);
 }
 .address article h3{
@@ -134,16 +140,19 @@ footer #footer-top-section {
     font-family:var(--inter);
     font-style: normal;
 }
-
+/*icon hover 0.5s hiine.*/
 .address:hover i{
     color: var(--hover_color_grey);
     transition: 0.5s ease-in-out;
 }
 
+/*dood hesgiin company medeelel (fb,ig,.. icons)*/
 .bottom{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /*display ni flex. space between-hiisneer ehnii element urd, 
+    2 udaah element hhamgiin hoino ochino*/
     justify-content: space-between;
     font-family: var(--inter);
     font-size: 1rem;
@@ -164,7 +173,7 @@ footer #footer-top-section {
 .bottom h4 a{
     color: var(--texts_color-black);
 }
-
+/*logo-nuud*/
 .bottom address img{
     color: var(--texts_color-white);
     width: 1.5rem;
@@ -189,18 +198,21 @@ footer #footer-top-section {
     right: 100%;
     transition: 0.4s;
 }
+/*active ni nemelt class gej oilgoj bolno .active-iig zalgah, ustgah zamaar neegddeg bolgoson*/
 .opened_list.active{
     right: 0;
 }
-
 .opened_list ul{
    width: 100%;
 }
+/*list elementvvd*/
 .opened_list ul li{
     padding:0;
     list-style: none;
     padding: 1em 3em;
     border-bottom: 1px solid var(--color-white);
+    /*elementvvd ni zvvn tiishee shahgdsan baina*/
+    text-align: left;
 }
 .opened_list ul li a{
     margin-top:0.5em;
@@ -210,11 +222,13 @@ footer #footer-top-section {
     font-size: 0.8em;
     color:var(--texts_color-white);
 }
+/*helnii songoltiig hadgalah heseg*/
 .opened_list div{
     display: flex;
     align-items: center;
     margin:1em auto 1em 3em;
 }
+/*world icon*/
 .opened_list div i{
     font-size: 1em;
     color:var(--texts_color-white);
@@ -225,19 +239,21 @@ footer #footer-top-section {
     font-family:var(--header_footer_text_style);
     color:var(--texts_color-white);
 }
-.opened_list ul li:hover{
-    background-color:rgba(256, 256, 256, 1);
+.opened_list li:hover{
+    background-color:rgba(255, 255, 255, 1);
 }
 .opened_list div:hover #world{
+    /*y tenhlegiin daguu 360grads ergene*/
     transform: rotate3d(0, 1, 0, 360deg);
     transition: 1.5s ease-in-out;
 }
-.opened_list ul li:hover a{
+.opened_list li:hover a{
     color: var(--assistant_color-blue);
 }
 
 
-
+/*1160px deeer header hesgiin list jijigrene. 
+dagaad logo, world icon jijigrene*/
 @media(max-width: 1160px){
     .head_menu ul li a{
         font-size: 0.6em;
@@ -260,33 +276,7 @@ footer #footer-top-section {
         font-size: 0.7em;
     }
 }
-
-@media(max-width: 800px){ 
-    header{
-        padding: 1em;
-    }
-    .head_menu{
-        display: none;
-    }
-    .logo{
-        margin: -0.4em auto -2em 1.6em;
-    }
-    .logo img{
-        width: 6em;
-    }
-    #list{
-        display: inline-block;
-        color: var(--texts_color-white);
-        font-size: 2em;
-        margin-right: 1.2em;
-    }
-    #list:hover{
-        color:var(--hover_color_grey);
-        transition:var(--header_transition);
-    }
-}
-
-
+/*950px deeer dood taliiin hayag-uud neg egneend orno*/
 @media(max-width: 950px){
     #footer-top-section{
         padding: 3rem 0;
@@ -331,31 +321,33 @@ footer #footer-top-section {
         height: 1.5rem;
     }
 }
-@media(max-width: 717px){
+/*100px hooron media ashiglaj baigaa ni omnoh ni footer-d nuluulj baisan
+harin 800px deer phone-list-d shiljih shaardlagatai baigaa uchir*/
+@media(max-width: 800px){ 
+    header{
+        padding: 1em;
+    }
+    .head_menu{
+        display: none;
+    }
+    .logo{
+        margin: -0.4em auto -2em 1.6em;
+    }
+    .logo img{
+        width: 6em;
+    }
+    #list{
+        display: inline-block;
+        color: var(--texts_color-white);
+        font-size: 2em;
+        margin-right: 1.2em;
+    }
+    #list:hover{
+        color:var(--hover_color_grey);
+        transition:var(--header_transition);
+    }
+    /*phone list-urgun 65% baina*/
     .opened_list{
-     width: 55%;
-    }
-
-}
-@media(max-width: 450px){
-    .opened_list ul li{
-        padding: 3em 3em;   
-    }
-    .opened_list div{
-        margin:3em auto 3em 3em;
-    }
- }
- @media(max-width: 335px){
-    .opened_list{
-        font-size: 20%;
-    }
-    .opened_list{
-        width:70%;
-    }
-    .opened_list ul li{
-        padding: 6em 20em 6em 6em;
-    }
-    .opened_list div{
-        margin:6em auto 6em 6em;
+        width: 65%;
     }
 }
