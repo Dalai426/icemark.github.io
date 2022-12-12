@@ -5,6 +5,7 @@
     margin:0px;
 }
 main img {
+    /*main deh bvh zurgiin haricaa vndsen haricaagaa avah ba urgun ni 100% buguud undur i tvvnees hamaarna*/
     width: 100%;
     aspect-ratio: initial;
     height: auto;
@@ -12,47 +13,54 @@ main img {
 main{
     padding: 2rem 4rem;
     padding-bottom: 1rem;
+    /*medeenvvdee 2 mor, 5 bagana bvhii grid-d huvaana*/
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 18rem 18rem 18rem 18rem 18rem ;
 }
-
+/*medee tus bvriin section. Tuhain grid-iin nvdee bvten ezelsen baina*/
 main section{
     width: 100%;
     height:  100%;
     padding: 2rem 1rem;
     border-bottom: solid 1px #d3d3d3;
 }
+/*grid news. display flex baisnaaraa chuluutei bairluulah bolomjtoi*/
 main a{
     display: inline-block;
     display: flex;
     flex-direction: row;
+    /*ilvv garval hugarch dooshoo orohgvi gedgiig iltgene*/
     flex-wrap: nowrap;
     width: 100%;
     height: 100%;
     text-decoration: none;
+    color: black;
 }
 main a picture{
     width: 40%;
     height: 100%;
     overflow: hidden;
 }
+/*text medeelel*/
 main a article {
     width: calc(60% - 2rem);
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
-   
 }
+/*garchig*/
 main a article h3{
     margin-bottom: 1rem;
     font-size: 1rem;
     font-family: var(--pre-news-ffamily)
 }
+/*medeenii tovch*/
 main a article p{
     font-family: var(--pre-news-ffamily);
     font-size: 0.8rem;
 }
+/*on sar udur*/
 .date{
     margin-top: auto;
     margin-bottom: 0rem;
@@ -61,16 +69,12 @@ main a article p{
     color: var(--color-p);
     font-size: 0.7rem;
 }
-main a article p,h3{
-    color: rgb(34, 32, 30);
-    text-align: justify;
-}
 #line{
     border: solid 1px black;
     margin: 2rem 4rem;
 }
 
-/*link*/
+/*page links*/
 .link{
     margin: 2rem 4rem;
     margin-top: 0rem;
@@ -79,16 +83,16 @@ main a article p,h3{
     text-decoration: none;
     display: inline-block;
     padding: 10px 1rem;
-   
     color: black;
+    font-family: var(--pre-news-ffamily);
 }
 .link a:hover{
-    border: 1px solid #f4f4f4;
-    background-color: rgb(13, 5, 32);
-    color: #f4f4f4;
+    background-color: black;
+    color: white;
 }
 
 @media(max-width: 900px){
+    /*medeenvvd 900px deer 10mor bvhii neg bagana bolno*/
     main{
         padding: 1rem 1rem;
         display: grid;
@@ -96,38 +100,19 @@ main a article p,h3{
         grid-template-rows: 18rem 18rem 18rem 18rem
         18rem 18rem 18rem 18rem 18rem 18rem ;
     }
-    main section{
-        width: 100%;
-        height: 100%;
-        padding: 1rem 1rem;
-        border-bottom: solid 1px #d3d3d3;
-    }
     main a picture{
         width: 60%;
     }
     #line{
-        border: solid 1px black;
         margin: 1rem 1rem;
     }
     .link{
         margin: 1rem 1rem;
     }
 }
+/*mobile news*/
 @media(max-width: 460px){
    html{
     font-size: 50%;
    }
 }
-@media(max-width: 229px){
-    html{
-     font-size: 30%;
-    }
-    header{
-        font-size: 150%;
-    }
- }
- @media(max-width: 143px){
-    html{
-        font-size: 20%;
-    }
- }
