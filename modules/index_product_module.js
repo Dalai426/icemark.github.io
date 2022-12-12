@@ -8,7 +8,7 @@ class RecentProductsItems{
     }
     render_a(){
         return `<a href="${this.href}">
-        <article class="p-art">
+        <article class="p-art" style="background-image:url(${this.src});">
        
         </article>
         <h2>${this.content}</h2>
