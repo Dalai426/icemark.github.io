@@ -412,7 +412,7 @@ padding: 8rem 0rem 9rem 0rem;
     color: var(--texts_color-white);
 }
 
-@media(max-width: 1290px){
+@media(max-width: 1300px){
     /*rem ni root buyu html font size-aas hamaardag, hemjeegee rem-eer ugsnuur
     zovhon html ffont size-iig solihod l hangalttai*/
     html{
