@@ -1,16 +1,15 @@
+// bvteegdehvvnii tanilcuulga page -> json vriable
 const sublist=[
     {
         "content":"МӨНХ ТУНХ",
-        "link":"section1",
-        "label":"Мөнх тунх бүтээгдэхүүний мэдээлэл",
         "icecream":[
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/м.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/м.webp",
                 "name":"MUNH",
                 "descrip":"Анх хараад л идэх хүсэл төрүүлнэ шоколад, цөцгийтэй MUNH"
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/tus_tunh.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/tus_tunh.webp",
                 "name":"TUNH",
                 "descrip":"Солонго шиг амттай гүзээлзгэнэ, цөцгийтэй сахарын агууламжгүй TUNH"
             }
@@ -18,16 +17,14 @@ const sublist=[
     },
     {
         "content":"ЖИМСТЭЙ ЗАЙРМАГ",
-        "link":"section2",
-        "label":"Жимстэй зайрмагнуудын мэдээлэл",
         "icecream":[
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/iberry.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/iberry.webp",
                 "name":"IBERRY",
                 "descrip":"Инээмсэглэл бэлэглэх амт, байгалийн зэрлэг жимс IBERRY."
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/mello1.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/mello1.webp",
                 "name":"MELLO",
                 "descrip":"MELLO киви, гүзээлзгэнэ, черриний дур булаам амт."
             }
@@ -35,16 +32,14 @@ const sublist=[
     },
     {
         "content":"ШОКОЛАДТАЙ ЗАЙРМАГ",
-        "link":"section3",
-        "label":"Шоколадтай зайрмагнуудын мэдээлэл",
         "icecream":[
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/IMG_8548.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/IMG_8548.webp",
                 "name":"VENUS",
                 "descrip":"Хайр дурлалын амт VENUS"
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/3d,4d_icemarkzairmag.png",
+                "img":"pictures_bvteegdehvvniitanilcuulga/3d,4d_icemarkzairmag.webp",
                 "name":"ICEMARK",
                 "descrip":"Төсөөллөөс ч илүү гүзээлзгэнэ, шоколадтай зайрмаг ICEMARK"
             }
@@ -52,11 +47,9 @@ const sublist=[
     },
     {
         "content":"MOCKTAIL",
-        "link":"section4",
-        "label":"Mocktail брендийн зайрмагнуудын мэдээлэл",
         "icecream":[
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/mocktai;.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/mocktai;.webp",
                 "name":"MOCKTAIL",
                 "descrip":"Зөвхөн чамтай л энэ төгс амтыг хуваалцмаар MOCKTAIL"
             }
@@ -65,11 +58,9 @@ const sublist=[
     },
     {
         "content":"ААРЦТАЙ ЗАЙРМАГ",
-        "link":"section5",
-        "label":"аарцтай зайрмагнуудын мэдээлэл",
         "icecream":[
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/бамбар.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/бамбар.webp",
                 "name":"BAMBAR",
                 "descrip":"Дархлаа дэмжигч аарцтай, чацарганатай, гүзээлзгэнэтэй BAMBAR"
             }
@@ -77,26 +68,24 @@ const sublist=[
     },
     {
         "content":"АЯГАТАЙ ЗАЙРМАГ",
-        "link":"section6",
-        "label":"Аягатай зайрмагнуудын танилцуулга",
         "icecream":[
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/teso_ice.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/teso_ice.webp",
                 "name":"TESO",
                 "descrip":"Иристэй цөцгий аягатай TESO"
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/элитэ.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/элитэ.webp",
                 "name":"ELITE",
                 "descrip":"Дур булаам амт, аягатай ELITE."
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/mocha.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/mocha.webp",
                 "name":"MOCHA",
                 "descrip":"Ногоон цайтай зайрмаг таныг таргалуулахгүй"
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/иогурт.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/иогурт.webp",
                 "name":"YOGURT ICECREAM",
                 "descrip":"Эрүүл мэндийн зайрмаг YOGURT ICECREAM"
             }
@@ -105,21 +94,19 @@ const sublist=[
     },
     {
         "content":"ЦӨЦГИЙТЭЙ ЗАЙРМАГ",
-        "link":"section7",
-        "label":"Цөцгийтэй зайрмагнуудын танилцуулга",
         "icecream":[
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/alyaskaface.png",
+                "img":"pictures_bvteegdehvvniitanilcuulga/alyaskaface.webp",
                 "name":"ALYASKA",
                 "descrip":"Амтат цөцгий эрүүл амттан ALYASKA"
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/standartface.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/standartface.webp",
                 "name":"STANDART",
                 "descrip":"Уруул дурлам аз жаргалын амт STANDART"
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/тус_.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/тус_.webp",
                 "name":"PLOMBIR",
                 "descrip":"Цөцгий, самар, ирсисний төгс хослол PLOMBIR"
             }
@@ -128,21 +115,19 @@ const sublist=[
     },
     {
         "content":"ГЭР БҮЛИЙН",
-        "link":"section8",
-        "label":"гэр бүлийн зайрмагнуудын танилцуулга",
         "icecream":[
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/империа.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/империа.webp",
                 "name":"IMPERIA CAKE ICECREAM",
                 "descrip":"Хайртдаа өгөх хамгийн гоё бэлэг IMPERIA зайрмаган бялуу."
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/IMG_8549.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/IMG_8549.webp",
                 "name":"MINI SHOCK",
                 "descrip":"Аз жаргалын амтаа хамтдаа хуваалцах хамгийн шилдэг амттан бол MINI SHOCK"
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/elite ice.jpg",
+                "img":"pictures_bvteegdehvvniitanilcuulga/elite ice.webp",
                 "name":"ELITE",
                 "descrip":"Гэр бүлээрээ идэхэд хамгийн тохиромжтой ELITE"
             }
@@ -151,25 +136,30 @@ const sublist=[
 ];
 
 class MySubList{
+    // content ni zairmagnii turul, link ni section id baina, label ni tailbar, icecream dotor zairmagnuudiin medeelel
     constructor(content,link,label,icecream) {
         this.content = content;
         this.link = link;
         this.label = label;
         this.icecream=icecream;
     }
+    // Zairmagnuudiin turliig haruulah sublist dotrohi medeelliig render hiine
     render_menu() {
         return `<li><a href="#${this.link}" aria-label="${this.label}">${this.content}</a>
         <div class="line"></div>
         </li>`;
     }
+    // Turul bvr deer tvvnd hamaarah zairmagnuudiin medeelliig zurna
     render_tanilcuulga(){
+        // mocktail-iih bish bol
         if(this.content!="MOCKTAIL"){
             let cont="";
+            // tuhain turliin zairmag bolgonii medeelleer gvine
             for(const ics of this.icecream){
                 cont+=`<article class="zairmag">
                 <section зайрмагны дэлгэрэнгүй мэдээлэл" onclick="${ics.name.split(" ")[0]}()">
                 <div class="zurag">
-                    <img src="${ics.img}" alt="${ics.name} зайрмаг">
+                    <img src="${ics.img}" alt="${ics.name} зайрмаг" width="100%" height="100%">
                 </div>
                 <h1>${ics.name}</h1>
                 <div class="bvteegdehvvn_tailbar">
@@ -191,11 +181,12 @@ class MySubList{
         }
         else{
             let cont="";
+            // mocktail bol arai oor baidlaar render hiine
             for(const ics of this.icecream){
                 cont+=`<article class="zairmag">
                 <section onclick="${ics.name.split(" ")[0]}()">
                 <div class="zurag">
-                    <img src="${ics.img}" alt="${ics.name} зайрмаг">
+                    <img src="${ics.img}" alt="${ics.name} зайрмаг" width="100%" height="100%">
                 </div>
                 <h1 id="Mocktail_h1">${ics.name}</h1>
                 <div class="bvteegdehvvn_tailbar" id="mocktail_foot">
@@ -222,9 +213,14 @@ class MySubList{
 function App(SList) {
     let retVal = "<ul>";
     let retVal_tanilcuulga="";
+    // i ni section index (section1, section2, ... ) gej uguh zoriulalttai
+    let i=1;
+    // json objectiin element bvreer gvine
     for (const key of SList){
         console.log(key.content);
-        let articleObj = new MySubList(key.content,key.link,key.label,key.icecream);
+        let articleObj = new MySubList(key.content,"section"+i,key.content+" мэдээлэл",key.icecream);
+        i++;
+        // json objectoos zairmagnuudiin turliig haruulah sublist bolon, tvvnd hamaarah zairmagnuudiiin medeelliig haruulah ssection-iig render hiine
         retVal += articleObj.render_menu();
         retVal_tanilcuulga+=articleObj.render_tanilcuulga();
     }
@@ -234,4 +230,3 @@ function App(SList) {
     turul.insertAdjacentHTML("afterend",retVal_tanilcuulga);
 }
 window.onload=()=>App(sublist);
-
