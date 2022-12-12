@@ -5,108 +5,41 @@
     padding: 0px;
     margin:0px;
 }
+
 body{
-    height: auto;
+    width: 100%;
+   aspect-ratio: 1/1;
   
 }
 
 /* main.css*/
 .slider {
-    width: 100%;
+    width: var(--slider-width);
     height: var(--slider-height);
     background-color: yellow;
     text-align: center;
     overflow: hidden;
    
   }
-  .image-container {
-    width: 300%;
-    
-    height: 100%;
-    clear: both;
-    position: relative;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 1s;
-    animation: sliding 10s 1s ease-in-out infinite alternate-reverse;
-  }
-  @keyframes sliding{
-    0%{
-        left: 0%;
-    }
-    30%{
-        left: 0%;
-    }
-    35%{
-        left: -100%;
-    }
-    70%{
-        left: -100%;
-    }
-    75%{
-        left: -200%;
-    }
-    100%{
-        left: -200%;
-    }
-  }
-  .slide {
-    width: 33.33%;
-    height: 100%;
-    float: left;
-   
-    position: relative;
-  }
-
  
-  .buttons {
-    z-index: 2;
-    position: relative;
-    top: -20px;
+
+.slide {
+    width: var(--slide-width);
+    height: var(--slide-height);
+    background-position: center; 
+    background-repeat: no-repeat; 
+  
+    background-size: cover; /* Resize the background image to cover the entire container */
   }
 
-.slider-img1{
-    background-image: url("../pictures/Home_img.webp"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
+  /*.slide img {
     
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.slider-img2{
-    background-image: url("../index_pictures/health.webp"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */   
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: 100% 150%; /* Resize the background image to cover the entire container */
-}
-
-.slider-img3{
-    background-image: url("../index_pictures/tart.webp"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */   
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.buttons {
-    position: relative;
-    top: -20px;
-  }
-  .buttons a {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50px;
-    border:1px solid lightgreen;
-  }
+    aspect-ratio: 1.2;
+  }*/
 
 
 
-/* product bar's css*/
-
+  /*product section's.product css*/
 .product{
     display: flex;
     justify-content: space-evenly;
@@ -115,97 +48,65 @@ body{
     margin-bottom: var(--section-product-tmargin);
 }
 .product a{
-    width: 9rem;
-    height: 13rem;
-    margin: 1rem 0.5rem;
-    padding: 0;
+    width: var(--product-a-width);
+    height: var(--product-a-height);
+    margin: var(--product-a-margin);
+    padding: var(--product-a-padding);
     text-decoration: none;
     display: flex;
     flex-direction: column;
    
     
 }
-.product article.p-art{
+/*artcle.p-art*/
+.product .p-art{
  
-    width:100%;
-    height: 70%;
+    width: var(--product-p-art-width);
+    aspect-ratio: 1/1;
     overflow: hidden;
     position: relative; 
-    border: solid 0px rgb(202, 176, 176);
-    border-radius: 44% 44% 48% 48%;
-    box-shadow: 0.25rem 0.25rem 0.55rem rgba(0, 0, 0, 0.25);
+
+    border-radius: var(--product-p-art-border-radius);
+    box-shadow:var(--product-p-art-box-shadow) ;
     transition: all 0.5s ease;
 }
-/*.product article.p-art picture{
-    width:100%;
-    height: 100%;
-}
-.product article.p-art picture source,img{
-    width:100%;
+/*.product .p-art img{
+    width: 100%;
     height: 100%;
 }*/
 .product article{
+    
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
-.product a:nth-child(1) article{
-    background-image: url("../index_pictures/mello.webp"); 
-}
-.product a:nth-child(2) article{
-    background-image: url("../index_pictures/choco.jpg"); 
-}
-.product a:nth-child(3) article{
-    background-image: url("../index_pictures/tus_bambar3.webp"); 
-}
-.product a:nth-child(4) article{
-    background-image: url("../index_pictures/teso_ice.webp"); 
-}
-.product a:nth-child(5) article{
-    background-image: url("../index_pictures/vannila.webp"); 
-}
-.product a:nth-child(6) article{
-    background-image: url("../index_pictures/cake.webp"); 
-}
-.product a:nth-child(7) article{
-    background-image: url("../index_pictures/tus_mock.webp"); 
-}
-.product a:nth-child(8) article{
-    background-image: url("../index_pictures/tus_tunh2.webp"); 
-    background-size: 120% auto; 
-}
-.product a article {
-    border-radius:44% 44% 48% 48%;;
-}
-
-.products{
-    width: 100%;
-    height: 100%;
-    background-color: #F0A178;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
-.product a:hover article{
+
+
+
+
+.product a:hover .p-art{
     transform:scale(1.1,1.1);
  
 }
+
+
+
 .product h2{
-    font-size: 1.25rem;
-    color: var(--line-color);
-    line-height: 1.2rem;
+    font-size: var(--product-h2-font-size);
+    color: var(--product-h2-color);
+    line-height: var(--product-h2-line-height);
     font-family: var(--product-font-family);
     text-align: center;
     font-weight:100;
-    margin-top: 1rem;
+    margin-top: var(--product-h2-margin-top);
 }
 
 
 
-
+/*product's css end*/
 
 
 
@@ -213,20 +114,18 @@ body{
 /*introduction css*/
 .intro 
 {
-    
-    
-    margin: 2rem 0rem;
+    margin: var(--intro-margin);
 }
 .intro > article{
-    padding: 2rem 3rem;
     
-    width: var(--width-size);
+     width: var(--article-width);
     display: grid;
     grid-template-columns: var(--article-grid-columns);
+
     grid-template-rows:  var(--article-grid-row);
 
     background-color:var(--intro-article-bgcolor) ;
-    z-index: 0;
+   
     padding: var(--article-padding);
 }
 .intro > article >section{
@@ -246,11 +145,11 @@ body{
     background-color: #cccccc; 
     background-position: center; 
     background-repeat: no-repeat; 
-    background-size: 100% 100%;
+    background-size: cover;
     overflow: hidden;
-    width: 32rem;
-    height: 28rem ;
-    border-radius: 44% 44% 48% 48%;
+    width: var(--intro-image-width);
+    height: var(--intro-image-height);
+    border-radius:var(--intro-border-radius) ;
 }
 .intro >article >section:nth-child(2){
     display: flex;
@@ -258,9 +157,9 @@ body{
     padding: 2rem 2rem;
 }
 .intro >article >section:nth-child(2) h1{
-    font-size: 3rem;
+    font-size: var(--h1-font-size);
     font-family:var(--intro-h1-ff);
-    font-weight: 300;
+    font-weight: var(--h1-font-weight);
     
 }
 
@@ -274,10 +173,10 @@ body{
     color: var( --intro-span1);
 }
 .intro >article >section:nth-child(2) p{
-    font-weight: 800;
-    margin-top: 2rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.6pt;
+    font-weight: var( --p-weight);
+    margin-top: var(--p-margin-top);
+    line-height: var(--p-line-height);
+    letter-spacing: var(--p-letter-spacing);
     text-align: justify;
     color: var( --color-p);
     font-family:var(--intro-p);
@@ -291,7 +190,7 @@ body{
     align-items: flex-end;
 }
 .intro >article >section:nth-child(2) button{
-    color: rgb(31, 29, 29);
+    color: var(--btn-color);
     display: inline-block;
     font-family:var(--intro-p);
     font-size: var(--btn-font-size);
@@ -307,15 +206,11 @@ body{
 .intro >article >section:nth-child(2) button:hover{
     transform: scale(1.1,1.1);
     background-color: var(--bg-btncolor-2);
-    color: rgb(31, 29, 29);
+    color: var(--btn-color);
 }
 
-/*news*/
-.line{
-    width: var(--news-line-width);
-    height: var(--line-height) ;
-    background-color: var(--line-color);
-}
+/*section.pre-news*/
+
 .pre-news {
     margin: var(--pre-news-tmargin) var(--pre-news-rmargin) var(--pre-news-bmargin) var(--pre-news-lmargin);
    
@@ -326,9 +221,11 @@ body{
  
   
 }
+/*Мэдээ:өнгө*/
 .pre-news .news-1{
     color: var(--intro-span1);
 }
+/*Мэдээлэл:өнгө*/
 .pre-news .news-2{
     color:var(--intro-span2);
 }
@@ -350,32 +247,33 @@ body{
 }
 .news a{
     text-decoration: none;
-    margin: var(--n-article-margins);
-    width: calc(25% - 4rem);
+    margin: var(--n-a-margins);
+    width: var(--n-a-width);
 }
 
 .news article{
     position: relative;
     overflow: hidden;
-    border-radius: 0.5rem;
-        border: var(--n-border);
-        width: var(--width-size);
-        height: var(--n-article-height);
+    border-radius: var(--n-box-bradius);
+   
+        width: var(--n-box-width);
+        aspect-ratio: 1/1;
          font-family: var(--intro-p);
          box-shadow: var(--news-box-shadow);
          display: flex;
          align-items: flex-end;
        transition: all 0.5s ease;
+     
+       background-position: center; 
+       background-repeat: no-repeat; 
+       background-size: cover; 
  }
  .news article:hover{
     transform: scale(1.1,1.1);
  }
 .news .img-1{
     background-image: url("../index_pictures/news1.webp");
-    background-color: #cccccc;  
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+   
 }
 .news .img-2{
     background-image: url("../index_pictures/news2.webp ");
@@ -392,7 +290,7 @@ body{
     background-size: cover; 
 }
 .news .img-4{
-    background-image: url("../index_pictures/factor.jpg");
+    background-image: url("../index_pictures/venus_shock3.jpg");
     background-color: #cccccc;  
     background-position: center; 
     background-repeat: no-repeat; 
@@ -400,19 +298,18 @@ body{
 }
 
  .news article  .text{
-    width: var(--width-size);
+    width: var(--n-box-width);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--txt-bgcolor);
-    
-    color: var(--choice-font-color);
+     color: var(--news-box-font-color);
  }
  section.news a article h2{
     font-family:  var(--intro-p);
     margin: var(--n-h2-margins);
     font-size: var(--f_size_products);
-    font-weight: 100;
+    font-weight: var(--font-weight);
  }
  .news .icons{
     width:100%;
@@ -441,7 +338,7 @@ body{
     .intro > article{
     
        
-        width: var(--width-size);
+        width: var( --article-width);
         display: grid;
         grid-template-columns: var(--article-grid-columns-tablet);
 
@@ -457,9 +354,9 @@ body{
     .intro-image{
         
        
-        background-size: 100% 100%;
-        width: 25rem;
-        height: 25rem ;
+        background-size: var(--bg-size);
+        width: var(--intro-image-width-Tablet);
+        height: var(--intro-image-height-Tablet);
     }
     .intro >article >section:nth-child(2) .btn{
    
@@ -482,8 +379,8 @@ body{
     .news article{
    
        
-            border: var(--n-border);
-            width: var(--width-size);
+          
+            width: var(--n-box-width);
              height: var(--n-article-height);
             
              box-shadow: var(--news-box-shadow);
@@ -514,9 +411,9 @@ body{
     .intro-image{
         
        
-        width: 18rem;
-        height: 18rem;
-        background-size: 100% 100%;
+        width: var( --intro-image-width-Mobile);
+        height: var(--intro-image-height-Mobile);
+        background-size: var(--bg-size);
     }
     .intro >article >section:nth-child(2) h1{
         font-size: 3rem;
@@ -543,7 +440,6 @@ body{
 .news article{
     overflow: hidden;
     border-radius: 1rem;
-    border: var(--n-border);
     width: var(--width-size);
     height: var(--n-article-height);
    
