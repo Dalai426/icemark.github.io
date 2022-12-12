@@ -101,31 +101,24 @@ body{
 .tanilcuulga_icecream .zairmag:nth-child(3n) .zurag{
     border-radius: 44% 60% 48% 48%;
 }
-.tanilcuulga_icecream:nth-child(10) .zairmag:nth-child(2) .zurag img{
-    position: relative;
+
+.tanilcuulga_icecream:nth-child(15) .zairmag:nth-child(2) .zurag img{
+    height:100%;
     width: auto;
-    height: 24.1rem;
-    top: 0.6rem;
 }
-.tanilcuulga_icecream:nth-child(16) .zairmag:nth-child(1) .zurag img{
+.tanilcuulga_icecream:nth-child(21) .zairmag:nth-child(1) .zurag img{
+    height:100%;
     width: auto;
-    height: 25rem;
 }
-.tanilcuulga_icecream:nth-child(16) .zairmag:nth-child(2) .zurag img{
-   position: relative;
-    bottom: 2rem;
-    width: 23rem;
+.tanilcuulga_icecream:nth-child(23) .zairmag:nth-child(2) .zurag img{
+    height:100%;
+    width: auto;
 }
-.tanilcuulga_icecream:nth-child(16) .zairmag:nth-child(4) .zurag img{
-    position: relative;
-    width: 22.8rem;
- }
- .tanilcuulga_icecream:nth-child(18) .zairmag:nth-child(2) .zurag img{
-    width: 29rem;
- }
- .tanilcuulga_icecream:nth-child(20) .zairmag:nth-child(3) .zurag img{
-    width: 35rem;
- }
+.tanilcuulga_icecream:nth-child(25) .zairmag:nth-child(3) .zurag img{
+    height:100%;
+    width: auto;
+}
+
 /*zairmagnii garchig*/
 .zairmag h1{
     font-family: var(--bvteegdehvvn_name-style);
