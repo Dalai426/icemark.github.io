@@ -1,0 +1,18 @@
+[
+    {
+        "src":"index_pictures/tart.webp",
+        "max_src":"index_pictures/tart.webp",
+        "min-src":"../index_pictures/tart.webp"
+        
+      },
+    {
+        "src":"pictures/Home_img.webp",
+        "max_src":"../pictures/Home_img.webp",
+        "min-src":"../pictures/Home_img.webp"
+      },
+    {
+        "src":"index_pictures/health.webp",
+        "max_src":"../index_pictures/health.webp",
+        "min_src":"../index_pictures/health.webp"
+      }
+]
