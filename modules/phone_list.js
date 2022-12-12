@@ -1,10 +1,9 @@
 export class phonelist{
-    constructor(width,list,open) {
-        this.width=window.matchMedia('(min-width:'+width+'px)');
+    // phone list
+    constructor(screen,list,open) {
+        this.width=window.matchMedia('(min-width:'+screen+'px)');
         this.event_el=document.getElementById(list);
         this.open_el=document.querySelector("."+open);
-        this.state="none";
-        this.open_name=open;
     }
     mediaquery_event(){
         window.addEventListener("resize",(e)=>{
@@ -14,9 +13,9 @@ export class phonelist{
         });
     }
     event(){
+        // hervee darval toggle hiij active class iig zalgana
         this.event_el.addEventListener("click",()=>{
             this.open_el.classList.toggle("active");
         });
     }
-
 }
