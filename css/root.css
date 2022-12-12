@@ -69,106 +69,156 @@
 /*tsogoo's variable*/
 
 /*.slider*/
+--slider-width:100%;
 --slider-height:65vh;
 --slider-heightT:20rem;
 --slider-heightM:10rem;
 
---news-line-width:80%;
-/*product*/
+--slide-height:100%;
+--slide-width:100%;
 
+
+--news-line-width:80%;
+
+
+/*.product with section */
 --products-color:linear-gradient(180deg, #f79c48 0%, #db7f15 53.93%);
 --section-product-tpadding: 1rem;
 --section-product-tmargin: 1rem;
---product-a-width: 12rem;
---product-a-Rmargin: 1rem 1rem;
---product-a-height:12rem;
-/*tsogoo's font family*/
+
+     /*a in .product  */
+    --product-a-width: 9rem;
+    --product-a-height:13rem;
+
+    --product-a-margin: 1rem 0.5rem;
+    --product-a-padding: 0;
+    --product-a-Rmargin: 1rem 1rem;
+
+    /*article in .product  */
+  --product-p-art-width:100%;
+  --product-p-art-border-radius:44% 44% 48% 48%;
+  --product-p-art-box-shadow:0.25rem 0.25rem 0.55rem rgba(0, 0, 0, 0.25);
+
+    /*h2 in .product  */
+    --products-width:100%;
+    --product-h2-font-size:1.25rem;
+    --product-h2-line-height:1.2rem;
+    --product-h2-margin-top:1rem;
+    --product-h2-color:#FF6C00;
 
 
-/*section with news class*/
---n-border: solid 0px rgb(71, 69, 69);
---n-height: 22rem;
---n-Rheight: 25rem;
---n-article-height: 18rem;
---n-article-height-1: 11rem;
---n-article-Rheight: 14rem;
-
---n-article-Rmargins: 2rem 3rem 1.5rem 3rem;
---n-article-margins: 2rem 2rem 2rem 2rem;
---n-date-margins:10px 10px 0 10px ;
---n-h2-margins:5px 10px 10px 10px ;
-
---news-box-shadow: 0px 8px 8px 0px #c2bfbf;
---f_size_products:  1rem;
---txt-bgcolor:rgba(10, 171, 196, 0.8);
 /*intro vars*/
+--intro-margin:2rem 0rem;
+
+     /* direct article in  section.intro */
+    --article-width:100%;
+
+    --article-grid-row:30rem;
+    --article-grid-Mrow:40rem;
+    --article-grid-row-tablet:30rem 30rem;
+
+    --article-grid-columns:60% 40%;
+    --article-grid-columns-tablet:100%;
+
+    --intro-article-bgcolor:#F8F3F0;
+    --article-padding:3rem;
+
+/* .intro > article > section:nth-child(2)*/
 
 
---article-grid-row:30rem;
---article-grid-Mrow:40rem;
---article-grid-columns:60% 40%;
---article-grid-row-tablet:30rem 30rem;
---article-grid-columns-tablet:100%;
-/*intro paddings*/
---article-padding:3rem;
---intro-padding: 3rem 5rem 20px 5rem ;
---intro-Rpadding: 2rem 3rem 1rem 3rem ;
 
---article-border-radius:2rem;
---line-width:100%;
---width-size: 100%;
-/*intro heights*/
---height-size: 30rem;
---row-height:12rem;
---icon-height: 60%;
-  --line-height:10px;
-  /*font size*/
---intro-btn-fsize:1rem;
+      /*intro-image class*/
+      --intro-image-width:32rem;
+      --intro-image-height:28rem;
+      --intro-border-radius:44% 44% 48% 48%;
+         /*For tablet
+         */
+          --bg-size:100% 100%;
+          --intro-image-width-Tablet:25rem;
+          --intro-image-height-Tablet: 25rem;
+          --intro-image-width-Mobile:18rem;
+          --intro-image-height-Mobile: rem;
+      /*its h1*/
+      --h1-font-size:3rem;
+      --h1-font-weight:300;
 
---intro-btnlp:5%;
---intro-btntp:70%;
---intro-Rbtntp:65%;
---intro-Mbtntp:90%;
+           /*its h1 span:1*/
+      
+      /*its p*/     
+      --p-weight:800;      
+      --p-margin-top:2rem;
+      --p-line-height:1.5rem;
+      --p-letter-spacing:0.6pt;
+
+      /*its button*/
+      --btn-border: solid 1px rgba(189, 205, 207, 0.8);
+      --btn-width:12rem;
+      --btn-padding:1rem 1rem;
+      --margin-top:2rem;
+      --btn-font-size:1rem;
+
+      --btn-color:rgb(31, 29, 29);
+      --bg-btncolor-2:rgba(204, 189, 170, 0.6);
+      --bg-btncolor-1:rgba(204, 189, 170, 0.4);
+
 /*pre-news*/
  --pre-news-tmargin:3rem;
  --pre-news-rmargin:1rem;
- --pre-news-bmargin:0rem;
+ --pre-news-bmargin:2rem;
  --pre-news-lmargin:1rem;
---pre-news-height: 2rem;
 
+--pre-news-height: 2rem;
 --pn-fsize: 3rem;
 --pn-fw: 300;
-/*btn width*/
---btn-border: solid 1px rgba(189, 205, 207, 0.8);
---btn-color:rgb(250, 248, 248);
---btn-width:12rem;
---btn-padding:1rem 1rem;
---margin-top:2rem;
---btn-font-size:1rem;
+
+
+/*section.news */
+
+
+    /*its a-tag*/
+    --n-a-width:calc(25% - 4rem);
+    --n-a-margins: 2rem;
+    --n-a-Rmargins: 2rem 3rem 1.5rem 3rem;
+
+
+
+          /*its article*/
+          --n-article-Rmargins: 2rem 3rem 1.5rem 3rem;
+          --n-box-bradius:0.5rem;
+          --n-box-width:100%;
+          --n-article-height: 18rem;
+          --news-box-shadow: 0px 8px 8px 0px #c2bfbf;
+               /*its section.text*/
+               --txt-bgcolor:rgba(10, 171, 196, 0.8);
+               --news-box-font-color: #FFFFFF;
+                   /*its h2*/
+                   --n-h2-margins:5px 10px 10px 10px ;
+                   --f_size_products:  1rem;
+                   --font-weight:600;
+
+
+--n-article-height-1: 11rem;
+--n-article-Rheight: 14rem;
+--n-height: 22rem;
+--n-Rheight: 25rem;
+--n-date-margins:10px 10px 0 10px ;
+
+
 /*font families*/
 
 --intro-h1-ff: 'Overlock', cursive;/*intro h1*/
 --intro-p: 'Comfortaa', cursive;
 --product-font-family: 'Pattaya', sans-serif;/**/
   /*color*/
---intro-span1:#0078AC;
 
---intro-span2:#FF6C00;
+    --intro-span1:#FF6C00;
+    --intro-span2: #005CA9;
+      --icon-size:7rem;
+      --font-size-title: 2rem;
+      --font-size-p: 1rem;
+      --color-p: #000;
+ 
 
-  --icon-size:7rem;
-  --font-size-title: 2rem;
-  --font-size-p: 1rem;
-  --color-p: #110f0f;
-  --article-h1color: rgba(26, 26, 238, 0.918);
---line-color: rgb(235, 149, 20);
---product-hover-color:rgb(235, 210, 173);
---choice-font-color: rgb(250, 248, 248);
-
---bg-btncolor-2:rgba(204, 189, 170, 0.6);
---bg-btncolor-1:rgba(204, 189, 170, 0.4);
-
-
---intro-article-bgcolor:#F8F3F0;
  /*Ariuka*/
 /* color*/
 --companYerunhiiTaniltsuulaga:#eeeee4;
