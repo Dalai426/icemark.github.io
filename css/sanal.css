@@ -4,20 +4,21 @@
     margin: 0;
 }
 main{
+    /*neg mor bvhii 20/80 haricaatai 2 baganad huvaasan*/
     display: grid;
     grid-template-columns: 20% 80%;
-    background-color: #666666;
 }
+/*zurag*/
 .picture{
-    background-color: white;
-    overflow: hidden;
     text-align: right;
+    /*backgrouund zurag ni centerlene*/
     background-image: url('../sanalHuselt/zairmag_back.png');
     background-position:center;
 }
+/*form heseg*/
 .contain{
-    background-color: white;
     font-family: var(--inter);
+    /*svvder zvvn tiishee unasan baina*/
     box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
     padding-bottom:12%;
 }
@@ -26,10 +27,10 @@ main{
     margin: auto auto;
     margin-top: 5%;
 }
+/*garchig*/
 .contain p{
     font-weight:100;
     font-size:1.5rem;
-    color: #666666;
     font-family: var(--nunito);
 }
 .contain h4{
@@ -41,6 +42,7 @@ main{
 .contain h4>span{
     color:#FF4C00;
 }
+/*formuud*/
 .contain form fieldset{
     width: 100%;
     border: none;
@@ -48,11 +50,13 @@ main{
     display: flex;
     align-items: center;
 }
+/*icon*/
 .contain form fieldset i{
     font-size: 2.5rem;
     width: 5rem;
     color: rgba(0, 92, 169, 1);
 }
+/*bichih talbar-iin css*/
 .contain form fieldset .input{
     border:none;
     border-bottom:0.1rem solid #0098DA;
@@ -62,9 +66,11 @@ main{
     width: 100%;
 }
 .contain form fieldset .input::placeholder{
+    /*input deer daraad bichihed harahgdah css*/
     font-size: 1rem;
     font-weight: 100;
 }
+/*ilgee tovch*/
 .button{
     background-color:rgba(0, 92, 169, 1);
     border: none;
@@ -83,15 +89,6 @@ main{
     opacity:40%;
 }
 
-@media(max-width:1340px){
-    .picture{
-        background-position:center;
-    }
-    main{
-        grid-template-columns: 30% 70%;
-    }
-
-}
 @media(max-width:900px){
     html{
         font-size: 70%;
@@ -102,17 +99,16 @@ main{
     .picture{
         background-size: 100% auto;
     }
+    /*header jijigdej baisan tul tomruulav*/
     header{
         font-size: 150%;
     }
-
 }
 @media(max-width:636px){
+    /*zurag bolon formiin zaig zov tencverjvvleh*/
     .picture{
         background-size: auto 100%;
     }
-}
-@media(max-width:582px){
     html{
         font-size: 60%;
     }
@@ -120,12 +116,12 @@ main{
         grid-template-columns: 35% 65%;
     }
 }
+
 @media(max-width:418px){
     html{
         font-size: 45%;
     }
-}
-@media(max-width:326px){
+    /*zurrgaa haragdahgvi bolood main-ee 1 bagana 1mor bolgono*/
     .picture{
         display: none;
     }
@@ -137,27 +133,3 @@ main{
         grid-template-rows: auto 30%;
     }
 }
-@media(max-width:218px){
-    html{
-        font-size: 30%;
-    }
-    main{
-        grid-template-rows: auto 30%;
-    }
-}
-@media(max-width:150px){
-    html{
-        font-size: 20%;
-    }
-}
-@media(max-width:100px){
-    html{
-        font-size: 10%;
-    }
-}
-@media(max-width: 66px){
-    main{
-        grid-template-rows: auto 25%;
-    }
-  
- }
