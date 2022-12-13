@@ -32,15 +32,11 @@ download(){
     .then(response=>{
         response.json()
         .then(jsob_data=>{
-            let retVal = "";
-    
-            for (const key of jsob_data){
-        
-                let articleObj = new RecentProductsItems(key.src,key.min,key.max,key.href,key.content);
-                retVal += articleObj.render_a();
-            }
-        
-            document.getElementsByClassName("product")[0].innerHTML=retVal;
+            document.getElementsByClassName("product")[0].innerHTML=jsob_data.map(products=>{
+                const articleObj = new RecentProductsItems(products.src,products.min,products.max,products.href,products.content);
+                return articleObj.render_a();
+            })
+            .reduce((prev,cur)=>prev+cur,"");;
             })
         })
     
