@@ -24,10 +24,11 @@
     <link rel="stylesheet" href="css/header_footer.css">
 </head>
 <body>
-    <script   src="./js/header_footer.js" type="module" ></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script  src="./js/header_footer.js" type="module" ></script>
     <script  src="./js/loading.js"></script>
     <script src="./js/index_product.js" type="module"></script>
-    <script defer src="./js/index_slider.js" ></script>
+
     <div id="loader" class="lazyload"></div>
     <header>
     <icemark-header></icemark-header>
@@ -37,9 +38,13 @@
 
     <main >
         
-        
         <section class="slider">
-           <h2> ou </h2>
+                <img class="nature" src="pictures/Home_img.webp" width="100%" height="100%" alt="icemark slider">
+                <img class="nature" src="index_pictures/slider1.jpg" width="100%" height="100%" alt="icemark slider">
+                <img class="nature" src="index_pictures/slider2.jpg" width="100%"  height="100%" alt="icemark slider">
+       <script>
+        w3.slideshow(".nature", 5000);
+       </script>
         </section>
    
         <section class="product">
@@ -75,7 +80,7 @@
                     <button>Цааш <span>Унших</span> </button>
                 </div>
               </section>
-              <h2 style="color: #fff; display: none;"> .</h2>
+                    
             </article>
 
         </section>
@@ -86,7 +91,6 @@
        </section>
 
         <section class="news">
-            <h2 style="color: #fff; display: none;"> .</h2>
             <a href="#">
                 <article class="img-1">
                     
@@ -104,8 +108,7 @@
                        <div class="date"> 2022.01.01</div>
                    </div>
                    
-                  </section> 
-                  <h2 style="color: #fff; display: none;"> .</h2>
+               </section> 
               </article>  
            </a>
             <a href="#">
@@ -125,7 +128,6 @@
                    </div>
                    
                </section> 
-               <h2 style="color: #fff; display: none;"> .</h2>
               </article>  
            </a>
             <a href="#">
@@ -145,7 +147,6 @@
                    </div>
                    
                </section> 
-               <h2 style="color: #fff; display: none;"> .</h2>
               </article>  
            </a>
             <a href="#">
@@ -165,13 +166,8 @@
                    </div>
                    
                </section> 
-               <h2 style="color: #fff; display: none;"> .</h2>
               </article>  
            </a>
-            
-            
-      
-        
         </section>
     </main>
 
