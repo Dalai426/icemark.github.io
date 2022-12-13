@@ -8,9 +8,10 @@
 
 body{
     width: 100%;
-   aspect-ratio: 1/1;
+ height: auto;
   
 }
+
 /* main.css*/
 .slider {
     width: var(--slider-width);
@@ -19,67 +20,86 @@ body{
     text-align: center;
     overflow: hidden;
     position: relative;
-}
-.nature{
-    aspect-ratio: initial;
-    height: 100%;
-    width: auto;
-}
-
-  /*.slide img {
-    
-    aspect-ratio: 1.2;
-  }*/
-
+  }
+ 
+/*each sliding image's css*/
+.slide {
+    width: var(--slide-width);
+    height: var(--slide-height);
+    background-position: center; 
+    background-repeat: no-repeat; 
+   position: absolute;
+   
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
 
 
   /*product section's.product css*/
-.product{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap:wrap;
-    margin-bottom: var(--section-product-tmargin);
-}
-.product a{
-    width: var(--product-a-width);
-    height: var(--product-a-height);
-    margin: var(--product-a-margin);
-    padding: var(--product-a-padding);
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-}
-/*artcle.p-art*/
-.product .p-art{
-    width: var(--product-p-art-width);
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    position: relative; 
-    border-radius: var(--product-p-art-border-radius);
-    box-shadow:var(--product-p-art-box-shadow) ;
-    transition: all 0.5s ease;
-}
-/*.product .p-art img{
-    width: 100%;
-    height: 100%;
-}*/
-.product article{
-    
-    background-color: #cccccc;  
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
+        .product{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap:wrap;
+            
+            margin-bottom: var(--section-product-tmargin);
+        }
 
-.product h2{
-    font-size: var(--product-h2-font-size);
-    color: var(--product-h2-color);
-    line-height: var(--product-h2-line-height);
-    font-family: var(--product-font-family);
-    text-align: center;
-    font-weight:100;
-    margin-top: var(--product-h2-margin-top);
-}
+        /*each product picture'a a tag that contains article elm & h2 tag */
+        .product a{
+            width: var(--product-a-width);
+            height: var(--product-a-height);
+            margin: var(--product-a-margin);
+            padding: var(--product-a-padding);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+        
+            
+        }
+        /*artcle.p-art or every product's image*/
+        .product .p-art{
+        
+            width: var(--product-p-art-width);
+           height: var(--product-p-art-height);
+            overflow: hidden;
+            position: relative; 
+
+            border-radius: var(--product-p-art-border-radius);
+            box-shadow:var(--product-p-art-box-shadow) ;
+            transition: all 0.5s ease;
+        }
+        /*.product .p-art img{
+            width: 100%;
+            height: 100%;
+        }*/
+        .product article{
+            
+            background-color: #cccccc;  
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+        }
+
+
+
+
+
+
+        .product a:hover .p-art{
+            transform:scale(1.1,1.1);
+        
+        }
+
+
+        /*every product's name's css*/
+        .product h2{
+            font-size: var(--product-h2-font-size);
+            color: var(--product-h2-color);
+            line-height: var(--product-h2-line-height);
+            font-family: var(--product-font-family);
+            text-align: center;
+            font-weight:100;
+            margin-top: var(--product-h2-margin-top);
+        }
 
 
 
@@ -89,101 +109,112 @@ body{
 
 
 /*introduction css*/
-.intro 
-{
-    margin: var(--intro-margin);
-}
-.intro > article{
-    
-     width: var(--article-width);
-    display: grid;
-    grid-template-columns: var(--article-grid-columns);
+        .intro 
+        {
+            margin: var(--intro-margin);
+        }
 
-    grid-template-rows:  var(--article-grid-row);
+        /* article elm that contains 2 section of introduction*/
+        .intro > article{
+            
+            width: var(--article-width);
+            display: grid;
+            grid-template-columns: var(--article-grid-columns);
 
-    background-color:var(--intro-article-bgcolor) ;
-   
-    padding: var(--article-padding);
-}
-.intro > article >section{
-    position: relative;
-    
-}
-.intro >article >section:nth-child(1){
-    text-align: center;
-    overflow: hidden;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
+            grid-template-rows:  var(--article-grid-row);
 
-.intro-image{
-    background-image: url("../pictures/icemark-20logo-202.webp"); /* The image used */
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    overflow: hidden;
-    width: var(--intro-image-width);
-    height: var(--intro-image-height);
-    border-radius:var(--intro-border-radius) ;
-}
-.intro >article >section:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 2rem;
-}
-.intro >article >section:nth-child(2) h2{
-    font-size: var(--h1-font-size);
-    font-family:var(--intro-h1-ff);
-    font-weight: var(--h1-font-weight);
-    
-}
+            background-color:var(--intro-article-bgcolor) ;
+        
+            padding: var(--article-padding);
+        }
 
-.intro >article >section:nth-child(2) h2 span:nth-child(1){
-    color: var(--intro-span1);
-}
-.intro >article >section:nth-child(2) h2 span:nth-child(2){
-    color: var( --intro-span2);
-}
-.intro-doc{
-    color: var( --intro-span1);
-}
-.intro >article >section:nth-child(2) p{
-    font-weight: var( --p-weight);
-    margin-top: var(--p-margin-top);
-    line-height: var(--p-line-height);
-    letter-spacing: var(--p-letter-spacing);
-    text-align: justify;
-    color: var( --color-p);
-    font-family:var(--intro-p);
-    font-style: normal;
-}
-.intro >article >section:nth-child(2) .btn{
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.intro >article >section:nth-child(2) button{
-    color: var(--btn-color);
-    display: inline-block;
-    font-family:var(--intro-p);
-    font-size: var(--btn-font-size);
-    width: var(--btn-width);
-    margin-top: var(--margin-top);
-    padding: var(--btn-padding);
-    background-color: var(--bg-btncolor-1);
-    border-radius: 1rem;
-    border: var(--btn-border);
-    font-weight: 500;
-    transition: all 0.5s ease;
-}
-.intro >article >section:nth-child(2) button:hover{
-    background-color: var(--bg-btncolor-2);
-    color: var(--btn-color);
-}
+        /*for every section*/
+        .intro > article >section{
+            position: relative;
+            
+        }
+
+       /* image section in intro.section -> article */
+        .intro >article >section:nth-child(1){
+            text-align: center;
+            overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+      /* first section's css in intro.section -> article*/
+        .intro-image{
+            background-image: url("../pictures/icemark-20logo-202.webp"); /* The image used */
+            background-color: #cccccc; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover;
+            overflow: hidden;
+            width: var(--intro-image-width);
+            height: var(--intro-image-height);
+            border-radius:var(--intro-border-radius) ;
+        }
+        /* second section's css and its child elms in intro.section -> article*/
+        .intro >article >section:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 2rem;
+        }
+        /*Компаний тухай */
+        .intro >article >section:nth-child(2) h2{
+            font-size: var(--h1-font-size);
+            font-family:var(--intro-h1-ff);
+            font-weight: var(--h1-font-weight);
+            
+        }
+        /*Компаний*/
+        .intro >article >section:nth-child(2) h2 span:nth-child(1){
+            color: var(--intro-span1);
+        }
+        /*Тухай*/
+        .intro >article >section:nth-child(2) h2 span:nth-child(2){
+            color: var( --intro-span2);
+        }
+        .intro-doc{
+            color: var( --intro-span1);
+        }
+        .intro >article >section:nth-child(2) p{
+            font-weight: var( --p-weight);
+            margin-top: var(--p-margin-top);
+            line-height: var(--p-line-height);
+            letter-spacing: var(--p-letter-spacing);
+            text-align: justify;
+            color: var( --color-p);
+            font-family:var(--intro-p);
+            font-style: normal;
+        }
+        /*div elm that contains button elm*/
+        .intro >article >section:nth-child(2) .btn{
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .intro >article >section:nth-child(2) button{
+            color: var(--btn-color);
+            display: inline-block;
+            font-family:var(--intro-p);
+            font-size: var(--btn-font-size);
+            width: var(--btn-width);
+        margin-top: var(--margin-top);
+            padding: var(--btn-padding);
+            background-color: var(--bg-btncolor-1);
+            border-radius: 1rem;
+            border: var(--btn-border);
+            font-weight: 500;
+            transition: all 0.5s ease;
+        }
+        .intro >article >section:nth-child(2) button:hover{
+            transform: scale(1.1,1.1);
+            background-color: var(--bg-btncolor-2);
+            color: var(--btn-color);
+        }
 
 /*section.pre-news*/
 
@@ -216,83 +247,80 @@ body{
 } 
 
 /*news*/
-.news {
- display: flex;
- flex-direction: row;
- flex-wrap: nowrap;
-}
-.news a{
-    text-decoration: none;
-    margin: var(--n-a-margins);
-    width: var(--n-a-width);
-}
+        /*section.news*/
+        .news {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        }
+        /*section.news's every news box's a tag*/
+        .news a{
+            text-decoration: none;
+            margin: var(--n-a-margins);
+            width: var(--n-a-width);
+        }
+        /*every news article's css, IOW,each news box's css*/
+        .news article{
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--n-box-bradius);
+            width: var(--n-box-width);
+                aspect-ratio: 1/1;
+                font-family: var(--intro-p);
+                box-shadow: var(--news-box-shadow);
+                display: flex;
+                align-items: flex-end;
+            transition: all 0.5s ease;
+             background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+        }
+        .news article:hover{
+            transform: scale(1.1,1.1);
+        }
+        .news .img-1{
+            background-image: url("../index_pictures/news1.webp");
+        
+        }
+        .news .img-2{
+            background-image: url("../index_pictures/news2.webp ");
+         
+        }
+        .news .img-3{
+            background-image: url("../index_pictures/news3.webp");
+           
+        }
+        .news .img-4{
+            background-image: url("../index_pictures/venus_shock3.jpg");
+            
+        }
 
-.news article{
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--n-box-bradius);
-   
-        width: var(--n-box-width);
-        aspect-ratio: 1/1;
-         font-family: var(--intro-p);
-         box-shadow: var(--news-box-shadow);
-         display: flex;
-         align-items: flex-end;
-       transition: all 0.5s ease;
-     
-       background-position: center; 
-       background-repeat: no-repeat; 
-       background-size: cover; 
- }
-.news .img-1{
-    background-image: url("../index_pictures/news1.webp");
-   
-}
-.news .img-2{
-    background-image: url("../index_pictures/news2.webp ");
-    background-color: #cccccc;  
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
-.news .img-3{
-    background-image: url("../index_pictures/news3.webp");
-    background-color: #cccccc;  
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
-.news .img-4{
-    background-image: url("../index_pictures/venus_shock3.jpg");
-    background-color: #cccccc;  
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
+        /* news box's text container*/
+        .news article  .text{
+            width: var(--n-box-width);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: var(--txt-bgcolor);
+            color: var(--news-box-font-color);
+        }
+         /*news's title & icon css in  news box's text container*/
+            section.news a article h2{
+                font-family:  var(--intro-p);
+                margin: var(--n-h2-margins);
+                font-size: var(--f_size_products);
+                font-weight: var(--font-weight);
+            }
+            .news .icons{
+                width:100%;
+                padding: 0.2rem 1rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            } 
 
- .news article  .text{
-    width: var(--n-box-width);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--txt-bgcolor);
-     color: var(--news-box-font-color);
- }
- section.news a article h2{
-    font-family:  var(--intro-p);
-    margin: var(--n-h2-margins);
-    font-size: var(--f_size_products);
-    font-weight: var(--font-weight);
- }
- .news .icons{
-    width:100%;
-    padding: 0.2rem 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
- } 
-
+        /*For Tablet */
 @media(max-width: 900px){
     #list{
         display: inline-block;
@@ -363,6 +391,7 @@ body{
     
 
 }
+ /*For mobile phone*/
 @media(max-width: 600px){
   
    
