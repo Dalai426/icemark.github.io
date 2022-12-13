@@ -127,7 +127,7 @@ const sublist=[
                 "descrip":"Аз жаргалын амтаа хамтдаа хуваалцах хамгийн шилдэг амттан бол MINI SHOCK"
             },
             {
-                "img":"pictures_bvteegdehvvniitanilcuulga/elite ice.webp",
+                "img":"pictures_bvteegdehvvniitanilcuulga/eliteice.webp",
                 "name":"ELITE",
                 "descrip":"Гэр бүлээрээ идэхэд хамгийн тохиромжтой ELITE"
             }
