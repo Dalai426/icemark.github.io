@@ -2,17 +2,19 @@
     {
         "src":"index_pictures/tart.webp",
         "max_src":"index_pictures/tart.webp",
-        "min-src":"../index_pictures/tart.webp"
-        
-      },
+        "min-src":"../index_pictures/tart.webp",
+        "zIndex":"1"   
+    },
     {
         "src":"pictures/Home_img.webp",
         "max_src":"../pictures/Home_img.webp",
-        "min-src":"../pictures/Home_img.webp"
+        "min-src":"../pictures/Home_img.webp",
+        "zIndex":"2"
       },
     {
         "src":"index_pictures/health.webp",
         "max_src":"../index_pictures/health.webp",
-        "min_src":"../index_pictures/health.webp"
+        "min_src":"../index_pictures/health.webp",
+        "zIndex":"3"
       }
 ]
