@@ -19,7 +19,7 @@ body{
     background-color: yellow;
     text-align: center;
     overflow: hidden;
-   
+    position: relative;
   }
  
 
@@ -28,7 +28,8 @@ body{
     height: var(--slide-height);
     background-position: center; 
     background-repeat: no-repeat; 
-  
+   position: absolute;
+   
     background-size: cover; /* Resize the background image to cover the entire container */
   }
 
@@ -156,17 +157,17 @@ body{
     flex-direction: column;
     padding: 2rem 2rem;
 }
-.intro >article >section:nth-child(2) h1{
+.intro >article >section:nth-child(2) h2{
     font-size: var(--h1-font-size);
     font-family:var(--intro-h1-ff);
     font-weight: var(--h1-font-weight);
     
 }
 
-.intro >article >section:nth-child(2) h1 span:nth-child(1){
+.intro >article >section:nth-child(2) h2 span:nth-child(1){
     color: var(--intro-span1);
 }
-.intro >article >section:nth-child(2) h1 span:nth-child(2){
+.intro >article >section:nth-child(2) h2 span:nth-child(2){
     color: var( --intro-span2);
 }
 .intro-doc{
@@ -230,7 +231,7 @@ body{
     color:var(--intro-span2);
 }
 
-.pre-news h1{
+.pre-news h2{
 
     font-size: var(--pn-fsize);
     font-weight:var(--pn-fw) ;  
@@ -348,7 +349,7 @@ body{
         z-index: 0;
         padding: var(--article-padding);
     }
-    .intro >article >section:nth-child(2) p,h1{
+    .intro >article >section:nth-child(2) p,h2{
         text-align: center;
     }
     .intro-image{
@@ -415,7 +416,7 @@ body{
         height: var(--intro-image-height-Mobile);
         background-size: var(--bg-size);
     }
-    .intro >article >section:nth-child(2) h1{
+    .intro >article >section:nth-child(2) h2{
         font-size: 3rem;
         font-family: var(--intro-h1-ff);
         
