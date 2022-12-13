@@ -118,6 +118,7 @@ body{
     height:100%;
     width: auto;
 }
+
 /*zairmagnii garchig*/
 .zairmag h1{
     font-family: var(--bvteegdehvvn_name-style);
@@ -269,7 +270,7 @@ body{
 .foot{
     margin-top: 2em;
 }
-.foot h1{
+.foot h2{
     color: var(--bvteegdehvvn_name-color);
     font-family:var(--bvteegdehvvn_name-style);
     font-size: 2em;
