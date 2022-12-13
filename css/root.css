@@ -220,41 +220,33 @@
  
 
  /*Ariuka*/
-/* color*/
---companYerunhiiTaniltsuulaga:#eeeee4;
---companYerunhiiTaniltsuulagaSuuder:rgb(242, 156, 44);
---huniiNuutsbackground:#EFB63F;
---huniiNuutsToonMedeelel:white;
---opportunitiesText:black;
---blue:#0098DA;
---songonShalgaruulaltH2:#40B2E3;
---straightLine:#F10C0C;
---humanResources1:#005CA9;
---humanResources2:#FF6C00;
---backgroundColorpink: #FFECDB;
---backgroundColorblue: #8ECCFF;
---alsiinHaraa_hr_:#f10c0cb3;
---alsiinHaraa_background:#9f9cc8cd;
-
-
 /*font family*/
 --companYerunhiiTaniltsuulagaFont:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
---hamtOlonFOnt:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
---sobgonShalgaruulalth2:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 --employee:Arial, Helvetica, sans-serif,Bold;
 --hamtOlonText:Verdana, Geneva, Tahoma, sans-serif;
 --zahzeeltext:cursive;
-/*font align*/
---hamtOlonAlign:justify;
+/*color*/
+--huniiNuutsToonMedeelel:white;
+--alsiinHaraa_background:#9f9cc8cd;
+--alsiinHaraa_hr_:#f10c0cb3;
+--humanResources1:#005CA9;
+--humanResources2:#FF6C00;
+--straightLine:#F10C0C;
+--background_Colorpink:#FFFBEC;
+--opportunitiesText:black;
+--backgroundColorblue: #8ECCFF;
+--backgroundColorpink: #FFECDB;
+/*radius*/
+--hamtOlon_radius:0rem 6rem 6rem 0rem;
+--baiguullagiin_radius:6rem 0rem 0rem 6rem;
+--bolomjuudBackgroundz_radius: 5% 5% 10% ;
+--shalgaruulaltiin_margin:1.5% 0 1.5% 0;
 /*size*/
---hamtOlonimg:5rem;
---hamtOlonH1top:2rem;
---hamtOlonSize:3.5rem;
---hamtOlon_p_top: -20rem;
---hamtOlon_p_size: 1.3em;
---organizationleft:30rem;
-
---straightTop:2rem;
-
+--padding_top:7rem;
+--fond_size:2rem;
+--circle_size:5.6rem;
+--shalgaruulalt_img_top:-2rem;
+--Equipment-img_bairlal:13%;
+--Equipment-text_bairlal:5%;
 }
 
