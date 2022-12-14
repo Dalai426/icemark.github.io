@@ -413,12 +413,6 @@ img{
     font-size: calc(1vw + 2rem);
 } }
 /*Хүний нөөц*/
-@media(max-width:952px){
-  .hunii_nuuts h2{
-    font-size: calc(1vw + 2rem);
-  }
-    .p-line-1 {
-      width: 65%;}}
 /*hamt olon & baiguullaga*/
 @media(max-width:976px){
   .organization{
@@ -434,7 +428,14 @@ img{
   }
   .hamtOlon p{
     font-size: calc(1vw + 0.4rem);
-   } }
+   }
+   .hunii_nuuts h2{
+    font-size: calc(1vw + 2rem);
+  }
+    .p-line-1 {
+      width: 65%;} 
+  .NiitZairmag h3{font-size:70%;}
+  .NiitZairmag p{font-size:60%;}}
 /*baiguullagiin bolomjuud*/
 @media(max-width:550px){
   .part h2  {
@@ -445,12 +446,16 @@ img{
   }
   .part{
     width: 80%;
-  } }
+  } 
+  .Tonog_Tuhuurumj p{
+    font-size: 90%;
+    text-align: justify;
+  }}
 /*shalgaruulalt*/
 @media(Max-width:744px){
   .selection p {
     transform: translateY(-20%);
-    font-size: 70%;  
+    font-size: 60%;  
   }
   .shalgaruulalt h2{
     font-size: 180%;
@@ -462,17 +467,7 @@ img{
   .Tonog_Tuhuurumj h2 {font-size:180%;
 } }
  /*zah zeel*/
-@media(max-width:1000px){
-  .NiitZairmag h3{font-size:70%;}
-  .NiitZairmag p{font-size:60%;}
-}
 @media(max-width:430px){
   .NiitZairmag h3{font-size:50%;}
   .NiitZairmag p{font-size:40%;
   } }
-  /*tonog tohooromj*/
-  @media(max-width:500px){
-    .Tonog_Tuhuurumj p{
-      font-size: 90%;
-      text-align: justify;
-    } }  
