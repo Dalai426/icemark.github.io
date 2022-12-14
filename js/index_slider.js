@@ -48,7 +48,7 @@ function sliding(){
           slideIndex++;
           if (slideIndex > slides.length) {slideIndex = 1}
           slides[slideIndex-1].style.zIndex = "30";
-          setTimeout(next, 2000);
+          setTimeout(next, 10000);
     
      
     
