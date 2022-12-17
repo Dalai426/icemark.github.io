@@ -6,6 +6,7 @@ class RecentProductsItems{
         this.href=href;
         this.content=content;
     }
+    /*product -ийн item бүрээ render-лэж буй функц*/ 
     render_a(){
         return `<a href="${this.href}">
         <article class="p-art" style="background-image:url(${this.src});">
@@ -25,7 +26,9 @@ constructor(jsonUrl) {
     this.jsonUrl = jsonUrl;
     
 }
-
+/* Өгөгдлөө json файлаас fetch хийн авчраад 
+тухайн өгөгдөл бүрийг агуулах RecentProductsItems-классын объектыг үүсгээд объект тус бүрийнхээ хуьвд рендерлэж байна.
+*/
 download(){
     fetch(`${this.jsonUrl}`,
     { mode: "no-cors" })

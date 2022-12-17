@@ -22,7 +22,7 @@
     },
     {
       "href":"#",
-      "src":"index_pictures/teso_ice.webp",
+      "src":"index_pictures/Cup.jpg",
       "min":"../index_pictures/teso_ice.webp",
       "max":"../index_pictures/teso_ice.webp",
       "content":"<span> Аягатай</span> <br> зайрмаг"
@@ -50,7 +50,7 @@
     },
     {
       "href":"#",
-      "src":"index_pictures/tus_tunh2.webp",
+      "src":"index_pictures/tart.webp",
       "min":"../index_pictures/tus_tunh2.webp",
       "max":"../index_pictures/tus_tunh2.webp",
       "content":"<span> Мөнх тунх</span><br> зайрмаг"
