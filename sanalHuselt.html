@@ -36,14 +36,15 @@
                 <p>САНАЛ ХҮСЭЛТ</p>
                 <h4><span>ХОЛБОО </span>БАРИХ</h4>
                 <div class="arrow"></div>
-                <form>
+                <form  action="http://localhost:3000/send_email"
+                method="POST" >
                     <fieldset>
-                        <i class="fas fa-user"></i>
+                        <i class="fas fa-user"></i> 
                         <input type="text" class="input" name="name" placeholder="Хэрэглэгчийн нэр">
                     </fieldset>
                     <fieldset>
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" class="input" name="e-mail" placeholder="И-мэйл">
+                        <input type="email" class="input" name="email" placeholder="И-мэйл">
                     </fieldset>
                     <fieldset>
                         <i class="fa-solid fa-pen-to-square"></i>
@@ -55,9 +56,9 @@
                     </fieldset>
                     <fieldset>
                         <i class="fa-solid fa-phone"></i>
-                        <input type="text" class="input" name="lastname" placeholder="Эргэн холбогдох хаяг">
+                        <input type="text" class="input" name="call" placeholder="Эргэн холбогдох хаяг">
                     </fieldset>
-                    <button class="button">Илгээх<i class="fas fa-paper-plane"></i></button>
+                    <button type="submit" class="button">Илгээх<i class="fas fa-paper-plane"></i></button>
                 </form>
             </article>
             </section>   
