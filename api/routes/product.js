@@ -4,11 +4,11 @@ const { Pool, Client } = require('pg');
 const router=express.Router();
 // database-tei connect hiine
 const pool = new Pool({
-    host:"localhost",
-    port:"5432",
-    database:"icecream",
-    user:"test",
-    password:"123456"
+    host:"icemark.postgres.database.azure.com",
+    port:5432,
+    database:"icecreams",
+    user:"icemark_admin@icemark",
+    password:"Tulbaga@11"
 }); 
 // connect hiijj chadval can gedeg vgiig hevlene
 pool.connect().then(()=> console.log("can"));
