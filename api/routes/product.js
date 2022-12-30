@@ -8,7 +8,8 @@ const pool = new Pool({
     port:5432,
     database:"icecreams",
     user:"icemark_admin@icemark",
-    password:"Tulbaga@11"
+    password:"Tulbaga@11",
+    ssl:true
 }); 
 // connect hiijj chadval can gedeg vgiig hevlene
 pool.connect().then(()=> console.log("can"));
