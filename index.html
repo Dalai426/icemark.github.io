@@ -27,6 +27,7 @@
     <script  src="./js/loading.js"></script>
     <script  src="./js/header_footer.js" type="module"></script>
     <script src="./js/index_product.js" type="module"></script>
+    <script  src="./js/index_news.js" ></script>
     <div id="loader" class="lazyload"></div>
     <header>
     <icemark-header></icemark-header>
@@ -80,13 +81,12 @@
             </article>
         </section>
         
-       <section class="pre-news">
+    <section class="pre-news">
         <h2> <span class="news-1">Мэдээ </span>  <span class="news-2"> мэдээлэл</span></h2>
-                
-       </section>
+     </section>
 
-        <section class="news">
-            <a href="#">
+        
+            <!--<a href="#">
                 <article class="img-1">
                     
                   <section class="text">  
@@ -163,11 +163,16 @@
                </section> 
               </article>  
            </a>
-            
+        -->
             
       
-        
+        <section class="news">
+            <icemark-news-box id="1" onclick="addView(1)"></icemark-news-box>
+            <icemark-news-box id="2" onclick="addView(2)" ></icemark-news-box>
+            <icemark-news-box id="3" onclick="addView(3)"></icemark-news-box>
+            <icemark-news-box id="4" onclick="addView(4)"></icemark-news-box>
         </section>
+        
     </main>
 
      <footer>
