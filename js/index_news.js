@@ -1,137 +1,131 @@
+//import "../modules/index_news_text.js"
+class Text extends HTMLElement{
 
-   /* fetch('../json/index_box.json', { mode: 'no-cors'}).then(res => res.json()).then(res => console.log);*/
-
-/*const products=[
-    {
-      "href":"#",
-      "src":"../index_pictures/mello.webp",
-      "min":"../index_pictures/mello.webp",
-      "max":"../index_pictures/mello.webp",
-      "content":"Жимстэй <br> зайрмаг"
-    },
-    {
-      "href":"#",
-      "src":"../index_pictures/choco.jpg",
-      "min":"../index_pictures/choco.jpg",
-      "max":"../index_pictures/choco.jpg",
-      "content":"<span> Шоколадтай</span> <br> зайрмаг"
-    },
-    {
-      "href":"#",
-      "src":"../index_pictures/tus_bambar3.webp",
-      "min":"../index_pictures/tus_bambar3.webp",
-      "max":"../index_pictures/tus_bambar3.webp",
-      "content":"<span> Аарцтай</span> <br> зайрмаг"
-    },
-    {
-      "href":"#",
-      "src":"../index_pictures/teso_ice.webp",
-      "min":"../index_pictures/teso_ice.webp",
-      "max":"../index_pictures/teso_ice.webp",
-      "content":"<span> Аягатай</span> <br> зайрмаг"
-    },
-    {
-      "href":"#",
-      "src":"../index_pictures/vannila.webp",
-      "min":"../index_pictures/vannila.webp",
-      "max":"../index_pictures/vannila.webp",
-      "content":"<span>Цөцгийтэй</span> <br> зайрмаг"
-    },
-    {
-      "href":"#",
-      "src":"../index_pictures/cake.webp",
-      "min":"../index_pictures/cake.webp",
-      "max":"../index_pictures/cake.webp",
-      "content":"<span>Гэр бүлийн</span><br>зайрмаг"
-    },
-    {
-      "href":"#",
-      "src":"../index_pictures/tus_mock.webp",
-      "min":"../index_pictures/tus_mock.webp",
-      "max":"../index_pictures/tus_mock.webp",
-      "content":"<span> Моктайл</span><br> зайрмаг"
-    },
-    {
-      "href":"#",
-      "src":"../index_pictures/tus_tunh2.webp",
-      "min":"../index_pictures/tus_tunh2.webp",
-      "max":"../index_pictures/tus_tunh2.webp",
-      "content":"<span> Мөнх тунх</span><br> зайрмаг"
-    }
-]*/
- class News extends HTMLElement{
-   connectedCallback(){
-    fetch(`./json/index_box.json`,
-        { mode: "no-cors" })
-        .then(response=>{
-            response.json()
-            .then(jsob=>{
-            var ret="";
-            for(const j of jsob) {
-            ret+=`<a href="${j.href}">
-                <article class="${j.class}">
-                  <section class="text">  
-                   <h2> ${j.h2} </h2>
+  constructor(json){
+    super();
+      this.id=this.getAttribute("id");
   
-                   <div class="icons">
-                       <p>
-                           <i class="fa-sharp fa-solid fa-comment"></i>
-    
-                           <span> ${j.comment} </span>
-                           <i class="fa-solid fa-eye"></i>
-                           <span> ${j.view} </span>
-                       </p>
-                       <div class="date"> ${j.date} </div>
-                   </div>
-                   
-               </section> 
-              </article>  
-           </a>`
-            } 
-            this.innerHTML=ret;
-            })
-        })
-        .catch(err => { console.log(err); 
-        });
-   }
-}
-customElements.define("icemark-news-box",News);
-
-class MyA{
-    constructor(src,mmin,mmax,href,content) {
-        this.src = src;
-        this.mmin = mmin;
-        this.mmax = mmax;
-        this.href=href;
-        this.content=content;
-    }
-    render_a(){
-        return `<a href="${this.href}">
-        <article class="p-art">
-       
-        </article>
-        <h2>${this.content}</h2>
-        </a> `
-    }
+      this.products=[];
+   
+  }
+ 
+  Render(){
+      fetch(`./json/index_box.json`,
+          { mode: "no-cors" })
+          .then(response=>{
+              response.json()
+              .then(jsob=>{
+              
+              for(var j of jsob){
+                 if(j.id==this.id){
+                      var a=this.products.length+parseInt( j.view);
+                      this.innerHTML=`
+                      <h2> ${j.h2}  </h2>
+                      <div class="icons">
+                                      <p>
+                                          <i class="fa-sharp fa-solid fa-comment"></i>
+                  
+                                          <span> ${j.comment} </span>
+                                          <i class="fa-solid fa-eye"></i>
+                                          <span>${a} </span>
+                                      </p>
+                                      <div class="date"> ${j.date}</div>
+                      </div>`
+              }
+            }
+               
+              })
+          })
+          .catch(err => { console.log(err); 
+          });
   
   }
-  
-  function PList(products) {
-    let retVal = "";
-    
-    for (const key of products){
-  
-        let articleObj = new MyA(key.src,key.min,key.max,key.href,key.content);
-        retVal += articleObj.render_a();
-  
+  AddToCart(myProduct) {
       
+      this.products.push(myProduct);
+      this.Render();
+  }
+  connectedCallback(){
+    
+    
+     this.Render();
+  }
+
+}
+window.customElements.define('icemark-news-box-text', Text);
+
+
+class News extends HTMLElement{
+
+  constructor(obj){
+    super();
+    if(obj!=null){
+      this.id=this.getAttribute("id");
     }
-  
-    document.getElementsByClassName("product")[0].innerHTML=retVal;
+
     
   }
-  window.onload=()=>PList(products);
+
+  connectedCallback(){
+  
+
+ 
+        fetch(`./json/index_box.json`,
+            { mode: "no-cors" })
+            .then(response=>{
+                response.json()
+                .then(jsob=>{
+                var ret="";
+                
+                for(const j of jsob) {
+                  if(j.id==this.id){
+                ret=`<a href="${j.href}">
+                    <article class="${j.class}">
+                        
+                      <icemark-news-box-text class="text" id="${j.id}">
+                      </icemark-news-box-text>
+                   
+                  </article>  
+               </a>`
+               break;
+                  }
+                } 
+                this.innerHTML=ret;
+                })
+            })
+            .catch(err => { console.log(err); 
+            });
+       
+  }
+}
+window.customElements.define('icemark-news-box', News);
 
 
 
+function addView(id){
+  const mycart=document.getElementById(id).children[0].children[0].children[0];
+  console.log(mycart);
+  mycart.AddToCart(this);
+  
+}
+/*document.querySelector("icemark-news-box").addEventListener("click", e=>{
+  console.log(e.target)
+  //const myCart = document.querySelector("icemark-news-box-text");
+  const mycard= document.getElementById( e.getElementById);
+  mycard.AddToCart(this);
+})
+/*
+<section class="text">
+<h2> ${j.h2} </h2>
+      
+<div class="icons">
+    <p>
+        <i class="fa-sharp fa-solid fa-comment"></i>
 
+        <span> ${j.comment} </span>
+        <i class="fa-solid fa-eye"></i>
+        <span> ${j.view} </span>
+    </p>
+    <div class="date"> ${j.date} </div>
+</div>
+</section> */
