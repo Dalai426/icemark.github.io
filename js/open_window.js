@@ -123,30 +123,30 @@
 //   }
 // }
 
-var tap;
-// tuhain duudagdsan elementiig render hiine
-function display(param){
-  tap=document.getElementById(`${param}`);
-  tap.parentNode.style.display="block";
-  listener();
-}
+// var tap;
+// // tuhain duudagdsan elementiig render hiine
+// function display(param){
+//   tap=document.getElementById(`${param}`);
+//   tap.parentNode.style.display="block";
+//   listener();
+// }
 
-function listener(){
-  tap.parentNode.addEventListener('click',function(e){
-    // click hiihed tuhain modalaas oor gazar click hiivel
-      if(!tap.contains(e.target)){
-          tap.parentNode.style.display="none";     
-      }
+// function listener(){
+//   tap.parentNode.addEventListener('click',function(e){
+//     // click hiihed tuhain modalaas oor gazar click hiivel
+//       if(!tap.contains(e.target)){
+//           tap.parentNode.style.display="none";     
+//       }
 
-  });
-  tap.childNodes[1].childNodes[1].addEventListener('click',()=>{
-    // x deer click hiivel
-    tap.parentNode.style.display="none";     
-  });
-  // 3d carousel
-  const ec=new Carousel(tap.parentNode);
-  ec.useControls();
-}
+//   });
+//   tap.childNodes[1].childNodes[1].addEventListener('click',()=>{
+//     // x deer click hiivel
+//     tap.parentNode.style.display="none";     
+//   });
+//   // 3d carousel
+//   const ec=new Carousel(tap.parentNode);
+//   ec.useControls();
+// }
 let tap;
 class Carousel{ 
         constructor(items){
