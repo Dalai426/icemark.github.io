@@ -26,8 +26,6 @@
 //     })
 //   })
 //   .catch(err => { console.log(err); });
-
-
 // class Carousel{ 
 //         constructor(items){
 //           // zurguudiig aguulsan elementvvd
