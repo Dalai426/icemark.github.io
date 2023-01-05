@@ -225,7 +225,6 @@ function MOCKTAIL(){
     tap.parentNode.style.display="block";
     listener();
 }
-
 function BAMBAR(){
     tap=document.getElementById("BAMBAR");
     tap.parentNode.style.display="block";
